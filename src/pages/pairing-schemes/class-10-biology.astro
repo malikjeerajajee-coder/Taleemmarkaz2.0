@@ -1,0 +1,466 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const pageUrl = "https://taleemmarkaz.com/pairing-schemes/class-10-biology/";
+
+const faqs = [
+  { q: "What are the chapters in the 2027 Class 10 Biology textbook?", a: "The 2027 PCTB Biology textbook contains 10 chapters: Human Digestive System, Human Respiratory System, Human Blood Circulatory System, Human Urinary System, Coordination, Reproduction, Inheritance, Biotechnology, Diseases and Immunity, and Evolution." },
+  { q: "Is this the official 2027 Biology pairing scheme?", a: "Yes. According to the Punjab Education Minister Rana Sikandar Hayat, this scheme has been officially added to the 2027 PCTB curriculum textbooks for all Punjab Boards to ensure fair competition." },
+  { q: "Why did the government introduce pairing schemes inside textbooks?", a: "Education Minister Rana Sikandar Hayat stated that private schools were buying pairing schemes from board offices to gain unfair advantages. By adding them directly to textbooks, the government ensures all students have equal access to the paper pattern." },
+  { q: "How many marks is the Class 10 Biology paper?", a: "The Biology theory paper carries 60 marks, including 12 objective marks (MCQs) and 48 subjective marks (short and long questions)." },
+  { q: "Which chapters are paired in Q.5?", a: "Q.5 combines Chapter 1 (Human Digestive System) in part (a) and Chapter 3 (Human Blood Circulatory System) in part (b)." },
+  { q: "Which chapters are paired in Q.6?", a: "Q.6 combines Chapter 6 (Reproduction) in part (a) and Chapter 5 (Coordination) in part (b)." },
+  { q: "Which chapters are paired in Q.7?", a: "Q.7 combines Chapter 9 (Diseases and Immunity) in part (a) and Chapter 8 (Biotechnology) in part (b)." }
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Class 10 Biology Pairing Scheme 2027 Punjab Boards – Official PCTB Scheme",
+      "description": "Get the official Class 10 Biology Pairing Scheme 2027 for Punjab Boards, authorized by Rana Sikandar Hayat. Includes chapter-wise MCQs, short questions, long questions, and full syllabus contents.",
+      "author": {
+        "@type": "Person",
+        "name": "Malik Muhammad Ahsan Jahangir",
+        "jobTitle": "Lead Academic Author",
+        "alumniOf": "MPhil Biotechnology",
+        "url": "https://taleemmarkaz.com/authors/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TaleemMarkaz",
+        "logo": { "@type": "ImageObject", "url": "https://taleemmarkaz.com/logo.png" }
+      },
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://taleemmarkaz.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Pairing Schemes", "item": "https://taleemmarkaz.com/pairing-schemes/"},
+        {"@type": "ListItem", "position": 3, "name": "Class 10 Biology", "item": pageUrl}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+      }))
+    }
+  ]
+};
+---
+
+<Layout 
+  title="Class 10 Biology Pairing Scheme 2027 Punjab Boards – Official PCTB"
+  description="Download the ONLY official Class 10 Biology Pairing Scheme 2027 authorized by Punjab Minister Rana Sikandar Hayat. Includes chapter-wise MCQs, short & long questions, and full book contents."
+  canonical={pageUrl}
+  schema={schema}
+>
+  <style is:global>
+    .font-urdu { font-family: 'Gulzar', serif; line-height: 2.4; font-size: 1.15rem; }
+    @media print {
+      header, footer, nav, .no-print, .breadcrumbs, .author-card { display: none !important; }
+      body { background: white !important; color: black !important; font-size: 12pt; }
+      main { padding: 0 !important; margin: 0 !important; }
+      .max-w-4xl { max-width: 100% !important; }
+      .print-header { display: flex !important; align-items: center; justify-content: space-between; border-bottom: 2px solid #2563eb; padding-bottom: 10px; margin-bottom: 20px; }
+      .print-header h1 { font-size: 16pt; margin: 0; color: #0f172a; }
+      table { page-break-inside: avoid; }
+      tr { page-break-inside: avoid; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      .font-urdu { font-size: 14pt; }
+    }
+    .print-header { display: none; }
+  </style>
+
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 breadcrumbs no-print">
+    <div class="max-w-5xl mx-auto text-sm text-slate-500 flex items-center gap-2">
+      <a href="/" class="hover:text-blue-600">Home</a> <span>/</span>
+      <a href="/pairing-schemes/" class="hover:text-blue-600">Pairing Schemes</a> <span>/</span>
+      <span class="text-slate-900 font-medium">Class 10 Biology</span>
+    </div>
+  </div>
+
+  <section class="bg-white pt-12 pb-8 px-4 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto">
+      <div class="print-header">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-lg">T</div>
+          <span class="text-xl font-extrabold text-slate-900">TaleemMarkaz</span>
+        </div>
+        <span class="text-sm font-semibold text-slate-500">taleemmarkaz.com</span>
+      </div>
+
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-bold uppercase tracking-wider mb-4 no-print">
+        🚨 Official Government Update
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+        Class 10 Biology Pairing Scheme 2027 <span class="text-green-600">(Punjab Boards)</span>
+      </h1>
+      <p class="text-lg text-slate-600 mb-6 max-w-3xl">
+        The complete, official chapter-wise Biology paper scheme, authorized by the Punjab Education Minister and included directly in the 2027 PCTB curriculum textbooks.
+      </p>
+
+      <button onclick="window.print()" class="no-print bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-flex items-center gap-2 shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Download PDF with Logo
+      </button>
+
+      <div class="author-card bg-white border border-slate-200 rounded-2xl p-5 md:p-6 shadow-sm mt-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl md:text-2xl shrink-0 border-4 border-green-100">MA</div>
+            <div class="text-left">
+              <div class="flex items-center gap-1.5 mb-1">
+                <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">Academically Reviewed By</p>
+              </div>
+              <a href="/authors/" class="text-lg md:text-xl font-extrabold text-slate-900 hover:text-green-600 transition-colors leading-tight block">Malik Muhammad Ahsan Jahangir</a>
+              <p class="text-sm font-medium text-slate-600 mt-0.5">Lead Academic Author | MPhil Biotechnology</p>
+            </div>
+          </div>
+          <div class="flex flex-row md:flex-col lg:flex-row gap-6 md:gap-2 lg:gap-6 text-sm text-slate-500 md:border-l md:border-slate-200 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0 border-slate-200">
+            <div><span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Published</span><span class="font-semibold text-slate-700">Nov 8, 2026</span></div>
+            <div><span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Updated</span><span class="font-semibold text-slate-700">Nov 8, 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 py-12">
+    <div class="prose prose-slate prose-lg max-w-none">
+      
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 not-prose">
+        <h3 class="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Official Announcement by Punjab Education Minister
+        </h3>
+        <p class="text-blue-800 mb-4"><strong>This is the ONLY official 2027 Biology pairing scheme for all Punjab Boards.</strong></p>
+        <p class="text-blue-800 mb-4">Punjab Education Minister <strong>Rana Sikandar Hayat</strong> has officially authorized the inclusion of these pairing schemes directly into the 2027 PCTB curriculum textbooks for Class 9 and Class 10.</p>
+        <div class="bg-white/60 p-4 rounded-lg border border-blue-100">
+          <p class="text-sm text-blue-900">The Minister noted that private schools were illegally obtaining pairing schemes to gain an unfair advantage. To ensure <strong>100% fair competition</strong>, the government has now printed these schemes inside the official textbooks.</p>
+        </div>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 my-8 not-prose" dir="rtl">
+        <h3 class="text-2xl font-bold text-slate-900 mb-4 font-urdu">اہم امتحانی ہدایات</h3>
+        <ul class="space-y-4 text-slate-700 font-urdu">
+          <li>• اس پیپر میں کل 60 نمبر ہیں جن میں 12 نمبر معروضی (MCQs) اور 48 نمبر سوالیہ (Subjective) ہیں۔</li>
+          <li>• معروضی حصے کو حل کرنے کے لیے 15 منٹ دیے جائیں گے۔</li>
+          <li>• سوالیہ حصے میں کل 3 سیکشنز (Q.2, Q.3, Q.4) ہیں، ہر سیکشن میں سے 5 سوالات حل کرنے ہوں گے۔</li>
+          <li>• طویل سوالات (Long Questions) میں سے صرف 2 سوالات حل کرنے ہوں گے۔</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">MCQs Distribution (Official 2027 Chapter Names)</h2>
+      <div class="overflow-x-auto my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Ch.</th>
+              <th class="p-3 font-bold text-slate-900">Official Chapter Name (PCTB)</th>
+              <th class="p-3 font-bold text-slate-900 text-center">MCQs</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">1</td><td class="p-3">Human Digestive System</td><td class="p-3 text-center font-bold text-green-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">2</td><td class="p-3">Human Respiratory System</td><td class="p-3 text-center font-bold text-green-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">3</td><td class="p-3">Human Blood Circulatory System</td><td class="p-3 text-center font-bold text-green-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">4</td><td class="p-3">Human Urinary System</td><td class="p-3 text-center font-bold text-green-600">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">5</td><td class="p-3">Coordination</td><td class="p-3 text-center font-bold text-green-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">6</td><td class="p-3">Reproduction</td><td class="p-3 text-center font-bold text-green-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">7</td><td class="p-3">Inheritance</td><td class="p-3 text-center font-bold text-green-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">8</td><td class="p-3">Biotechnology</td><td class="p-3 text-center font-bold text-green-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">9</td><td class="p-3">Diseases and Immunity</td><td class="p-3 text-center font-bold text-green-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">10</td><td class="p-3">Evolution</td><td class="p-3 text-center font-bold text-green-600">2</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Short Questions Pairing Scheme</h2>
+      
+      <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Q.2 – Short Questions (10 Marks)</h3>
+      <div class="overflow-x-auto my-4 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead><tr class="bg-slate-100 border-b border-slate-200"><th class="p-3 font-bold text-slate-900">Ch.</th><th class="p-3 font-bold text-slate-900">Chapter Name</th><th class="p-3 font-bold text-slate-900 text-center">Questions</th></tr></thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3">1</td><td class="p-3">Human Digestive System</td><td class="p-3 text-center">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3">2</td><td class="p-3">Human Respiratory System</td><td class="p-3 text-center">4</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3">5</td><td class="p-3">Coordination</td><td class="p-3 text-center">2</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Q.3 – Short Questions (10 Marks)</h3>
+      <div class="overflow-x-auto my-4 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead><tr class="bg-slate-100 border-b border-slate-200"><th class="p-3 font-bold text-slate-900">Ch.</th><th class="p-3 font-bold text-slate-900">Chapter Name</th><th class="p-3 font-bold text-slate-900 text-center">Questions</th></tr></thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3">3</td><td class="p-3">Human Blood Circulatory System</td><td class="p-3 text-center">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3">4</td><td class="p-3">Human Urinary System</td><td class="p-3 text-center">3</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3">6</td><td class="p-3">Reproduction</td><td class="p-3 text-center">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3">7</td><td class="p-3">Inheritance</td><td class="p-3 text-center">2</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Q.4 – Short Questions (10 Marks)</h3>
+      <div class="overflow-x-auto my-4 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead><tr class="bg-slate-100 border-b border-slate-200"><th class="p-3 font-bold text-slate-900">Ch.</th><th class="p-3 font-bold text-slate-900">Chapter Name</th><th class="p-3 font-bold text-slate-900 text-center">Questions</th></tr></thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3">8</td><td class="p-3">Biotechnology</td><td class="p-3 text-center">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3">9</td><td class="p-3">Diseases and Immunity</td><td class="p-3 text-center">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3">10</td><td class="p-3">Evolution</td><td class="p-3 text-center">4</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Long Questions Pairing Scheme 2027</h2>
+      <div class="overflow-x-auto my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead><tr class="bg-slate-100 border-b border-slate-200"><th class="p-3 font-bold text-slate-900">Question</th><th class="p-3 font-bold text-slate-900">Part (a) – 5 marks</th><th class="p-3 font-bold text-slate-900">Part (b) – 4 marks</th></tr></thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-green-600">Q.5</td><td class="p-3">Ch 1: Human Digestive System</td><td class="p-3">Ch 3: Human Blood Circulatory System</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-green-600">Q.6</td><td class="p-3">Ch 6: Reproduction</td><td class="p-3">Ch 5: Coordination</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-bold text-green-600">Q.7</td><td class="p-3">Ch 9: Diseases and Immunity</td><td class="p-3">Ch 8: Biotechnology</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">English Model Paper 2027</h2>
+      <p>Based on the official PCTB curriculum and pairing scheme, here are the most important questions to practice.</p>
+      
+      <div class="bg-white border border-slate-200 rounded-xl p-6 not-prose my-6">
+        <h3 class="text-lg font-bold text-slate-900 mb-3 text-blue-700">Q.2 – Important Short Questions (Attempt any 5)</h3>
+        <ul class="list-disc pl-5 text-sm text-slate-700 space-y-2 mb-6">
+          <li>Write down two functions of the liver other than digestion.</li>
+          <li>Differentiate between bolus and chyme.</li>
+          <li>What is pleura? Write its function.</li>
+          <li>Describe the events that take place during exhalation.</li>
+          <li>What are the causes and symptoms of emphysema?</li>
+          <li>Write the functions of the thalamus and hypothalamus.</li>
+          <li>Name the hormones secreted by the anterior pituitary gland.</li>
+          <li>Name the proteins present in blood plasma and their functions.</li>
+        </ul>
+
+        <h3 class="text-lg font-bold text-slate-900 mb-3 text-blue-700">Q.3 – Important Short Questions (Attempt any 5)</h3>
+        <ul class="list-disc pl-5 text-sm text-slate-700 space-y-2 mb-6">
+          <li>What are agranulocytes? Write their types.</li>
+          <li>Differentiate between pressure filtration and tubular secretion.</li>
+          <li>What is lithotripsy?</li>
+          <li>Write the functions of estrogen and progesterone.</li>
+          <li>What is the composition of eukaryotic chromatin?</li>
+          <li>Why did Mendel select pea plants for his experiments?</li>
+          <li>Name the potential risks of biotechnology.</li>
+          <li>What are zoonotic diseases? Give examples.</li>
+        </ul>
+
+        <h3 class="text-lg font-bold text-slate-900 mb-3 text-blue-700">Q.4 – Important Short Questions (Attempt any 5)</h3>
+        <ul class="list-disc pl-5 text-sm text-slate-700 space-y-2 mb-6">
+          <li>What are vestigial structures? Give examples in humans.</li>
+          <li>How is mutation a source of variation?</li>
+          <li>Differentiate between allopatric and sympatric speciation.</li>
+          <li>What are the steps involved in natural selection?</li>
+          <li>Write the role of bacteria in genetic modification.</li>
+          <li>What are fungal and parasitic protozoan infections?</li>
+          <li>Define fitness in the context of evolution.</li>
+          <li>What is the role of killer cells in immunity?</li>
+        </ul>
+
+        <h3 class="text-lg font-bold text-slate-900 mb-3 text-blue-700">Q.5 to Q.7 – Important Long Questions (Attempt any 2)</h3>
+        <ul class="list-disc pl-5 text-sm text-slate-700 space-y-2">
+          <li><strong>Q.5 (a):</strong> Explain the absorption of food in the small intestine. <br> <strong>Q.5 (b):</strong> Describe blood circulation in the human heart with a diagram.</li>
+          <li><strong>Q.6 (a):</strong> Write a detailed note on sexually transmitted diseases, with special reference to AIDS. <br> <strong>Q.6 (b):</strong> Explain the hormones of the adrenal gland and their functions.</li>
+          <li><strong>Q.7 (a):</strong> Describe the role of killer cells and protective proteins in the second line of defence. <br> <strong>Q.7 (b):</strong> Discuss the applications of biotechnology in medicine.</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">Urdu Model Paper 2027 (اردو ماڈل پیپر)</h2>
+      <p class="font-urdu text-lg text-slate-600 mb-6" dir="rtl">سرکاری پیپر پیٹرن کے مطابق اہم سوالات جن کی تیاری لازمی ہے۔</p>
+      
+      <div class="bg-white border border-slate-200 rounded-xl p-6 not-prose my-6" dir="rtl">
+        <h3 class="text-lg font-bold text-slate-900 mb-3 text-blue-700 font-urdu">سوال ۲: مختصر سوالات (کوئی سے 5 حل کریں)</h3>
+        <ul class="list-disc pr-5 text-slate-700 space-y-3 mb-8 font-urdu">
+          <li>جگر کے دو اہم کام بتائیں (ہضم کے علاوہ)۔</li>
+          <li>بولس اور کائم میں کیا فرق ہے؟</li>
+          <li>پلورا کیا ہے؟ اس کا کام لکھیں۔</li>
+          <li>سانس باہر نکالتے وقت کیا واقعات پیش آتے ہیں؟</li>
+          <li>ایمفیسیما (Emphysema) کی وجوہات اور علامات کیا ہیں؟</li>
+          <li>تھیلامس اور ہائپوتھیلامس کے افعال لکھیں۔</li>
+          <li>پچھلی پٹیوٹری غدود سے نکلنے والے ہارمونز کے نام لکھیں۔</li>
+          <li>خون کے پلازما میں موجود پروٹینز اور ان کے افعال لکھیں۔</li>
+        </ul>
+
+        <h3 class="text-lg font-bold text-slate-900 mb-3 text-blue-700 font-urdu">سوال ۳: مختصر سوالات (کوئی سے 5 حل کریں)</h3>
+        <ul class="list-disc pr-5 text-slate-700 space-y-3 mb-8 font-urdu">
+          <li>ایگرینولو سائیٹس (Agranulocytes) کیا ہیں؟ ان کی اقسام بتائیں۔</li>
+          <li>پریشر فلٹریشن اور ٹیوبولر سیکریشن میں فرق کریں۔</li>
+          <li>لیتھوٹریپسی (Lithotripsy) کیا ہے؟</li>
+          <li>ایسٹروجن اور پروجیسٹرون کے افعال لکھیں۔</li>
+          <li>یوکیریوٹک کرومیٹن (Eukaryotic Chromatin) کی ساخت کیا ہے؟</li>
+          <li>مینڈل نے اپنے تجربات کے لیے مٹر کے پودے کیوں منتخب کیے؟</li>
+          <li>بائیو ٹیکنالوجی کے ممکنہ خطرات کیا ہیں؟</li>
+          <li>زونوٹک بیماریاں (Zoonotic diseases) کیا ہیں؟ مثالیں دیں۔</li>
+        </ul>
+
+        <h3 class="text-lg font-bold text-slate-900 mb-3 text-blue-700 font-urdu">سوال ۴: مختصر سوالات (کوئی سے 5 حل کریں)</h3>
+        <ul class="list-disc pr-5 text-slate-700 space-y-3 mb-8 font-urdu">
+          <li>ویستیجیئل ڈھانچے (Vestigial structures) کیا ہیں؟ انسانوں میں مثالیں دیں۔</li>
+          <li>میوٹیشن (Mutation) تغیر کیسے پیدا کرتی ہے؟</li>
+          <li>ایللوپیٹرک اور سمپیٹرک اسپیشیشن میں کیا فرق ہے؟</li>
+          <li>قدرتی انتخاب (Natural Selection) کے مراحل کیا ہیں؟</li>
+          <li>جینیاتی تبدیلی میں بیکٹیریا کا کیا کردار ہے؟</li>
+          <li>فنگل اور پراسائٹک پروٹوزوا کے انفیکشن کیا ہیں؟</li>
+          <li>ارتقاء کے تناظر میں فٹنس (Fitness) کی تعریف کریں۔</li>
+          <li>مدافعت میں کلر سیلز (Killer Cells) کا کیا کردار ہے؟</li>
+        </ul>
+
+        <h3 class="text-lg font-bold text-slate-900 mb-3 text-blue-700 font-urdu">سوال ۵ تا ۷: طویل سوالات (کوئی سے 2 حل کریں)</h3>
+        <ul class="list-disc pr-5 text-slate-700 space-y-4 font-urdu">
+          <li><strong>سوال ۵ (a):</strong> چھوٹی آنت میں خوراک کے جذب ہونے کا عمل بیان کریں۔ <br> <strong>سوال ۵ (b):</strong> خاکے کی مدد سے انسانی دل میں خون کی گردش کی وضاحت کریں۔</li>
+          <li><strong>سوال ۶ (a):</strong> جنسی طور پر منتقل ہونے والی بیماریوں پر نوٹ لکھیں، خاص طور پر ایڈز۔ <br> <strong>سوال ۶ (b):</strong> ایڈرینل غدود کے ہارمونز اور ان کے افعال کی وضاحت کریں۔</li>
+          <li><strong>سوال ۷ (a):</strong> دفاع کی دوسری لائن میں کلر سیلز اور حفاظتی پروٹینز کے کردار کی وضاحت کریں۔ <br> <strong>سوال ۷ (b):</strong> طب (Medicine) میں بائیو ٹیکنالوجی کے استعمال پر بحث کریں۔</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">Official PCTB Class 10 Biology Syllabus (2027)</h2>
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6">
+        <ul class="divide-y divide-slate-200">
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 1: Human Digestive System</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 1</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>1.1 Nutrition and its Importance</li>
+              <li>1.2 Human Digestive System</li>
+              <li>1.3 Disorders of the Digestive System</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 2: Human Respiratory System</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 12</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>2.1 Human Respiratory System</li>
+              <li>2.2 The Mechanism of Breathing</li>
+              <li>2.3 Respiratory Disorders</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 3: Human Blood Circulatory System</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 24</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>3.1 Blood and its Components</li>
+              <li>3.2 Human Heart</li>
+              <li>3.3 Blood Vessels</li>
+              <li>3.4 Arterial & Venous Systems</li>
+              <li>3.5 Cardiovascular Disorders</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 4: Human Urinary System</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 38</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>4.1 Human Urinary System</li>
+              <li>4.2 Functioning of the Kidney</li>
+              <li>4.3 Disorders of Kidney</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 5: Coordination</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 48</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>5.1 Neurons - The Units of Nervous System</li>
+              <li>5.2 Divisions of the Nervous System</li>
+              <li>5.3 Endocrine System</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 6: Reproduction</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 64</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>6.1 Formation of Gametes and Fertilization</li>
+              <li>6.2 Role of Hormones in Sexual Development</li>
+              <li>6.3 Reproductive Systems</li>
+              <li>6.4 Sexually Transmitted Diseases</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 7: Inheritance</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 73</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>7.1 Structure of Chromosome</li>
+              <li>7.2 DNA and RNA</li>
+              <li>7.3 Mendel's Laws of Inheritance</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 8: Biotechnology</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 86</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>8.1 Introduction of Biotechnology</li>
+              <li>8.2 Genetic Engineering</li>
+              <li>8.3 Applications of Biotechnology</li>
+              <li>8.4 Potential Risks of Biotechnology</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 9: Diseases and Immunity</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 96</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>9.1 Disease</li>
+              <li>9.2 Pathogens</li>
+              <li>9.3 Immunity</li>
+            </ul>
+          </li>
+          <li class="p-4 hover:bg-slate-50">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-bold text-slate-900">Chapter 10: Evolution</h4>
+              <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Page 106</span>
+            </div>
+            <ul class="text-sm text-slate-600 space-y-1 list-disc pl-5">
+              <li>10.1 Darwin's Observations</li>
+              <li>10.2 Theory of Evolution by Natural Selection</li>
+              <li>10.3 Species and Speciation</li>
+              <li>10.4 Sources of Variation</li>
+              <li>10.5 Evidences of Evolution</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-6 border-b border-slate-200 pb-2">Frequently Asked Questions</h2>
+      <div class="space-y-4 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h4 class="font-bold text-slate-900 mb-2">{faq.q}</h4>
+            <p class="text-sm text-slate-600">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

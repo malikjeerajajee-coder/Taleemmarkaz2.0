@@ -1,0 +1,292 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Advanced Entity & Semantic SEO Schema
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://taleemmarkaz.com/#website",
+      "url": "https://taleemmarkaz.com/",
+      "name": "TaleemMarkaz",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://taleemmarkaz.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://taleemmarkaz.com/#organization",
+      "name": "TaleemMarkaz",
+      "url": "https://taleemmarkaz.com/",
+      "founder": { "@id": "https://taleemmarkaz.com/#person-malik" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://taleemmarkaz.com/#person-malik",
+      "name": "Malik Muhammad Ahsan Jahangir",
+      "jobTitle": "Lead Academic Author",
+      "alumniOf": ["BS (Hons) Microbiology", "MPhil Biotechnology"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I find free Matric notes and past papers in Pakistan?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You can browse Matric educational resources on TaleemMarkaz. Select Class 9 or Class 10, choose your education board and subject, and explore the available notes, textbooks and previous examination papers." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does TaleemMarkaz provide Federal Board and Punjab Board resources?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. TaleemMarkaz organizes educational resources for Federal Board, Punjab, Sindh, KPK, Balochistan and AJK students. Resource availability varies by class, subject and category." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are guess papers guaranteed to appear in board examinations?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Guess papers are supplementary examination preparation materials. They are not guaranteed predictions of actual board examination questions. Students should prepare from their prescribed syllabus and textbooks." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is TaleemMarkaz an official education board website?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. TaleemMarkaz is an independent educational resource platform. Official examination policies, curriculum notifications, date sheets and results should be confirmed through the relevant education board." }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout 
+  title="Matric & Intermediate Notes, Past Papers & Books 2027 | TaleemMarkaz"
+  description="Download free Matric and Intermediate notes, past papers, textbooks, MCQs and exam resources for Class 9–12. Explore Punjab, FBISE, Sindh, KPK and other boards at TaleemMarkaz."
+  schema={schema}
+>
+  <!-- HERO SECTION -->
+  <section class="relative bg-white border-b border-slate-200 pt-16 pb-20 px-4 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: radial-gradient(#2563eb 1px, transparent 1px); background-size: 24px 24px;"></div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold mb-6">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Updated for the 2027 Exam Session
+      </div>
+
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+        Free Matric & Intermediate Notes, Past Papers and Textbooks
+      </h1>
+      
+      <p class="text-lg text-slate-600 mb-10 max-w-3xl mx-auto">
+        Prepare for your board examinations with TaleemMarkaz, a free online library of educational resources for students across Pakistan. Find notes, previous papers, textbooks, MCQs, and more.
+      </p>
+
+      <!-- Search Bar -->
+      <div class="max-w-2xl mx-auto relative rounded-lg border-2 border-slate-200 focus-within:border-blue-600 transition-colors bg-white">
+        <div class="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+          <svg class="h-5 w-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+        <input type="text" class="block w-full pl-12 pr-32 py-4 rounded-lg border-0 focus:ring-0 text-lg placeholder-slate-400 bg-transparent" placeholder="Search e.g., '10th Class Physics Past Papers'">
+        <button class="absolute inset-y-2 right-2 bg-blue-600 hover:bg-blue-700 text-white px-6 rounded-md font-semibold transition-colors">
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE 7 PILLARS GRID -->
+  <section class="max-w-7xl mx-auto px-4 py-16">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-extrabold text-slate-900">Explore Exam Resources</h2>
+      <p class="text-slate-500 mt-2">Direct links to the most searched study materials in Pakistan.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <!-- Notes -->
+      <a href="/notes/" class="bg-white border border-slate-200 rounded-xl p-6 hover:border-blue-500 hover:bg-blue-50/30 transition-all group flex flex-col items-center text-center">
+        <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Chapter Notes</h3>
+        <p class="text-slate-500 text-sm">Solved exercises & key points</p>
+      </a>
+      <!-- Past Papers -->
+      <a href="/past-papers/" class="bg-white border border-slate-200 rounded-xl p-6 hover:border-orange-500 hover:bg-orange-50/30 transition-all group flex flex-col items-center text-center">
+        <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-orange-500 group-hover:text-white transition-colors">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Past Papers</h3>
+        <p class="text-slate-500 text-sm">10-year solved board archives</p>
+      </a>
+      <!-- Pairing Schemes -->
+      <a href="/pairing-schemes/" class="bg-white border border-slate-200 rounded-xl p-6 hover:border-emerald-500 hover:bg-emerald-50/30 transition-all group flex flex-col items-center text-center">
+        <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Pairing Schemes 2027</h3>
+        <p class="text-slate-500 text-sm">Chapter-wise marks distribution</p>
+      </a>
+      <!-- Date Sheets -->
+      <a href="/date-sheets/" class="bg-white border border-slate-200 rounded-xl p-6 hover:border-green-500 hover:bg-green-50/30 transition-all group flex flex-col items-center text-center">
+        <div class="w-14 h-14 bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-500 group-hover:text-white transition-colors">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Date Sheets 2027</h3>
+        <p class="text-slate-500 text-sm">Official upcoming schedules</p>
+      </a>
+      <!-- Textbooks -->
+      <a href="/textbooks/" class="bg-white border border-slate-200 rounded-xl p-6 hover:border-purple-500 hover:bg-purple-50/30 transition-all group flex flex-col items-center text-center">
+        <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Textbooks</h3>
+        <p class="text-slate-500 text-sm">PCTB & official board books</p>
+      </a>
+      <!-- Guess Papers -->
+      <a href="/guess-papers/" class="bg-white border border-slate-200 rounded-xl p-6 hover:border-pink-500 hover:bg-pink-50/30 transition-all group flex flex-col items-center text-center">
+        <div class="w-14 h-14 bg-pink-50 text-pink-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-pink-500 group-hover:text-white transition-colors">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Guess Papers 2027</h3>
+        <p class="text-slate-500 text-sm">Supplementary revision notes</p>
+      </a>
+      <!-- Result Gazettes -->
+      <a href="/result-gazettes/" class="bg-white border border-slate-200 rounded-xl p-6 hover:border-cyan-500 hover:bg-cyan-50/30 transition-all group flex flex-col items-center text-center">
+        <div class="w-14 h-14 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-cyan-500 group-hover:text-white transition-colors">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-slate-900 mb-1">Result Gazettes</h3>
+        <p class="text-slate-500 text-sm">BISE results & gazette PDFs</p>
+      </a>
+      <!-- Faculty -->
+      <a href="/authors/" class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:bg-slate-800 transition-colors group flex flex-col items-center text-center">
+        <div class="w-14 h-14 bg-slate-800 text-white rounded-full flex items-center justify-center mb-4 border border-slate-700">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-1">Our Faculty</h3>
+        <p class="text-slate-400 text-sm">Meet the experts</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- E-E-A-T SPOTLIGHT -->
+  <section class="bg-white border-y border-slate-200 py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center md:items-start">
+        <div class="w-32 h-32 md:w-40 md:h-40 bg-blue-600 text-white rounded-2xl flex items-center justify-center text-5xl font-extrabold shrink-0">MA</div>
+        <div class="text-center md:text-left flex-grow">
+          <div class="flex flex-col md:flex-row items-center justify-between mb-4">
+            <div>
+              <h2 class="text-2xl font-extrabold text-slate-900">Malik Muhammad Ahsan Jahangir</h2>
+              <p class="text-blue-600 font-semibold text-sm mt-1">Lead Academic Author</p>
+            </div>
+            <span class="mt-4 md:mt-0 bg-green-100 text-green-700 border border-green-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Verified Expert
+            </span>
+          </div>
+          <p class="text-slate-600 text-sm leading-relaxed mb-4 font-medium">
+            <strong>Qualifications:</strong> BS (Hons) Microbiology & MPhil Biotechnology.
+          </p>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            "Our goal is to make educational resources easier to find for students across Pakistan. We ensure that all materials provided on TaleemMarkaz are organized, accessible, and relevant to the respective board syllabi."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPREHENSIVE SEO CONTENT -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <div class="text-slate-700 space-y-10">
+      
+      <!-- Section: By Class -->
+      <div>
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">Explore Study Resources by Class</h2>
+        <p class="mb-6">Find educational resources according to your current class. Browse textbooks, past papers, notes and other available learning materials for your examination preparation.</p>
+        
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="bg-slate-50 border border-slate-200 p-5 rounded-lg">
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Class 9 Notes, Books & Past Papers</h3>
+            <p class="text-sm text-slate-600 mb-3">Start your Matric journey with Class 9 educational resources. Explore available textbooks, chapter-wise study notes, subject materials, MCQs and previous board papers.</p>
+            <a href="/class-9/" class="text-blue-600 font-semibold text-sm hover:underline">Explore Class 9 Resources →</a>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 p-5 rounded-lg">
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Class 10 Notes, Books & Past Papers</h3>
+            <p class="text-sm text-slate-600 mb-3">Prepare for your Matric Part 2 examinations with Class 10 study materials. Browse subject-wise textbooks, solved exercises, MCQs and previous papers.</p>
+            <a href="/class-10/" class="text-blue-600 font-semibold text-sm hover:underline">Explore Class 10 Resources →</a>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 p-5 rounded-lg">
+            <h3 class="font-bold text-lg text-slate-900 mb-2">1st Year Notes, Books & Past Papers</h3>
+            <p class="text-sm text-slate-600 mb-3">Access Intermediate Part 1 resources for FSc, ICS, FA and other study groups. Find subject-wise textbooks and previous board papers.</p>
+            <a href="/class-11/" class="text-blue-600 font-semibold text-sm hover:underline">Explore 1st Year Resources →</a>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 p-5 rounded-lg">
+            <h3 class="font-bold text-lg text-slate-900 mb-2">2nd Year Notes, Books & Past Papers</h3>
+            <p class="text-sm text-slate-600 mb-3">Get ready for your Intermediate Part 2 examinations with Class 12 educational resources. Explore available textbooks and revision resources.</p>
+            <a href="/class-12/" class="text-blue-600 font-semibold text-sm hover:underline">Explore 2nd Year Resources →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: By Board -->
+      <div>
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">Browse Pakistani Board Examination Resources</h2>
+        <p class="mb-6">Different educational boards may follow different curricula, assessment frameworks and examination schedules. TaleemMarkaz organizes materials by board to help students locate relevant materials.</p>
+        
+        <ul class="space-y-4">
+          <li><strong class="text-slate-900">Punjab Board:</strong> Explore educational resources for students studying under Punjab's Boards of Intermediate and Secondary Education (BISE).</li>
+          <li><strong class="text-slate-900">Federal Board (FBISE):</strong> Find Federal Board SSC and HSSC educational resources, including textbooks, syllabus materials, and model papers.</li>
+          <li><strong class="text-slate-900">Sindh Board:</strong> Browse educational resources for students studying under Sindh's educational boards.</li>
+          <li><strong class="text-slate-900">KPK Board:</strong> Access educational resources for students studying under Khyber Pakhtunkhwa's educational boards.</li>
+          <li><strong class="text-slate-900">Balochistan Board:</strong> Explore available educational resources for students studying under the Balochistan Board.</li>
+          <li><strong class="text-slate-900">AJK Board:</strong> Find educational resources for students studying under the BISE Azad Jammu and Kashmir.</li>
+        </ul>
+      </div>
+
+      <!-- Section: How to find -->
+      <div>
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">How to Find the Right Study Material</h2>
+        <ol class="list-decimal pl-5 space-y-2">
+          <li><strong>Select your class:</strong> Choose Class 9, Class 10, 1st Year or 2nd Year.</li>
+          <li><strong>Choose your board:</strong> Select Punjab, Federal, Sindh, KPK, Balochistan or AJK.</li>
+          <li><strong>Select your subject:</strong> Find the relevant subject, such as Mathematics, Physics, Chemistry, Biology, English or Urdu.</li>
+          <li><strong>Choose your resource:</strong> Browse available notes, textbooks, MCQs, past papers or other educational materials.</li>
+          <li><strong>Check the academic session:</strong> Confirm that the resource matches your applicable syllabus and examination session.</li>
+        </ol>
+      </div>
+
+      <!-- Section: FAQ -->
+      <div>
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-6 border-b border-slate-200 pb-2">Frequently Asked Questions</h2>
+        <div class="space-y-4">
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h3 class="font-bold text-slate-900 mb-2">Where can I find free Matric notes and past papers in Pakistan?</h3>
+            <p class="text-sm text-slate-600">You can browse Matric educational resources on TaleemMarkaz. Select Class 9 or Class 10, choose your education board and subject, and explore the available notes, textbooks and previous examination papers.</p>
+          </div>
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h3 class="font-bold text-slate-900 mb-2">Does TaleemMarkaz provide Federal Board and Punjab Board resources?</h3>
+            <p class="text-sm text-slate-600">Yes. TaleemMarkaz organizes educational resources for Federal Board, Punjab, Sindh, KPK, Balochistan and AJK students. Resource availability varies by class, subject and category.</p>
+          </div>
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h3 class="font-bold text-slate-900 mb-2">Are guess papers guaranteed to appear in board examinations?</h3>
+            <p class="text-sm text-slate-600">No. Guess papers are supplementary examination preparation materials. They are not guaranteed predictions of actual board examination questions. Students should prepare from their prescribed syllabus and textbooks.</p>
+          </div>
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h3 class="font-bold text-slate-900 mb-2">Is TaleemMarkaz an official education board website?</h3>
+            <p class="text-sm text-slate-600">No. TaleemMarkaz is an independent educational resource platform. Official examination policies, curriculum notifications, date sheets and results should be confirmed through the relevant education board.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: About -->
+      <div class="bg-slate-100 p-6 md:p-8 rounded-xl border border-slate-200">
+        <h2 class="text-xl font-extrabold text-slate-900 mb-3">About TaleemMarkaz</h2>
+        <p class="text-sm text-slate-700 leading-relaxed mb-4">TaleemMarkaz is an educational platform created to make Pakistani board examination resources easier to discover and access. Our library brings together educational materials for students studying across different classes, subjects and education boards.</p>
+        <p class="text-sm text-slate-700 leading-relaxed font-semibold">TaleemMarkaz — Making educational resources easier to find for students across Pakistan.</p>
+      </div>
+
+    </div>
+  </section>
+</Layout>

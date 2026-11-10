@@ -1,0 +1,40 @@
+---
+const { items = [] } = Astro.props;
+const siteUrl = "https://taleemmarkaz.com";
+
+// Automatically generate the Breadcrumb Schema for Google
+const schema = items.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": items.map((item, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": item.name,
+    "item": `${siteUrl}${item.url}`
+  }))
+} : null;
+---
+
+<!-- Visual Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="bg-slate-100 border-b border-slate-200 py-3 px-4 no-print">
+  <div class="max-w-5xl mx-auto text-sm text-slate-500 flex flex-wrap items-center gap-2">
+    {items.map((item, index) => {
+      const isLast = index === items.length - 1;
+      return (
+        <>
+          {isLast ? (
+            <span class="text-slate-900 font-semibold" aria-current="page">{item.name}</span>
+          ) : (
+            <>
+              <a href={item.url} class="hover:text-blue-600 transition-colors">{item.name}</a>
+              <span class="text-slate-400">/</span>
+            </>
+          )}
+        </>
+      );
+    })}
+  </div>
+</nav>
+
+<!-- JSON-LD Schema -->
+{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}

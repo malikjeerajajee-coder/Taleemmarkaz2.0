@@ -1,0 +1,502 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TuitionAd from '../../components/TuitionAd.astro';
+import Math from '../../components/Math.astro';
+
+const pageUrl = "https://taleemmarkaz.com/pairing-schemes/class-10-mathematics/";
+
+const faqs = [
+  { q: "What is the total marks of the Class 10 Mathematics paper in 2027?", a: "The Class 10 Mathematics paper carries 75 marks. It includes 15 marks of MCQs, 36 marks of short questions and 24 marks of long questions." },
+  { q: "How many MCQs are included in the 10th Class Maths paper?", a: "There are 15 MCQs in the objective portion. Chapters 9, 11 and 12 carry two MCQs each, while the remaining chapters carry one MCQ each." },
+  { q: "How many short questions are included in the Mathematics pairing scheme?", a: "There are three short-question groups: Q.2, Q.3 and Q.4. Each group contains nine options, from which students attempt six. Each question carries two marks." },
+  { q: "How many long questions are included in the Class 10 Maths paper?", a: "The paper contains five long questions (Q.5 to Q.9). Students attempt any two from Q.5-Q.7 and any one from Q.8-Q.9." },
+  { q: "Which chapters carry two MCQs in Class 10 Mathematics 2027?", a: "Chapters 9 (Tangent and Angles of a Circle), 11 (Information Handling) and 12 (Probability) carry two MCQs each." },
+  { q: "Can I prepare only the chapters mentioned in the long-question pairing?", a: "No. You should prepare the complete prescribed syllabus. Chapters can appear in different sections, and relying on selected long-question combinations may leave gaps in your preparation." },
+  { q: "How can I score high marks in 10th Class Mathematics?", a: "Build a strong understanding of concepts, practise textbook exercises regularly, revise formulas, prepare MCQs and subjective questions, and solve complete practice papers." }
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Class 10 Mathematics Pairing Scheme 2027 Punjab Board – Official PECTAA",
+      "description": "Download the Class 10 Mathematics Pairing Scheme 2027 for Punjab Board. Check chapter-wise MCQs, short questions, long question combinations, paper marks and smart preparation tips.",
+      "author": {
+        "@type": "Person",
+        "name": "Sir Naeem Khan",
+        "jobTitle": "Mathematics Specialist",
+        "alumniOf": "COMSATS University Islamabad",
+        "url": "https://taleemmarkaz.com/authors/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TaleemMarkaz",
+        "logo": { "@type": "ImageObject", "url": "https://taleemmarkaz.com/logo.png" }
+      },
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://taleemmarkaz.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Pairing Schemes", "item": "https://taleemmarkaz.com/pairing-schemes/"},
+        {"@type": "ListItem", "position": 3, "name": "Class 10 Mathematics", "item": pageUrl}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+      }))
+    }
+  ]
+};
+---
+
+<Layout 
+  title="Class 10 Mathematics Pairing Scheme 2027 Punjab Board – Official PECTAA"
+  description="Download the Class 10 Mathematics Pairing Scheme 2027 for Punjab Board. Check chapter-wise MCQs, short questions, long question combinations, paper marks and smart preparation tips."
+  canonical={pageUrl}
+  schema={schema}
+>
+  <style is:global>
+    /* 1. PREVENT PAGE HORIZONTAL SCROLL */
+    html, body { overflow-x: hidden; }
+
+    /* 2. URDU SPACING */
+    .font-urdu { font-family: 'Gulzar', serif; line-height: 3.2; font-size: 1.15rem; }
+    .font-urdu li { margin-bottom: 0.5rem; }
+
+    /* 3. KATEX OVERFLOW FIX */
+    .katex-display { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding-bottom: 4px; }
+    .katex { font-size: 1.1em; }
+    
+    /* 4. TABLE CONTAINMENT */
+    table { table-layout: auto; width: 100%; }
+    td, th { vertical-align: middle !important; }
+
+    @media print {
+      header, footer, nav, .no-print, .breadcrumbs, .author-card { display: none !important; }
+      body { background: white !important; color: black !important; font-size: 12pt; overflow-x: visible; }
+      main { padding: 0 !important; margin: 0 !important; }
+      .max-w-4xl { max-width: 100% !important; }
+      .print-header { display: flex !important; align-items: center; justify-content: space-between; border-bottom: 2px solid #ea580c; padding-bottom: 10px; margin-bottom: 20px; }
+      .print-header h1 { font-size: 16pt; margin: 0; color: #0f172a; }
+      table { page-break-inside: avoid; }
+      tr { page-break-inside: avoid; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      .font-urdu { font-size: 14pt; line-height: 2.8; }
+    }
+    .print-header { display: none; }
+  </style>
+
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 breadcrumbs no-print w-full overflow-hidden">
+    <div class="max-w-5xl mx-auto text-sm text-slate-500 flex flex-wrap items-center gap-2">
+      <a href="/" class="hover:text-blue-600">Home</a> <span>/</span>
+      <a href="/pairing-schemes/" class="hover:text-blue-600">Pairing Schemes</a> <span>/</span>
+      <span class="text-slate-900 font-medium">Class 10 Mathematics</span>
+    </div>
+  </div>
+
+  <section class="bg-white pt-12 pb-8 px-4 border-b border-slate-200 w-full overflow-hidden">
+    <div class="max-w-4xl mx-auto">
+      <div class="print-header">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-orange-600 text-white rounded flex items-center justify-center font-bold text-lg">T</div>
+          <span class="text-xl font-extrabold text-slate-900">TaleemMarkaz</span>
+        </div>
+        <span class="text-sm font-semibold text-slate-500">taleemmarkaz.com</span>
+      </div>
+
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-orange-700 text-xs font-bold uppercase tracking-wider mb-4 no-print">
+        🚨 Official Government Update
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+        Class 10 Mathematics Pairing Scheme 2027 <span class="text-orange-600">(Punjab Boards)</span>
+      </h1>
+      <p class="text-lg text-slate-600 mb-6 max-w-3xl">
+        The complete, official chapter-wise Mathematics paper scheme and model paper, based on the PECTAA textbook pattern and authorized for all Punjab Boards.
+      </p>
+
+      <button onclick="window.print()" class="no-print bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-flex items-center gap-2 shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Download PDF with Logo
+      </button>
+
+      <div class="author-card bg-white border border-slate-200 rounded-2xl p-5 md:p-6 shadow-sm mt-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold text-xl md:text-2xl shrink-0 border-4 border-orange-100">NK</div>
+            <div class="text-left">
+              <div class="flex items-center gap-1.5 mb-1">
+                <svg class="w-4 h-4 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">Academically Reviewed By</p>
+              </div>
+              <a href="/authors/" class="text-lg md:text-xl font-extrabold text-slate-900 hover:text-orange-600 transition-colors leading-tight block">Sir Naeem Khan</a>
+              <p class="text-sm font-medium text-slate-600 mt-0.5">Mathematics Specialist | BS Mathematics</p>
+            </div>
+          </div>
+          <div class="flex flex-row md:flex-col lg:flex-row gap-6 md:gap-2 lg:gap-6 text-sm text-slate-500 md:border-l md:border-slate-200 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0 border-slate-200">
+            <div><span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Published</span><span class="font-semibold text-slate-700">Nov 8, 2026</span></div>
+            <div><span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Updated</span><span class="font-semibold text-slate-700">Nov 8, 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 py-12 w-full overflow-hidden">
+    <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+      
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 not-prose">
+        <h3 class="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Official Announcement by Punjab Education Minister
+        </h3>
+        <p class="text-blue-800 mb-4"><strong>This is the official 2027 Mathematics paper pattern for all Punjab Boards.</strong></p>
+        <p class="text-blue-800 mb-4">Punjab Education Minister <strong>Rana Sikandar Hayat</strong> has officially authorized the inclusion of pairing schemes directly into the 2027 PCTB curriculum textbooks for Class 9 and Class 10.</p>
+        <div class="bg-white/60 p-4 rounded-lg border border-blue-100">
+          <p class="text-sm text-blue-900">The Minister noted that private schools were illegally obtaining pairing schemes to gain an unfair advantage. To ensure <strong>100% fair competition</strong>, the government has now printed these schemes inside the official textbooks.</p>
+        </div>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 my-8 not-prose" dir="rtl">
+        <h3 class="text-2xl font-bold text-slate-900 mb-4 font-urdu">اہم امتحانی ہدایات</h3>
+        <ul class="space-y-4 text-slate-700 font-urdu">
+          <li>• اس پیپر میں کل 75 نمبر ہیں جن میں 15 نمبر معروضی (MCQs) اور 60 نمبر سوالیہ (Subjective) ہیں۔</li>
+          <li>• پیپر کا وقت 2 گھنٹے 30 منٹ ہوگا۔ معروضی حصے کے لیے 20 منٹ اور سوالیہ حصے کے لیے 2 گھنٹے 10 منٹ ہوں گے۔</li>
+          <li>• سوالیہ حصے میں Q.2, Q.3 اور Q.4 شامل ہیں، ہر سوال میں 9 میں سے 6 سوالات حل کرنے ہوں گے۔</li>
+          <li>• طویل سوالات میں Q.5 تا Q.7 میں سے 2 سوال اور Q.8 تا Q.9 میں سے 1 سوال حل کرنا ہوگا۔</li>
+          <li>• ریاضی کے پیپر میں فارمولے اور اقدامات (Steps) لکھنا لازمی ہے، صرف جواب لکھنے پر نمبر نہیں ملتے۔</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Paper Pattern & Marks Distribution</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Category</th>
+              <th class="p-3 font-bold text-slate-900">Details</th>
+              <th class="p-3 font-bold text-slate-900 text-center">Marks</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900">Objective (MCQs)</td>
+              <td class="p-3">Q-1: 15 MCQs from the entire textbook. One MCQ each from Ch 1, 2, 3, 4, 5, 6, 7, 8, 10. Two MCQs each from Ch 9, 11, 12.</td>
+              <td class="p-3 text-center font-bold text-orange-600">15</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900">Part-I: Subjective (Q.2)</td>
+              <td class="p-3">Attempt 6 out of 9 short questions. At least two from Ch 1, 2, 3, 4.</td>
+              <td class="p-3 text-center">12</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900">Part-I: Subjective (Q.3)</td>
+              <td class="p-3">Attempt 6 out of 9 short questions. At least two from Ch 5, 6, 7, 8.</td>
+              <td class="p-3 text-center">12</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900">Part-I: Subjective (Q.4)</td>
+              <td class="p-3">Attempt 6 out of 9 short questions. At least two from Ch 9, 10, 11, 12.</td>
+              <td class="p-3 text-center">12</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900">Part-II: Subjective (Q.5-Q.7)</td>
+              <td class="p-3">Long questions, bifurcated into (a) & (b) of 4 marks each. Attempt any 2.</td>
+              <td class="p-3 text-center">16</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900">Part-III: Subjective (Q.8-Q.9)</td>
+              <td class="p-3">Long questions, bifurcated into (a) & (b) of 4 marks each. Attempt any 1.</td>
+              <td class="p-3 text-center">8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Long Questions Selection (Chapter Pairing)</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Question</th>
+              <th class="p-3 font-bold text-slate-900">Part (a) - 4 Marks</th>
+              <th class="p-3 font-bold text-slate-900">Part (b) - 4 Marks</th>
+              <th class="p-3 font-bold text-slate-900 text-center">Selection</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.5</td><td class="p-3">Chapter 1</td><td class="p-3">Chapter 2</td><td class="p-3 text-center font-bold text-orange-600" rowspan="3">Any 2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.6</td><td class="p-3">Chapter 3</td><td class="p-3">Chapter 4</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.7</td><td class="p-3">Chapter 5</td><td class="p-3">Chapter 7</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.8</td><td class="p-3">Chapter 6</td><td class="p-3">Chapter 8 or 11</td><td class="p-3 text-center font-bold text-orange-600" rowspan="2">Any 1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.9</td><td class="p-3">Chapter 10</td><td class="p-3">Chapter 9 or 12</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MODEL PAPER SECTION -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">Official PECTAA Model Paper 2027</h2>
+      
+      <!-- Objective -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">Objective Type (معروضی طرز)</h3>
+          <p class="text-sm text-slate-600">Time Allowed: 20 Min. | Max. Marks: 15</p>
+        </div>
+        <div class="p-4 w-full overflow-hidden">
+          <p class="text-sm text-slate-700 mb-4 font-medium"><strong>Note:</strong> Four possible answers A, B, C and D to each question are given. The choice which you think is correct, fill that circle in front of that question.</p>
+          
+          <div class="overflow-x-auto w-full max-w-full">
+            <table class="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr class="bg-slate-50 border-b border-slate-200">
+                  <th class="p-3 font-bold text-slate-900 border-r border-slate-200 w-12 text-center">#</th>
+                  <th class="p-3 font-bold text-slate-900 border-r border-slate-200">Questions</th>
+                  <th class="p-3 font-bold text-slate-900 text-center border-r border-slate-200">A</th>
+                  <th class="p-3 font-bold text-slate-900 text-center border-r border-slate-200">B</th>
+                  <th class="p-3 font-bold text-slate-900 text-center border-r border-slate-200">C</th>
+                  <th class="p-3 font-bold text-slate-900 text-center">D</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">i</td><td class="p-3 border-r border-slate-100"><Math math={String.raw`i^{27} + i^{25} =`} /></td><td class="p-3 border-r border-slate-100 text-center">-1</td><td class="p-3 border-r border-slate-100 text-center">0</td><td class="p-3 border-r border-slate-100 text-center">1</td><td class="p-3 text-center">2</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">ii</td><td class="p-3 border-r border-slate-100">What is the discriminant of <Math math={String.raw`x^2 + 5x - 5 = 0`} />?</td><td class="p-3 border-r border-slate-100 text-center">-20</td><td class="p-3 border-r border-slate-100 text-center">20</td><td class="p-3 border-r border-slate-100 text-center">25</td><td class="p-3 text-center">45</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">iii</td><td class="p-3 border-r border-slate-100">If <Math math={String.raw`A^t = -A`} />, then A is ______ matrix.</td><td class="p-3 border-r border-slate-100 text-center">Square</td><td class="p-3 border-r border-slate-100 text-center">Skew-symmetric</td><td class="p-3 border-r border-slate-100 text-center">Row</td><td class="p-3 text-center">Rectangular</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">iv</td><td class="p-3 border-r border-slate-100">A function f from X to Y is represented by:</td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`f: Y \to X`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`f: X \to Y`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`f: X/Y`} /></td><td class="p-3 text-center">None</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">v</td><td class="p-3 border-r border-slate-100">Lowest form of <Math math={String.raw`\frac{15xyz}{10}`} /> is:</td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\frac{3xyz}{2}`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\frac{3}{2}xyz`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\frac{xyz}{2}`} /></td><td class="p-3 text-center">None</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">vi</td><td class="p-3 border-r border-slate-100"><Math math={String.raw`P(4, -4)`} /> lies in ______ quadrant.</td><td class="p-3 border-r border-slate-100 text-center">1st</td><td class="p-3 border-r border-slate-100 text-center">2nd</td><td class="p-3 border-r border-slate-100 text-center">3rd</td><td class="p-3 text-center">4th</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">vii</td><td class="p-3 border-r border-slate-100"><Math math={String.raw`\sin(90^\circ + \theta) =`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\sin \theta`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`-\sin \theta`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\cos \theta`} /></td><td class="p-3 text-center"><Math math={String.raw`-\cos \theta`} /></td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">viii</td><td class="p-3 border-r border-slate-100">The sum of the measures of central angles of a circle is:</td><td class="p-3 border-r border-slate-100 text-center">90°</td><td class="p-3 border-r border-slate-100 text-center">180°</td><td class="p-3 border-r border-slate-100 text-center">270°</td><td class="p-3 text-center">360°</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">ix</td><td class="p-3 border-r border-slate-100">______ tangents can be drawn to a circle from a point outside.</td><td class="p-3 border-r border-slate-100 text-center">One</td><td class="p-3 border-r border-slate-100 text-center">Two</td><td class="p-3 border-r border-slate-100 text-center">Three</td><td class="p-3 text-center">Many</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">x</td><td class="p-3 border-r border-slate-100">If <Math math={String.raw`r=6cm, \theta=2`} /> radians, then arc length is:</td><td class="p-3 border-r border-slate-100 text-center">12 cm</td><td class="p-3 border-r border-slate-100 text-center">8 cm</td><td class="p-3 border-r border-slate-100 text-center">6 cm</td><td class="p-3 text-center">3 cm</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xi</td><td class="p-3 border-r border-slate-100">At least how many chords are needed to locate the centre?</td><td class="p-3 border-r border-slate-100 text-center">1</td><td class="p-3 border-r border-slate-100 text-center">2</td><td class="p-3 border-r border-slate-100 text-center">3</td><td class="p-3 text-center">4</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xii</td><td class="p-3 border-r border-slate-100">Second quartile represents:</td><td class="p-3 border-r border-slate-100 text-center">Mean</td><td class="p-3 border-r border-slate-100 text-center">Median</td><td class="p-3 border-r border-slate-100 text-center">Mode</td><td class="p-3 text-center">Variance</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xiii</td><td class="p-3 border-r border-slate-100">Positive square root of variance is called:</td><td class="p-3 border-r border-slate-100 text-center">Mean</td><td class="p-3 border-r border-slate-100 text-center">Median</td><td class="p-3 border-r border-slate-100 text-center">Standard deviation</td><td class="p-3 text-center">Range</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xiv</td><td class="p-3 border-r border-slate-100">If <Math math={String.raw`P(A)=0.6`} />, probability of A not happening is:</td><td class="p-3 border-r border-slate-100 text-center">0.4</td><td class="p-3 border-r border-slate-100 text-center">0.6</td><td class="p-3 border-r border-slate-100 text-center">1</td><td class="p-3 text-center">1.6</td></tr>
+                <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xv</td><td class="p-3 border-r border-slate-100">______ outcomes are possible when we draw a card.</td><td class="p-3 border-r border-slate-100 text-center">13</td><td class="p-3 border-r border-slate-100 text-center">1</td><td class="p-3 border-r border-slate-100 text-center">52</td><td class="p-3 text-center">26</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subjective Part I -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">Subjective Type - Part I (انشائیہ طرز)</h3>
+          <p class="text-sm text-slate-600">Time Allowed: 2:10 hrs. | Max. Marks: 60</p>
+        </div>
+        <div class="p-4 space-y-6">
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.2: Write short answers to any six (06) questions:</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-3">
+              <li>Simplify: <Math math={String.raw`i^{27}`} /></li>
+              <li>Find the modulus of <Math math={String.raw`-5 - 4i`} /></li>
+              <li>Define quadratic equation with example.</li>
+              <li>Write the quadratic equation <Math math={String.raw`2x(x + 1) = 4(2x + 3)`} /> in standard form.</li>
+              <li>Examine the nature of roots of equation <Math math={String.raw`3x^2 - 9x - 2 = 0`} /></li>
+              <li>Find A - B and B - A, if <Math math={String.raw`A = \begin{bmatrix} 5 & 9 \\ 4 & 8 \end{bmatrix}, B = \begin{bmatrix} 3 & 6 \\ 2 & 1 \end{bmatrix}`} /></li>
+              <li>Find the multiplicative inverse of <Math math={String.raw`\begin{bmatrix} -4 & 8 \\ 7 & 2 \end{bmatrix}`} /></li>
+              <li>Find <Math math={String.raw`f(x) - g(x)`} />, if <Math math={String.raw`f(x) = x + 1, g(x) = 2x - 3`} /></li>
+              <li>Solve and express the solution on number line: <Math math={String.raw`|4x - 9| = 3`} /></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.3: Write short answers to any six (06) questions:</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-3">
+              <li>Simplify: <Math math={String.raw`\frac{3}{x-y} + \frac{1}{y-x}`} /></li>
+              <li>Define reciprocal equation with example.</li>
+              <li>Reduce to the lowest form: <Math math={String.raw`\frac{x^2 - 5x}{x^2 - 4x - 5}`} /></li>
+              <li>Show that <Math math={String.raw`a = 5\hat{i} - 2\hat{j}`} /> and <Math math={String.raw`b = -10\hat{i} + 4\hat{j}`} /> are parallel.</li>
+              <li>Find a unit vector in the direction of <Math math={String.raw`a = \frac{5}{3}\hat{i} + \frac{1}{3}\hat{j}`} /></li>
+              <li>State law of sines.</li>
+              <li>Calculate area of triangle ABC in which <Math math={String.raw`a = 6.12`} /> cm, <Math math={String.raw`b = 8.34`} /> cm, <Math math={String.raw`c = 7.12`} /> cm</li>
+              <li>Define "Secant" and draw its figure.</li>
+              <li>Prove that a unique circle can pass through the points A(1, 1), B(4, 2) and C(3, 5).</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.4: Write short answers to any six (06) questions:</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-3">
+              <li>Define tangent to a circle with Figure.</li>
+              <li>Find the value of x. <em>[Diagram: Intersecting chords]</em></li>
+              <li>Find the area of sector of a circle having central angle 60° and radius 7cm. Also find the length of the arc.</li>
+              <li>Construct a circle with the help of radius = 2 cm and locate its centre by construction.</li>
+              <li>Draw a circle of radius 1.3 cm draw a tangent at point P, when P lies on its circumference.</li>
+              <li>Find median for the given data: 102, 98, 95, 100, 93, 110, 108, 104, 97, 96, 92, 101, 99, 105, 107</li>
+              <li>Find the range of the given data: 15, 22, 18, 30, 17, 25</li>
+              <li>Two coins are tossed together, what is probability of getting different faces on the coins?</li>
+              <li>Two numbers are randomly chosen from 1 to 10, with replacement, find the probability that both numbers are prime.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subjective Part II & III -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">Subjective Type - Part II & III</h3>
+          <p class="text-sm text-slate-600">Attempt any two (02) from Part II, and any one (01) from Part III.</p>
+        </div>
+        <div class="p-4 space-y-6">
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Part-II (حصہ دوم) - Attempt any two</h4>
+            <ul class="space-y-4 text-sm text-slate-700">
+              <li><strong>Q.5 (a):</strong> Solve <Math math={String.raw`3z + (2 + i)w = 11 - i`} />, <Math math={String.raw`(2 - i)z - w = -1 + i`} /> with complex coefficient for w and z.<br>
+              <strong>Q.5 (b):</strong> If the equation <Math math={String.raw`x^2 + 2(1 + k)x + k^2 = 0`} /> has equal roots, then find the value of k.</li>
+              <li><strong>Q.6 (a):</strong> Solve by matrix inverse method: <Math math={String.raw`3x + 2y = 2`} />, <Math math={String.raw`x - 2y = -2`} /><br>
+              <strong>Q.6 (b):</strong> Verify <Math math={String.raw`f(f^{-1}(x)) = f^{-1}(f(x)) = x`} />, where <Math math={String.raw`f(x) = \frac{x-4}{x+2}, x \neq -2`} />.</li>
+              <li><strong>Q.7 (a):</strong> Solve: <Math math={String.raw`4 \cdot 2^{2x} - 9 \cdot 2^x + 1 = 0`} /><br>
+              <strong>Q.7 (b):</strong> Solve the triangle ABC: <Math math={String.raw`c = 7`} />cm, <Math math={String.raw`\beta = 34^\circ`} />, <Math math={String.raw`\gamma = 64^\circ`} /></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Part-III (حصہ سوم) - Attempt any one</h4>
+            <ul class="space-y-4 text-sm text-slate-700">
+              <li><strong>Q.8 (a):</strong> The coordinates of A, B and D are (1, 2), (6, 3) and (2, 8) respectively. Find the coordinates of C by using vector method if ABCD is a parallelogram.<br>
+              <strong>Q.8 (b):</strong> A factory produces rods with lengths (in cm) of their production line: 50.1, 49.9, 50.0, 50.2, 49.8 check consistency using standard deviation.</li>
+              <li><strong>Q.9 (a):</strong> Draw a circle of radius 1.5 cm. Draw two tangents that meet an angle of 30°.<br>
+              <strong>Q.9 (b):</strong> Two dice are rolled together. Find the probability of getting a same number or sum of faces as 10.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- URDU MODEL PAPER -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">Urdu Model Paper 2027 (اردو ماڈل پیپر)</h2>
+      <p class="font-urdu text-lg text-slate-600 mb-6" dir="rtl">سرکاری پیپر پیٹرن کے مطابق اہم سوالات جن کی تیاری لازمی ہے۔</p>
+      
+      <div class="bg-white border border-slate-200 rounded-xl p-6 not-prose my-6 font-urdu" dir="rtl">
+        
+        <h3 class="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2">معروضی طرز (Objective Type)</h3>
+        <p class="text-sm text-slate-600 mb-4">نوٹ: ہر سوال کے لیے چار جوابات A, B, C, D دیئے گئے ہیں۔ جوابی کاغذ پر سوال سے متعلق دائرہ بھریں۔</p>
+        
+        <div class="overflow-x-auto w-full max-w-full mb-8">
+          <table class="w-full text-right border-collapse text-sm">
+            <thead>
+              <tr class="bg-slate-50 border-b border-slate-200">
+                <th class="p-3 font-bold text-slate-900 border-r border-slate-200 w-12 text-center">#</th>
+                <th class="p-3 font-bold text-slate-900 border-r border-slate-200">سوالات</th>
+                <th class="p-3 font-bold text-slate-900 text-center border-r border-slate-200">A</th>
+                <th class="p-3 font-bold text-slate-900 text-center border-r border-slate-200">B</th>
+                <th class="p-3 font-bold text-slate-900 text-center border-r border-slate-200">C</th>
+                <th class="p-3 font-bold text-slate-900 text-center">D</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">i</td><td class="p-3 border-r border-slate-100"><Math math={String.raw`i^{27} + i^{25} =`} /></td><td class="p-3 border-r border-slate-100 text-center">-1</td><td class="p-3 border-r border-slate-100 text-center">0</td><td class="p-3 border-r border-slate-100 text-center">1</td><td class="p-3 text-center">2</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">ii</td><td class="p-3 border-r border-slate-100"><Math math={String.raw`x^2 + 5x - 5 = 0`} /> کا ڈسکریمیننٹ کیا ہے؟</td><td class="p-3 border-r border-slate-100 text-center">-20</td><td class="p-3 border-r border-slate-100 text-center">20</td><td class="p-3 border-r border-slate-100 text-center">25</td><td class="p-3 text-center">45</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">iii</td><td class="p-3 border-r border-slate-100">اگر <Math math={String.raw`A^t = -A`} /> ہو تو میٹرکس A ______ ہوگی۔</td><td class="p-3 border-r border-slate-100 text-center">سکوئر</td><td class="p-3 border-r border-slate-100 text-center">skew-symmetric</td><td class="p-3 border-r border-slate-100 text-center">قطاری</td><td class="p-3 text-center">مستطیلی</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">iv</td><td class="p-3 border-r border-slate-100"><Math math={String.raw`X`} /> سے <Math math={String.raw`Y`} /> تک ایک فنکشن <Math math={String.raw`f`} /> کو ظاہر کیا جاتا ہے:</td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`f: Y \to X`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`f: X \to Y`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`f: X/Y`} /></td><td class="p-3 text-center">None</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">v</td><td class="p-3 border-r border-slate-100"><Math math={String.raw`\frac{15xyz}{10}`} /> کی مختصر ترین شکل ہے:</td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\frac{3xyz}{2}`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\frac{3}{2}xyz`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\frac{xyz}{2}`} /></td><td class="p-3 text-center">None</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">vi</td><td class="p-3 border-r border-slate-100">نقطہ <Math math={String.raw`P(4, -4)`} /> ______ ربع میں واقع ہے۔</td><td class="p-3 border-r border-slate-100 text-center">پہلے</td><td class="p-3 border-r border-slate-100 text-center">دوسرے</td><td class="p-3 border-r border-slate-100 text-center">تیسرے</td><td class="p-3 text-center">چوتھے</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">vii</td><td class="p-3 border-r border-slate-100"><Math math={String.raw`\sin(90^\circ + \theta) =`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\sin \theta`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`-\sin \theta`} /></td><td class="p-3 border-r border-slate-100 text-center"><Math math={String.raw`\cos \theta`} /></td><td class="p-3 text-center"><Math math={String.raw`-\cos \theta`} /></td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">viii</td><td class="p-3 border-r border-slate-100">ایک دائرے کے مرکزی زاویوں کا مجموعہ ہے۔</td><td class="p-3 border-r border-slate-100 text-center">90°</td><td class="p-3 border-r border-slate-100 text-center">180°</td><td class="p-3 border-r border-slate-100 text-center">270°</td><td class="p-3 text-center">360°</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">ix</td><td class="p-3 border-r border-slate-100">دائرے کے باہر کسی نقطے سے ______ مماس لگائے جا سکتے ہیں۔</td><td class="p-3 border-r border-slate-100 text-center">ایک</td><td class="p-3 border-r border-slate-100 text-center">دو</td><td class="p-3 border-r border-slate-100 text-center">تین</td><td class="p-3 text-center">بہت سے</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">x</td><td class="p-3 border-r border-slate-100">اگر <Math math={String.raw`r = 6cm, \theta = 2`} /> ریڈین ہو تو قوس کی لمبائی ہے۔</td><td class="p-3 border-r border-slate-100 text-center">12 cm</td><td class="p-3 border-r border-slate-100 text-center">8 cm</td><td class="p-3 border-r border-slate-100 text-center">6 cm</td><td class="p-3 text-center">3 cm</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xi</td><td class="p-3 border-r border-slate-100">دائرہ بنانے کے لیے کم از کم کتنے غیر ہم خط نقاط درکار ہوتے ہیں؟</td><td class="p-3 border-r border-slate-100 text-center">1</td><td class="p-3 border-r border-slate-100 text-center">2</td><td class="p-3 border-r border-slate-100 text-center">3</td><td class="p-3 text-center">4</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xii</td><td class="p-3 border-r border-slate-100">دوسرے چوتھائی کا مرکزی رجحان ہے:</td><td class="p-3 border-r border-slate-100 text-center">اوسط</td><td class="p-3 border-r border-slate-100 text-center">وسطانیہ</td><td class="p-3 border-r border-slate-100 text-center">موڈ</td><td class="p-3 text-center">تغیر</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xiii</td><td class="p-3 border-r border-slate-100">تغیر کی مثبت جذر کو ______ کہا جاتا ہے۔</td><td class="p-3 border-r border-slate-100 text-center">اوسط</td><td class="p-3 border-r border-slate-100 text-center">وسطانیہ</td><td class="p-3 border-r border-slate-100 text-center">معیاری انحراف</td><td class="p-3 text-center">سمت</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xiv</td><td class="p-3 border-r border-slate-100">اگر <Math math={String.raw`P(A) = 0.6`} /> تو واقعہ نہ ہونے کا امکان ہے:</td><td class="p-3 border-r border-slate-100 text-center">0.4</td><td class="p-3 border-r border-slate-100 text-center">0.6</td><td class="p-3 border-r border-slate-100 text-center">1</td><td class="p-3 text-center">1.6</td></tr>
+              <tr><td class="p-3 border-r border-slate-100 text-center font-bold">xv</td><td class="p-3 border-r border-slate-100">تاش کی گڈی میں سے ایک پتہ نکالنے کے ______ ممکنہ نتائج ہو سکتے ہیں۔</td><td class="p-3 border-r border-slate-100 text-center">13</td><td class="p-3 border-r border-slate-100 text-center">1</td><td class="p-3 border-r border-slate-100 text-center">52</td><td class="p-3 text-center">26</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2">انشائیہ طرز (Subjective Type)</h3>
+        
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 2: کوئی سے چھ (6) سوالات کے مختصر جوابات لکھیں۔</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-3">
+              <li>مختصر کریں: <Math math={String.raw`i^{27}`} /></li>
+              <li>قیمت معلوم کریں: <Math math={String.raw`-5 - 4i`} /> کا ماڈیولس</li>
+              <li>دو درجی مساوات کی تعریف مثال کے ساتھ تحریر کیجئے۔</li>
+              <li>دو درجی مساوات <Math math={String.raw`2x(x + 1) = 4(2x + 3)`} /> کو معیاری شکل میں لکھیں۔</li>
+              <li>مساوات <Math math={String.raw`3x^2 - 9x - 2 = 0`} /> کی جذروں کی نوعیت کا جائزہ لیجئے۔</li>
+              <li><Math math={String.raw`A - B`} /> اور <Math math={String.raw`B - A`} /> معلوم کریں۔ <Math math={String.raw`A = \begin{bmatrix} 5 & 9 \\ 4 & 8 \end{bmatrix}, B = \begin{bmatrix} 3 & 6 \\ 2 & 1 \end{bmatrix}`} /></li>
+              <li>ضربی معکوس معلوم کیجئے: <Math math={String.raw`\begin{bmatrix} -4 & 8 \\ 7 & 2 \end{bmatrix}`} /></li>
+              <li>اگر <Math math={String.raw`f(x) = x + 1, g(x) = 2x - 3`} /> ہو تو <Math math={String.raw`f(x) - g(x)`} /> معلوم کیجئے۔</li>
+              <li>حل کریں اور نمبر لائن پر دکھائیں: <Math math={String.raw`|4x - 9| = 3`} /></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 3: کوئی سے چھ (6) سوالات کے مختصر جوابات لکھیں۔</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-3">
+              <li>مختصر کریں: <Math math={String.raw`\frac{3}{x-y} + \frac{1}{y-x}`} /></li>
+              <li>مقلوب مساوات کی تعریف مثال کے ساتھ تحریر کیجئے۔</li>
+              <li>مختصر ترین شکل میں تحویل کریں: <Math math={String.raw`\frac{x^2 - 5x}{x^2 - 4x - 5}`} /></li>
+              <li>ثابت کریں کہ <Math math={String.raw`a = 5\hat{i} - 2\hat{j}`} /> اور <Math math={String.raw`b = -10\hat{i} + 4\hat{j}`} /> متوازی ہیں۔</li>
+              <li>وہ یونٹ ویکٹر معلوم کریں جو <Math math={String.raw`a = \frac{5}{3}\hat{i} + \frac{1}{3}\hat{j}`} /> کی سمت میں ہو۔</li>
+              <li>سائن کا قانون بیان کریں۔</li>
+              <li>مثلث ABC کا رقبہ معلوم کریں جس میں <Math math={String.raw`a = 6.12`} /> cm, <Math math={String.raw`b = 8.34`} /> cm, <Math math={String.raw`c = 7.12`} /> cm</li>
+              <li>قطع خط (Secant) کی تعریف کریں اور اس کی شکل بنائیں۔</li>
+              <li>ثابت کریں کہ ایک منفرد دائرہ نقطوں A(1, 1), B(4, 2) اور C(3, 5) سے گزرتا ہے۔</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 4: کوئی سے چھ (6) سوالات کے مختصر جوابات لکھیں۔</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-3">
+              <li>دائرے کے مماس کی تعریف کریں اور شکل بنائیں۔</li>
+              <li>x کی قیمت معلوم کیجئے۔ <em>[Diagram: Intersecting chords]</em></li>
+              <li>دائرے کے قطعہ کا رقبہ معلوم کریں جس کا مرکزی زاویہ 60° اور رداس 7cm ہے۔ نیز قوس کی لمبائی بھی معلوم کریں۔</li>
+              <li>2cm رداس کے ساتھ ایک دائرہ بنائیں اور اس کا مرکز تعمیر کے ذریعے معلوم کریں۔</li>
+              <li>1.3 cm رداس کا ایک دائرہ بنائیں اور نقطہ P پر مماس کھینچیں جبکہ P اس کے محیط پر ہو۔</li>
+              <li>دیے گئے اعداد و اعداد کے لیے وسطانیہ معلوم کریں: 102, 98, 95, 100, 93, 110, 108, 104, 97, 96, 92, 101, 99, 105, 107</li>
+              <li>دیے گئے اعداد و اعداد کا دائرہ (Range) معلوم کریں: 15, 22, 18, 30, 17, 25</li>
+              <li>دو سکے ایک ساتھ اچھالے جائیں تو دونوں سکوں پر مختلف رخ آنے کا احتمال کیا ہے؟</li>
+              <li>1 سے 10 تک کے اعداد میں سے دو اعداد تصادفی طور پر (جا بجا کرنے کی اجازت کے ساتھ) منتخب کیے جائیں تو اس بات کا احتمال معلوم کریں کہ دونوں اعداد مفرد ہوں۔</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">حصہ دوم: کوئی سے دو (2) سوالات کے جوابات تحریر کیجئے۔</h4>
+            <ul class="space-y-4 text-sm text-slate-700">
+              <li><strong>سوال 5 (a):</strong> کمپلیکس عددی سر کے ساتھ w اور z کے لیے <Math math={String.raw`3z + (2 + i)w = 11 - i`} />, <Math math={String.raw`(2 - i)z - w = -1 + i`} /> حل کریں۔<br>
+              <strong>سوال 5 (b):</strong> اگر مساوات <Math math={String.raw`x^2 + 2(1 + k)x + k^2 = 0`} /> کے جذروں کی نوعیت برابر ہو تو k کی قیمت معلوم کیجئے۔</li>
+              <li><strong>سوال 6 (a):</strong> میٹرکس ایکس طریقے سے حل کریں: <Math math={String.raw`3x + 2y = 2`} />, <Math math={String.raw`x - 2y = -2`} /><br>
+              <strong>سوال 6 (b):</strong> تصدیق کریں کہ <Math math={String.raw`f(f^{-1}(x)) = f^{-1}(f(x)) = x`} /> جہاں <Math math={String.raw`f(x) = \frac{x-4}{x+2}, x \neq -2`} /></li>
+              <li><strong>سوال 7 (a):</strong> حل کریں: <Math math={String.raw`4 \cdot 2^{2x} - 9 \cdot 2^x + 1 = 0`} /><br>
+              <strong>سوال 7 (b):</strong> مثلث ABC حل کریں: <Math math={String.raw`c = 7`} />cm, <Math math={String.raw`\beta = 34^\circ`} />, <Math math={String.raw`\gamma = 64^\circ`} /></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">حصہ سوم: کوئی سے ایک (1) سوال کا جواب تحریر کیجئے۔</h4>
+            <ul class="space-y-4 text-sm text-slate-700">
+              <li><strong>سوال 8 (a):</strong> نقطات A, B اور D کے کوآرڈینیٹ بالترتیب (1, 2), (6, 3) اور (2, 8) ہیں۔ متوازی الاضلاع ABCD کے لیے ویکٹر کا طریقہ استعمال کرتے ہوئے C کے کوآرڈینیٹ معلوم کیجئے۔<br>
+              <strong>سوال 8 (b):</strong> معیاری انحراف کا استعمال کرتے ہوئے یکسانیت کی جانچ کریں: 50.1, 49.9, 50.0, 50.2, 49.8</li>
+              <li><strong>سوال 9 (a):</strong> 1.5cm رداس کا ایک دائرہ بنائیں اور ایسے دو مماس کھینچیں جو 30° کے زاویے پر ملیں۔<br>
+              <strong>سوال 9 (b):</strong> دو دانت ایک ساتھ پھینکے جائیں۔ ایک جیسے اعداد یا پھر چہروں کا مجموعہ 10 آنے کا احتمال معلوم کیجئے۔</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <TuitionAd subject="Mathematics" classLevel="Class 10" />
+
+      <!-- FAQ Section -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-6 border-b border-slate-200 pb-2">Frequently Asked Questions</h2>
+      <div class="space-y-4 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h4 class="font-bold text-slate-900 mb-2">{faq.q}</h4>
+            <p class="text-sm text-slate-600">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

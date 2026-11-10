@@ -1,0 +1,82 @@
+---
+// Uses Web3Forms (free form backend, no signup required, just need an access key)
+// 1. Go to https://web3forms.com/ 
+// 2. Enter your email (taleemmarkazofficial@gmail.com)
+// 3. Paste the Access Key below.
+const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"; 
+---
+
+<!-- Floating Button -->
+<button id="report-btn" class="no-print fixed bottom-6 right-6 z-50 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-5 rounded-full shadow-lg transition-transform hover:scale-105 flex items-center gap-2">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+  Report Issue
+</button>
+
+<!-- Modal Overlay -->
+<div id="report-modal" class="no-print fixed inset-0 z-[100] bg-slate-900/60 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-2xl max-w-md w-full p-6 md:p-8 relative">
+    <button id="close-modal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-900">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    
+    <h2 class="text-2xl font-extrabold text-slate-900 mb-2">Report an Issue</h2>
+    <p class="text-sm text-slate-500 mb-6">Help us improve. Report a typo, incorrect answer, or broken link.</p>
+
+    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+      <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY} />
+      <input type="hidden" name="subject" value="New Issue Reported on TaleemMarkaz" />
+      
+      <!-- Automatically filled by JS -->
+      <input type="hidden" id="report-page-title" name="Page Title" value="" />
+      <input type="hidden" id="report-page-url" name="Page URL" value="" />
+
+      <div>
+        <label class="block text-sm font-bold text-slate-700 mb-1">Your Name</label>
+        <input type="text" name="name" required class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:border-red-500 focus:ring-1 outline-none text-sm">
+      </div>
+      
+      <div>
+        <label class="block text-sm font-bold text-slate-700 mb-1">Issue Description *</label>
+        <textarea name="message" rows="4" required placeholder="What is wrong on this page?" class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:border-red-500 focus:ring-1 outline-none text-sm resize-y"></textarea>
+      </div>
+
+      <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition-colors">
+        Submit Report
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('report-btn');
+    const modal = document.getElementById('report-modal');
+    const closeBtn = document.getElementById('close-modal');
+    const titleInput = document.getElementById('report-page-title') as HTMLInputElement;
+    const urlInput = document.getElementById('report-page-url') as HTMLInputElement;
+
+    if (btn && modal && closeBtn) {
+      btn.addEventListener('click', () => {
+        // Auto-fill the hidden fields with current page info
+        if (titleInput) titleInput.value = document.title;
+        if (urlInput) urlInput.value = window.location.href;
+
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      });
+
+      // Close when clicking outside the modal
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      });
+    }
+  });
+</script>

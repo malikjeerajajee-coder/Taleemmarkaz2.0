@@ -1,0 +1,247 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const siteUrl = "https://taleemmarkaz.com";
+const pageUrl = `${siteUrl}/privacy-policy/`;
+
+const title = "Privacy Policy | TaleemMarkaz";
+const description = "Read the Privacy Policy of TaleemMarkaz. Learn how we handle data, protect children's privacy, and ensure a safe, ad-free educational environment for Pakistani students.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      name: title,
+      url: pageUrl,
+      description,
+      inLanguage: ["en-PK", "ur-PK"],
+      isPartOf: { "@id": `${siteUrl}/#website` },
+      about: { "@id": `${siteUrl}/#organization` },
+      author: {
+        "@type": "Person",
+        "name": "Malik Muhammad Ahsan Jahangir",
+        "jobTitle": "Lead Academic Author & Founder",
+        "alumniOf": "MPhil Biotechnology"
+      }
+    }
+  ]
+};
+---
+
+<Layout title={title} description={description} canonical={pageUrl} schema={schema}>
+  <style is:global>
+    html { scroll-behavior: smooth; }
+    .font-urdu, .font-urdu * {
+      font-family: 'Gulzar', serif !important;
+      line-height: 2.15 !important;
+    }
+    .font-urdu h2, .font-urdu h3 { line-height: 1.9 !important; }
+  </style>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 no-print">
+    <div class="max-w-4xl mx-auto text-sm text-slate-500 flex items-center gap-2">
+      <a href="/" class="hover:text-blue-600 transition-colors">Home</a> <span>/</span>
+      <span class="text-slate-900 font-semibold" aria-current="page">Privacy Policy</span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="relative bg-white border-b border-slate-200 px-4 py-16 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: radial-gradient(#2563eb 1px, transparent 1px); background-size: 24px 24px;"></div>
+    
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <span class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 rounded-full px-4 py-1.5 text-sm font-bold mb-6">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        Trust & Transparency
+      </span>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6">
+        Privacy Policy
+      </h1>
+
+      <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto mb-10">
+        Your privacy is important to us. This policy explains how TaleemMarkaz handles information to provide a safe, ad-free educational environment for students across Pakistan.
+      </p>
+
+      <!-- AUTHOR & DATE E-E-A-T BLOCK -->
+      <div class="max-w-2xl mx-auto bg-white border border-slate-200 rounded-2xl p-5 text-left">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg shrink-0 border-2 border-blue-100">
+              MA
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-0.5">
+                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Approved By</span>
+              </div>
+              <a href="/authors/" class="block text-base font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
+                Malik Muhammad Ahsan Jahangir
+              </a>
+              <p class="text-xs text-slate-600">Founder & Lead Academic Author</p>
+            </div>
+          </div>
+          <div class="text-sm text-slate-500 sm:border-l sm:border-slate-200 sm:pl-4">
+            <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Effective Date</span>
+            <time datetime="2026-11-08" class="font-semibold text-slate-700">Nov 8, 2026</time>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-16">
+    
+    <!-- Quick Summary -->
+    <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 md:p-8 mb-12">
+      <h2 class="text-xl font-bold text-emerald-900 mb-4 flex items-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Quick Summary (TL;DR)
+      </h2>
+      <ul class="space-y-2 text-sm text-emerald-800 font-medium">
+        <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">•</span> <strong>No Accounts:</strong> We do not require you to create an account or log in.</li>
+        <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">•</span> <strong>No Ads:</strong> We do not display ads or sell your data to advertisers.</li>
+        <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">•</span> <strong>Direct Contact:</strong> We only collect information if you voluntarily email us or use our contact form.</li>
+        <li class="flex items-start gap-2"><span class="text-emerald-600 mt-0.5">•</span> <strong>Child Safety:</strong> We are committed to protecting the privacy of young students.</li>
+      </ul>
+    </div>
+
+    <!-- English Content -->
+    <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+      
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">1. Introduction</h2>
+      <p>Welcome to <strong>TaleemMarkaz</strong>. Your privacy is important to us. This Privacy Policy explains how TaleemMarkaz collects, uses, stores, protects, and handles information when you visit or use our website.</p>
+      <p>TaleemMarkaz is an educational platform providing free learning materials and educational resources for students from Class 1 to Class 12, with a particular focus on Matric and Intermediate education.</p>
+      <p>By using our website, you acknowledge that you have read this Privacy Policy. If you do not agree with this policy, please discontinue using the website.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">2. Information We May Collect</h2>
+      <p>The information we collect depends on how you interact with TaleemMarkaz.</p>
+      
+      <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">A. Information You Provide Voluntarily</h3>
+      <p>You may provide personal information when you:</p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Contact us through our contact forms or email.</li>
+        <li>Send feedback, suggestions, or questions.</li>
+        <li>Report an error in educational content.</li>
+        <li>Submit educational materials or contribute content.</li>
+      </ul>
+      <p>This information may include your name, email address, message, and any other details you voluntarily provide. Please avoid sharing sensitive personal information through our website.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">B. Information Collected Automatically</h3>
+      <p>When you visit TaleemMarkaz, certain technical information may be collected automatically, depending on our website configuration and the services we use. This may include:</p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>IP address and Browser type.</li>
+        <li>Device and operating system information.</li>
+        <li>Pages visited and time spent on pages.</li>
+        <li>Referring website or source.</li>
+      </ul>
+      <p>This information is used to understand website performance, identify technical problems, and maintain website security.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">3. How We Use Your Information</h2>
+      <p>TaleemMarkaz may use collected information to respond to inquiries, improve educational resources, review feedback, maintain security, and fulfill legal obligations. <strong>We do not sell users' personal information.</strong></p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">4. Cookies and Similar Technologies</h2>
+      <p>TaleemMarkaz may use cookies or similar technologies where necessary for website functionality, preferences, security, or analytics. You can manage or disable cookies through your browser settings, though this may affect some website features.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">5. Third-Party Services and External Links</h2>
+      <p>Our website may contain links to external educational websites. We do not control the privacy practices, content, or security policies of external websites. Information shared directly with third-party websites is governed by their respective privacy policies.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">6. Children's and Students' Privacy</h2>
+      <p>TaleemMarkaz provides educational resources for students from Class 1 to Class 12. We recognize the importance of protecting children's and teenagers' privacy online. We do not intentionally seek unnecessary personal information from children. Parents and guardians who believe that a child has provided personal information inappropriately may contact us to request a review. We encourage students not to share private information (like passwords, home addresses, or phone numbers) publicly.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">7. How We Protect Your Information</h2>
+      <p>We take reasonable technical and organizational measures to protect information against unauthorized access, misuse, or loss. However, no method of electronic transmission can be guaranteed to be completely secure.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">8. Data Retention & Your Rights</h2>
+      <p>We retain personal information only for as long as reasonably necessary for the purposes described in this policy. Depending on applicable law, you may have the right to request information about, correction of, or deletion of your personal data. To make a request, contact us using the details below.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">9. Free Access and Advertising</h2>
+      <p>TaleemMarkaz is committed to providing free educational resources. We do not charge subscription fees, and <strong>we do not display advertisements</strong> on our website. If our business model changes in the future, this policy will be updated.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">10. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy when necessary to reflect changes in our practices or legal requirements. Any updates will be published on this page with a revised effective date.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">11. Contact Us</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy, please contact us:</p>
+      <ul class="list-none pl-0 space-y-2 font-medium">
+        <li><strong>Email:</strong> <a href="mailto:taleemmarkazofficial@gmail.com" class="text-blue-600 hover:underline">taleemmarkazofficial@gmail.com</a></li>
+        <li><strong>Website:</strong> <a href="https://taleemmarkaz.com" class="text-blue-600 hover:underline">taleemmarkaz.com</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Urdu Content -->
+  <section class="bg-slate-50 border-t border-slate-200 py-16 px-4 font-urdu" dir="rtl" lang="ur">
+    <div class="max-w-4xl mx-auto">
+      
+      <div class="text-center mb-12">
+        <span class="text-sm font-bold text-blue-600">رازداری کی پالیسی</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">تعلیم مرکز – پرائیویسی پالیسی</h2>
+        <p class="text-xl text-slate-600">آپ کی رازداری ہمارے لیے اہم ہے۔</p>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-2xl p-8 md:p-10 text-lg text-slate-800 space-y-8">
+        
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">1. تعارف</h3>
+          <p>تعلیم مرکز میں آپ کی رازداری ہمارے لیے اہم ہے۔ اس پالیسی میں بتایا گیا ہے کہ جب آپ ہماری ویب سائٹ استعمال کرتے ہیں تو ہم آپ کی معلومات کیسے جمع، استعمال اور محفوظ کرتے ہیں۔ تعلیم مرکز ایک مفت تعلیمی پلیٹ فارم ہے جو جماعت اول سے بارہویں تک کے طلبہ کے لیے تعلیمی مواد فراہم کرتا ہے۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">2. ہم کون سی معلومات جمع کر سکتے ہیں؟</h3>
+          <p class="mb-3">ہماری جانب سے جمع کی جانے والی معلومات کا انحصار اس بات پر ہے کہ آپ ویب سائٹ کو کس طرح استعمال کرتے ہیں۔</p>
+          <p class="font-bold mb-1">الف۔ وہ معلومات جو آپ خود فراہم کرتے ہیں:</p>
+          <p class="mb-3">آپ رابطہ فارم یا ای میل کے ذریعے ہم سے رابطہ کرتے وقت اپنا نام، ای میل اور پیغام فراہم کر سکتے ہیں۔ براہِ کرم غیر ضروری حساس ذاتی معلومات فراہم نہ کریں۔</p>
+          <p class="font-bold mb-1">ب۔ خودکار طور پر جمع ہونے والی معلومات:</p>
+          <p>ویب سائٹ وزٹ کرنے پر تکنیکی معلومات (جیسے آئی پی ایڈریس، براؤزر کی قسم، اور وزٹ کیے گئے صفحات) خودکار طور پر جمع ہو سکتی ہیں تاکہ ویب سائٹ کی کارکردگی اور سیکیورٹی کو بہتر بنایا جا سکے۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">3. ہم آپ کی معلومات کیوں استعمال کرتے ہیں؟</h3>
+          <p>ہم معلومات کا استعمال صارفین کے سوالات کا جواب دینے، تعلیمی مواد بہتر بنانے، ویب سائٹ کی حفاظت برقرار رکھنے اور قانونی ذمہ داریاں پوری کرنے کے لیے کرتے ہیں۔ <strong>ہم صارفین کی ذاتی معلومات فروخت نہیں کرتے۔</strong></p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">4. کوکیز اور تھرڈ پارٹی خدمات</h3>
+          <p>ویب سائٹ کی فعالیت اور سیکیورٹی کے لیے کوکیز استعمال کی جا سکتی ہیں۔ آپ اپنے براؤزر کی سیٹنگز کے ذریعے کوکیز کو کنٹرول کر سکتے ہیں۔ ہماری ویب سائٹ پر بیرونی تعلیمی ویب سائٹس کے لنکس بھی ہو سکتے ہیں، جن کی رازداری کی پالیسیوں پر ہمارا اختیار نہیں ہوتا۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">5. بچوں اور طلبہ کی رازداری</h3>
+          <p>تعلیم مرکز جماعت اول سے بارہویں تک کے طلبہ کے لیے ہے۔ ہم انٹرنیٹ پر بچوں کی رازداری کے تحفظ کی اہمیت کو سمجھتے ہیں۔ ہم بچوں سے غیر ضروری ذاتی معلومات حاصل کرنے کی کوشش نہیں کرتے۔ ہم طلبہ کو مشورہ دیتے ہیں کہ وہ اپنے پاس ورڈز، گھر کا پتہ یا فون نمبر عوامی طور پر شیئر نہ کریں۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">6. معلومات کا تحفظ اور مدت</h3>
+          <p>ہم ذاتی معلومات کو غیر مجاز رسائی سے بچانے کے لیے مناسب تکنیکی اقدامات کرتے ہیں۔ تاہم، انٹرنیٹ پر کوئی بھی طریقہ مکمل طور پر محفوظ نہیں ہوتا۔ ہم معلومات کو صرف اتنی مدت تک محفوظ رکھتے ہیں جتنی اس پالیسی میں بیان کردہ مقاصد کے لیے ضروری ہو۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">7. مفت سہولیات اور اشتہارات</h3>
+          <p>تعلیم مرکز طلبہ کو مفت تعلیمی وسائل فراہم کرنے کے لیے پُرعزم ہے۔ ہم اپنے تعلیمی وسائل کے لیے کوئی فیس وصول نہیں کرتے اور نہ ہی <strong>اپنی ویب سائٹ پر کوئی اشتہارات دکھاتے ہیں</strong>۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">8. ہم سے رابطہ کریں</h3>
+          <p class="mb-4">اگر آپ کو اس پالیسی سے متعلق کوئی سوال یا درخواست ہو تو ہم سے رابطہ کریں:</p>
+          <ul class="list-none pr-0 space-y-2">
+            <li><strong>ای میل:</strong> <span dir="ltr">taleemmarkazofficial@gmail.com</span></li>
+            <li><strong>ویب سائٹ:</strong> <span dir="ltr">taleemmarkaz.com</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Note -->
+  <div class="bg-white border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+    <p>This policy may be updated as our website and practices develop.</p>
+    <a href="/" class="inline-block mt-2 text-blue-600 font-bold hover:underline">← Back to TaleemMarkaz Home</a>
+  </div>
+
+</Layout>

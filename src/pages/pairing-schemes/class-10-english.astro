@@ -1,0 +1,492 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TuitionAd from '../../components/TuitionAd.astro';
+
+const pageUrl = "https://taleemmarkaz.com/pairing-schemes/class-10-english/";
+
+const faqs = [
+  { q: "How many marks is the Class 10 English paper in 2027?", a: "The paper pattern provided specifies 75 marks: 19 marks for objective questions and 56 marks for subjective questions." },
+  { q: "How many MCQs are included in the English paper?", a: "There are 19 MCQs, carrying one mark each." },
+  { q: "How much time is allowed for the English examination?", a: "The total duration is 2 hours and 30 minutes. The objective section is allocated 20 minutes and the subjective section 2 hours and 10 minutes." },
+  { q: "How many short questions are required in Q-2?", a: "Students must attempt five out of eight short questions. Each question carries 2 marks." },
+  { q: "How many marks are allocated to translation?", a: "Q-3 carries 8 marks for translation into Urdu or rewriting a paragraph in simple English. Q-8 also carries 8 marks for Urdu-to-English translation or its specified English-medium alternative." },
+  { q: "How many marks does the poetry question carry?", a: "Q-4 carries 5 marks and offers a poem-summary or stanza-explanation alternative." },
+  { q: "What is the word limit for the English essay?", a: "The essay option requires 150–200 words. The alternative paragraph option requires 100–150 words." },
+  { q: "How many sentences are required for the English-medium alternative in Q-8?", a: "The alternative requires a paragraph of ten sentences on the given topic." }
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Class 10 English Pairing Scheme 2027 Punjab Boards – Official PECTAA",
+      "description": "Check the Class 10 English Pairing Scheme 2027 for Punjab Boards. Get the complete paper pattern, MCQs distribution, short questions, essay topics, and model paper.",
+      "author": {
+        "@type": "Person",
+        "name": "Sir Ikhlaq Qureshi",
+        "jobTitle": "English Specialist",
+        "alumniOf": "University of the Punjab, Lahore",
+        "url": "https://taleemmarkaz.com/authors/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TaleemMarkaz",
+        "logo": { "@type": "ImageObject", "url": "https://taleemmarkaz.com/logo.png" }
+      },
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-08"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://taleemmarkaz.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Pairing Schemes", "item": "https://taleemmarkaz.com/pairing-schemes/"},
+        {"@type": "ListItem", "position": 3, "name": "Class 10 English", "item": pageUrl}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+      }))
+    }
+  ]
+};
+---
+
+<Layout 
+  title="Class 10 English Pairing Scheme 2027 Punjab Boards – Official PECTAA"
+  description="Check the Class 10 English Pairing Scheme 2027 for Punjab Boards. Get the complete paper pattern, MCQs distribution, short questions, essay topics, and model paper."
+  canonical={pageUrl}
+  schema={schema}
+>
+  <style is:global>
+    /* PREVENT HORIZONTAL SCROLL */
+    html, body { overflow-x: hidden; }
+
+    /* URDU SPACING */
+    .font-urdu { font-family: 'Gulzar', serif; line-height: 3.2; font-size: 1.15rem; }
+    .font-urdu li { margin-bottom: 0.5rem; }
+
+    /* TABLE CONTAINMENT */
+    table { table-layout: auto; width: 100%; }
+    td, th { vertical-align: middle !important; }
+
+    @media print {
+      header, footer, nav, .no-print, .breadcrumbs, .author-card { display: none !important; }
+      body { background: white !important; color: black !important; font-size: 12pt; overflow-x: visible; }
+      main { padding: 0 !important; margin: 0 !important; }
+      .max-w-4xl { max-width: 100% !important; }
+      .print-header { display: flex !important; align-items: center; justify-content: space-between; border-bottom: 2px solid #9333ea; padding-bottom: 10px; margin-bottom: 20px; }
+      .print-header h1 { font-size: 16pt; margin: 0; color: #0f172a; }
+      table { page-break-inside: avoid; }
+      tr { page-break-inside: avoid; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      .font-urdu { font-size: 14pt; line-height: 2.8; }
+    }
+    .print-header { display: none; }
+  </style>
+
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 breadcrumbs no-print w-full overflow-hidden">
+    <div class="max-w-5xl mx-auto text-sm text-slate-500 flex flex-wrap items-center gap-2">
+      <a href="/" class="hover:text-blue-600">Home</a> <span>/</span>
+      <a href="/pairing-schemes/" class="hover:text-blue-600">Pairing Schemes</a> <span>/</span>
+      <span class="text-slate-900 font-medium">Class 10 English</span>
+    </div>
+  </div>
+
+  <section class="bg-white pt-12 pb-8 px-4 border-b border-slate-200 w-full overflow-hidden">
+    <div class="max-w-4xl mx-auto">
+      <div class="print-header">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-purple-600 text-white rounded flex items-center justify-center font-bold text-lg">T</div>
+          <span class="text-xl font-extrabold text-slate-900">TaleemMarkaz</span>
+        </div>
+        <span class="text-sm font-semibold text-slate-500">taleemmarkaz.com</span>
+      </div>
+
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-200 text-purple-700 text-xs font-bold uppercase tracking-wider mb-4 no-print">
+        🚨 Official Government Update
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+        Class 10 English Pairing Scheme 2027 <span class="text-purple-600">(Punjab Boards)</span>
+      </h1>
+      <p class="text-lg text-slate-600 mb-6 max-w-3xl">
+        Students preparing for the Class 10 English examination 2027 can use this guide to understand the complete paper pattern, marks distribution, MCQ categories, short-question choices, translation, poetry, essay writing and grammar sections.
+      </p>
+
+      <button onclick="window.print()" class="no-print bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-flex items-center gap-2 shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Download PDF with Logo
+      </button>
+
+      <div class="author-card bg-white border border-slate-200 rounded-2xl p-5 md:p-6 shadow-sm mt-8">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-xl md:text-2xl shrink-0 border-4 border-purple-100">IQ</div>
+            <div class="text-left">
+              <div class="flex items-center gap-1.5 mb-1">
+                <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">Academically Reviewed By</p>
+              </div>
+              <a href="/authors/" class="text-lg md:text-xl font-extrabold text-slate-900 hover:text-purple-600 transition-colors leading-tight block">Sir Ikhlaq Qureshi</a>
+              <p class="text-sm font-medium text-slate-600 mt-0.5">English Specialist | BS English Literature</p>
+            </div>
+          </div>
+          <div class="flex flex-row md:flex-col lg:flex-row gap-6 md:gap-2 lg:gap-6 text-sm text-slate-500 md:border-l md:border-slate-200 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0 border-slate-200">
+            <div><span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Published</span><span class="font-semibold text-slate-700">Nov 8, 2026</span></div>
+            <div><span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Updated</span><span class="font-semibold text-slate-700">Nov 8, 2026</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 py-12 w-full overflow-hidden">
+    <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+      
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 not-prose">
+        <h3 class="text-xl font-bold text-blue-900 mb-3 flex items-center gap-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Official Announcement by Punjab Education Minister
+        </h3>
+        <p class="text-blue-800 mb-4"><strong>This is the official 2027 English paper pattern for all Punjab Boards.</strong></p>
+        <p class="text-blue-800 mb-4">Punjab Education Minister <strong>Rana Sikandar Hayat</strong> has officially authorized the inclusion of pairing schemes directly into the 2027 PCTB curriculum textbooks for Class 9 and Class 10.</p>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 my-8 not-prose" dir="rtl">
+        <h3 class="text-2xl font-bold text-slate-900 mb-4 font-urdu">اہم امتحانی ہدایات</h3>
+        <ul class="space-y-4 text-slate-700 font-urdu">
+          <li>• اس پیپر میں کل 75 نمبر ہیں جن میں 19 نمبر معروضی (MCQs) اور 56 نمبر سوالیہ (Subjective) ہیں۔</li>
+          <li>• پیپر کا وقت 2 گھنٹے 30 منٹ ہوگا۔ معروضی حصے کے لیے 20 منٹ اور سوالیہ حصے کے لیے 2 گھنٹے 10 منٹ ہوں گے۔</li>
+          <li>• سوالیہ حصے میں Q.2 سے Q.8 تک سوالات شامل ہیں۔</li>
+          <li>• طویل سوالات میں مضمون یا پیراگراف، خطوط اور نظم کا خلاصہ شامل ہے۔</li>
+        </ul>
+      </div>
+
+      <p>The English paper carries 75 marks and has a total duration of 2 hours and 30 minutes. According to the textbook-based instructions provided, the paper is divided into an objective section of 19 marks and a subjective section of 56 marks.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Class 10 English Paper Pattern 2027</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Paper Section</th>
+              <th class="p-3 font-bold text-slate-900">Question Details</th>
+              <th class="p-3 font-bold text-slate-900 text-center">Marks</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Objective Type</td><td class="p-3">Q-1: 19 MCQs</td><td class="p-3 text-center text-purple-600 font-bold">19</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Short Questions</td><td class="p-3">Q-2 (Attempt 5 out of 8)</td><td class="p-3 text-center">10</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Translation / Simple English</td><td class="p-3">Q-3 (Urdu or Simple English)</td><td class="p-3 text-center">8</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Poetry</td><td class="p-3">Q-4 (Summary or Stanza)</td><td class="p-3 text-center">5</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Essay / Paragraph</td><td class="p-3">Q-5</td><td class="p-3 text-center">15</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Direct and Indirect Speech</td><td class="p-3">Q-6 (Attempt 5 out of 8)</td><td class="p-3 text-center">5</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Pair of Words</td><td class="p-3">Q-7 (Attempt 5 out of 8)</td><td class="p-3 text-center">5</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Urdu to English Translation</td><td class="p-3">Q-8</td><td class="p-3 text-center">8</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Total</td><td class="p-3"></td><td class="p-3 text-center text-purple-600">75</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Class 10 English MCQs Pairing Scheme 2027</h2>
+      <p>The objective section contains 19 multiple-choice questions, carrying one mark each. These MCQs are divided into four categories.</p>
+      
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">MCQ Category</th>
+              <th class="p-3 font-bold text-slate-900">Source / Syllabus Coverage</th>
+              <th class="p-3 font-bold text-slate-900 text-center">Marks</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Correct Forms of Verbs</td><td class="p-3">English Grammar and Composition 9–10</td><td class="p-3 text-center font-bold text-purple-600">5</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Correct Spellings</td><td class="p-3">Units 1–5 + Review-I (2) & Units 6–10 + Review-II (2)</td><td class="p-3 text-center font-bold text-purple-600">4</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Meanings of Underlined Words</td><td class="p-3">Units 1–5 + Review-I (2) & Units 6–10 + Review-II (3)</td><td class="p-3 text-center font-bold text-purple-600">5</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Grammar-Based MCQs</td><td class="p-3">English-10 and English Grammar and Composition 9–10</td><td class="p-3 text-center font-bold text-purple-600">5</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">10th Class English Short Questions Pairing Scheme 2027</h2>
+      <p>Q-2 carries 10 marks. Students must answer any five out of eight short questions. Each question carries 2 marks. The eight questions are divided equally between the two groups of units.</p>
+      
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Syllabus Portion</th>
+              <th class="p-3 font-bold text-slate-900 text-center">Number of Questions</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Units 1–5 + Review-I</td><td class="p-3 text-center font-bold text-purple-600">4</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Units 6–10 + Review-II</td><td class="p-3 text-center font-bold text-purple-600">4</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Total Available</td><td class="p-3 text-center">8</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Questions to Attempt</td><td class="p-3 text-center text-purple-600">5 (10 Marks)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Model Paper Section</h2>
+      
+      <!-- English Model Paper -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">English-10 Model Paper (Objective)</h3>
+          <p class="text-sm text-slate-600">Time Allowed: 20 Min. | Max. Marks: 19</p>
+        </div>
+        <div class="p-4 w-full overflow-hidden">
+          <p class="text-sm font-bold text-slate-800 mb-4">Q.1 (a) Choose the correct forms of verbs and fill up the bubble sheet. (5)</p>
+          
+          <div class="overflow-x-auto w-full max-w-full mb-6">
+            <table class="w-full text-left border-collapse text-sm min-w-[600px]">
+              <thead><tr class="bg-slate-50 border-b border-slate-200"><th class="p-2 font-bold text-slate-900 border-r w-1/2">Questions</th><th class="p-2 font-bold text-slate-900 text-center border-r">A</th><th class="p-2 font-bold text-slate-900 text-center border-r">B</th><th class="p-2 font-bold text-slate-900 text-center border-r">C</th><th class="p-2 font-bold text-slate-900 text-center">D</th></tr></thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr><td class="p-2 border-r">1. It ____ at present.</td><td class="p-2 border-r text-center">rain</td><td class="p-2 border-r text-center">rained</td><td class="p-2 border-r text-center">is raining</td><td class="p-2 text-center">has rained</td></tr>
+                <tr><td class="p-2 border-r">2. She ____ the piano since 2 o'clock.</td><td class="p-2 border-r text-center">plays</td><td class="p-2 border-r text-center">is playing</td><td class="p-2 border-r text-center">has been playing</td><td class="p-2 text-center">played</td></tr>
+                <tr><td class="p-2 border-r">3. How long ago did you ____ here?</td><td class="p-2 border-r text-center">come</td><td class="p-2 border-r text-center">came</td><td class="p-2 border-r text-center">have come</td><td class="p-2 text-center">had come</td></tr>
+                <tr><td class="p-2 border-r">4. He ____ here since 1970.</td><td class="p-2 border-r text-center">is coming</td><td class="p-2 border-r text-center">was coming</td><td class="p-2 border-r text-center">has been coming</td><td class="p-2 text-center">have been coming</td></tr>
+                <tr><td class="p-2 border-r">5. I hope it ____ raining by the evening.</td><td class="p-2 border-r text-center">stops</td><td class="p-2 border-r text-center">stopped</td><td class="p-2 border-r text-center">has stopped</td><td class="p-2 text-center">will have stopped</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-sm font-bold text-slate-800 mb-4">Q.1 (b) Choose the words with the correct spellings and fill up the bubble sheet. (4)</p>
+          <div class="overflow-x-auto w-full max-w-full mb-6">
+            <table class="w-full text-left border-collapse text-sm min-w-[600px]">
+              <thead><tr class="bg-slate-50 border-b border-slate-200"><th class="p-2 font-bold text-slate-900 border-r">#</th><th class="p-2 font-bold text-slate-900 text-center border-r">A</th><th class="p-2 font-bold text-slate-900 text-center border-r">B</th><th class="p-2 font-bold text-slate-900 text-center border-r">C</th><th class="p-2 font-bold text-slate-900 text-center">D</th></tr></thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr><td class="p-2 border-r text-center">6.</td><td class="p-2 border-r text-center">patriarcal</td><td class="p-2 border-r text-center">patriarchical</td><td class="p-2 border-r text-center">patrirchal</td><td class="p-2 text-center">patriarkal</td></tr>
+                <tr><td class="p-2 border-r text-center">7.</td><td class="p-2 border-r text-center">fascinatiing</td><td class="p-2 border-r text-center">fascinating</td><td class="p-2 border-r text-center">fascineting</td><td class="p-2 text-center">fascineting</td></tr>
+                <tr><td class="p-2 border-r text-center">8.</td><td class="p-2 border-r text-center">adicted</td><td class="p-2 border-r text-center">addicited</td><td class="p-2 border-r text-center">addcited</td><td class="p-2 text-center">addicted</td></tr>
+                <tr><td class="p-2 border-r text-center">9.</td><td class="p-2 border-r text-center">certian</td><td class="p-2 border-r text-center">certain</td><td class="p-2 border-r text-center">certen</td><td class="p-2 text-center">certeien</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-sm font-bold text-slate-800 mb-4">Q.1 (c) Choose the correct meanings of the underlined words and fill up the bubble sheet. (5)</p>
+          <div class="overflow-x-auto w-full max-w-full mb-6">
+            <table class="w-full text-left border-collapse text-sm min-w-[600px]">
+              <thead><tr class="bg-slate-50 border-b border-slate-200"><th class="p-2 font-bold text-slate-900 border-r w-1/3">Questions</th><th class="p-2 font-bold text-slate-900 text-center border-r">A</th><th class="p-2 font-bold text-slate-900 text-center border-r">B</th><th class="p-2 font-bold text-slate-900 text-center border-r">C</th><th class="p-2 font-bold text-slate-900 text-center">D</th></tr></thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr><td class="p-2 border-r">10. <u>advent</u> means:</td><td class="p-2 border-r text-center">departure or leaving</td><td class="p-2 border-r text-center">arrival or beginning</td><td class="p-2 border-r text-center">celebration or festival</td><td class="p-2 text-center">adventure or journey</td></tr>
+                <tr><td class="p-2 border-r">11. Emoji use has <u>added</u> a visual element to language</td><td class="p-2 border-r text-center">removed</td><td class="p-2 border-r text-center">included</td><td class="p-2 border-r text-center">ignored</td><td class="p-2 text-center">replaced</td></tr>
+                <tr><td class="p-2 border-r">12. Let's try to <u>explore</u> the causes of pollution.</td><td class="p-2 border-r text-center">ignore</td><td class="p-2 border-r text-center">investigate</td><td class="p-2 border-r text-center">destroy</td><td class="p-2 text-center">create</td></tr>
+                <tr><td class="p-2 border-r">13. The word "<u>suffer</u>" means:</td><td class="p-2 border-r text-center">enjoy</td><td class="p-2 border-r text-center">endure</td><td class="p-2 border-r text-center">celebrate</td><td class="p-2 text-center">ignore</td></tr>
+                <tr><td class="p-2 border-r">14. "<u>warfare</u>" means:</td><td class="p-2 border-r text-center">peaceful negotiation</td><td class="p-2 border-r text-center">fighting or conflict</td><td class="p-2 border-r text-center">celebration</td><td class="p-2 text-center">friendship</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-sm font-bold text-slate-800 mb-4">Q.1 (d) Choose the correct option according to grammar and fill up the bubble sheet. (5)</p>
+          <div class="overflow-x-auto w-full max-w-full">
+            <table class="w-full text-left border-collapse text-sm min-w-[600px]">
+              <thead><tr class="bg-slate-50 border-b border-slate-200"><th class="p-2 font-bold text-slate-900 border-r w-1/3">Questions</th><th class="p-2 font-bold text-slate-900 text-center border-r">A</th><th class="p-2 font-bold text-slate-900 text-center border-r">B</th><th class="p-2 font-bold text-slate-900 text-center border-r">C</th><th class="p-2 font-bold text-slate-900 text-center">D</th></tr></thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr><td class="p-2 border-r">15. Orphans were often ____ without care or protection.</td><td class="p-2 border-r text-center">leave</td><td class="p-2 border-r text-center">left</td><td class="p-2 border-r text-center">leaving</td><td class="p-2 text-center">leaves</td></tr>
+                <tr><td class="p-2 border-r">16. English is often used as a global <u>lingua franca</u>. The underlined word is:</td><td class="p-2 border-r text-center">adverb</td><td class="p-2 border-r text-center">noun</td><td class="p-2 border-r text-center">gerund</td><td class="p-2 text-center">adjective</td></tr>
+                <tr><td class="p-2 border-r">17. This <u>damages</u> their education. The underlined word is:</td><td class="p-2 border-r text-center">verb</td><td class="p-2 border-r text-center">modal verb</td><td class="p-2 border-r text-center">adjective</td><td class="p-2 text-center">adverb</td></tr>
+                <tr><td class="p-2 border-r">18. The King put on <u>simple</u> clothes.</td><td class="p-2 border-r text-center">noun</td><td class="p-2 border-r text-center">verb</td><td class="p-2 border-r text-center">adverb</td><td class="p-2 text-center">adjective</td></tr>
+                <tr><td class="p-2 border-r">19. He speaks the truth. Here "<u>truth</u>" is a/an ____.</td><td class="p-2 border-r text-center">adjective</td><td class="p-2 border-r text-center">verb</td><td class="p-2 border-r text-center">noun</td><td class="p-2 text-center">pronoun</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subjective Part -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">English-10 Model Paper (Subjective)</h3>
+          <p class="text-sm text-slate-600">Time Allowed: 2:10 Hours | Max. Marks: 56</p>
+        </div>
+        <div class="p-4 space-y-6">
+          
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.2 Answer any FIVE of the following questions: (10)</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-2">
+              <li>What was the social condition of women, orphans, and slaves in pre-Islamic Arabia?</li>
+              <li>What is code-switching, and how does it appear in online communication?</li>
+              <li>What does the author mean by saying that climate action is "a global conversation rather than a fringe concern"?</li>
+              <li>What motivates the Swallow to delay his journey to Egypt and help the Happy Prince?</li>
+              <li>What is drug abuse, and how does it affect individuals and society?</li>
+              <li>How does greenery, especially trees and plants, help reduce pollution and improve the quality of life in cities?</li>
+              <li>What three questions did the king want to find answers to?</li>
+              <li>Why is the speaker sorry he cannot travel both the roads? With reference to the poem "The Road Not Taken".</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.3 Translate any ONE of the following paragraphs into Urdu. OR Rewrite any ONE in simple English: (8)</h4>
+            <ul class="list-disc pl-5 text-sm text-slate-700 space-y-2">
+              <li>While large-scale policy changes are crucial, individuals also play an important role in the fight against climate change. Everyday choices—like reducing energy use, recycling, avoiding single-use plastics, and using public transport—can collectively make a significant difference. Choosing to eat less meat, supporting eco-friendly brands, and planting trees are also impactful steps.</li>
+              <li>One of the most worrying things is that many drug users are young people. Teenagers and university students are especially at risk. Some students start using drugs at parties or with friends, thinking it is fun. But later, they become addicted and cannot stop.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.4 Write the summary of the poem "The Road Not Taken" by Robert Frost. OR Paraphrase the following lines: (5)</h4>
+            <div class="bg-slate-50 p-4 rounded border border-slate-200 text-sm text-slate-700 italic mb-2">
+              Unfathomable Sea! whose waves are years,<br>
+              Ocean of Time, whose waters of deep woe<br>
+              Are brackish with the salt of human tears!<br>
+              Thou shoreless flood, which in thy ebb and flow<br>
+              Claspest the limits of mortality!
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.5 Write an essay of 150-200 words on any ONE of the following topics: (15)</h4>
+            <p class="text-sm text-slate-700 mb-2">i. A True Muslim | ii. Health | iii. Tolerance</p>
+            <p class="text-sm font-bold text-slate-800 mb-2">OR Write a paragraph of 100-150 words on any ONE of the following topics:</p>
+            <p class="text-sm text-slate-700">i. The Pakistani Women | ii. My Neighbour | iii. A Pleasant Dream</p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.6 Change any FIVE of the following sentences into indirect forms. (5)</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-1">
+              <li>She said, "May you prosper!"</li>
+              <li>She said, "What a beautiful piece of art!"</li>
+              <li>He said, "Alas! I am ruined."</li>
+              <li>Afshan said, "Let us go for a picnic on Friday."</li>
+              <li>The judge said, "Call the next witness."</li>
+              <li>The teacher said, "Do not make a noise."</li>
+              <li>Raza said, "Where are you going?"</li>
+              <li>They said, "We have done our duty."</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.7 Use any FIVE of the following pairs of words in your own sentences: (5)</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm text-slate-700 mt-2">
+              <span>i. affect : effect</span>
+              <span>ii. bare : bear</span>
+              <span>iii. cool : cold</span>
+              <span>iv. diary : dairy</span>
+              <span>v. elder : older</span>
+              <span>vi. flour : floor</span>
+              <span>vii. meet : meat</span>
+              <span>viii. sail : sale</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.8 Translate the following paragraph into English. OR Write a paragraph of TEN sentences about "Computers". (8)</h4>
+            <div class="bg-slate-50 p-4 rounded border border-slate-200 text-lg text-slate-800 font-urdu" dir="rtl">
+              آزادی قلمت خود بخود ہے۔ اس کا پہلے کرتے رہے اور لگے رہے کہا تکلیف دی گئی کہ وہ کبھی اپنے ملک کے لیے بھی سوچیں گے۔ جس کو غلامی کا خاتمہ پسند نہیں وہ آزادی سے بھی خوش نہیں ہو سکتا۔ ہمیں ایسے لوگوں سے بچنا چاہیے۔ ہمارے نوجوان ہی ملک کا مستقبل ہیں۔ انہیں تعلیم کے زیور سے آراستہ کر کے ان کے اندر خود اعتمادی پیدا کرنی چاہیے۔ اگر ہمارے نوجوان بااختیار ہوں گے تو وطن ترقی کرے گا اور ہماری آنے والی نسلیں خوشحال ہوں گی۔
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- URDU MODEL PAPER -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">Urdu Model Paper 2027 (اردو ماڈل پیپر)</h2>
+      <p class="font-urdu text-lg text-slate-600 mb-6" dir="rtl">سرکاری پیپر پیٹرن کے مطابق اہم سوالات جن کی تیاری لازمی ہے۔</p>
+      
+      <div class="bg-white border border-slate-200 rounded-xl p-6 not-prose my-6 font-urdu" dir="rtl">
+        
+        <h3 class="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2">انشائیہ طرز (Subjective Type)</h3>
+        
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 2: کسی بھی پانچ (5) سوالات کے مختصر جوابات لکھیں۔ (10)</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-2">
+              <li>اسلام سے پہلے عرب میں خواتین، یتیموں اور غلاموں کی سماجی حالت کیسی تھی؟</li>
+              <li>کوڈ سوئچنگ کیا ہے اور یہ آن لائن مواصلات میں کیسے ظاہر ہوتی ہے؟</li>
+              <li>مصنف کا یہ کہنے سے کیا مطلب ہے کہ موسمیاتی کارروائی "ایک عالمی بات چیت ہے نہ کہ کوئی غیر معمولی معاملہ"؟</li>
+              <li>ہیپی پرنس کی مدد کرنے کے لیے نگل کو مصر جانے میں تاخیر کس چیز نے پرعزم کیا؟</li>
+              <li>منشیات کا استعمال کیا ہے اور یہ افراد اور معاشرے کو کیسے متاثر کرتا ہے؟</li>
+              <li>سبزہ، خاص طور پر درخت اور پودے، شہروں میں آلودگی کو کم کرنے اور معیار زندگی کو بہتر بنانے میں کیسے مدد کرتے ہیں؟</li>
+              <li>بادشاہ کن تین سوالوں کے جوابات تلاش کرنا چاہتا تھا؟</li>
+              <li>نظم "The Road Not Taken" کے حوالے سے، مقرر کیوں افسردہ ہے کہ وہ دونوں راستوں پر سفر نہیں کر سکتا؟</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 3: درج ذیل میں سے کسی ایک پیراگراف کا اردو میں ترجمہ کریں یا آسان انگریزی میں دوبارہ لکھیں۔ (8)</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-2">
+              <li>While large-scale policy changes are crucial, individuals also play an important role in the fight against climate change.</li>
+              <li>One of the most worrying things is that many drug users are young people. Teenagers and university students are especially at risk.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 4: رابرٹ فراسٹ کی نظم "The Road Not Taken" کا خلاصہ لکھیں یا اس کی وضاحت کریں۔ (5)</h4>
+            <p class="text-sm text-slate-700">(نظم کا خلاصہ یا بند کی تشریح)</p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 5: درج ذیل میں سے کسی ایک موضوع پر 150-200 الفاظ کا مضمون لکھیں۔ (15)</h4>
+            <p class="text-sm text-slate-700 mb-2">i. ایک سچا مسلمان | ii. صحت | iii. رواداری</p>
+            <p class="text-sm font-bold text-slate-800 mb-2">یا 100-150 الفاظ کا پیراگراف لکھیں:</p>
+            <p class="text-sm text-slate-700">i. پاکستانی خواتین | ii. میرا پڑوسی | iii. ایک خوشگوار خواب</p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 6: درج ذیل میں سے کسی پانچ جملوں کو بالواسطہ (Indirect) میں بدلیں۔ (5)</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-1">
+              <li>She said, "May you prosper!"</li>
+              <li>She said, "What a beautiful piece of art!"</li>
+              <li>He said, "Alas! I am ruined."</li>
+              <li>Afshan said, "Let us go for a picnic on Friday."</li>
+              <li>The judge said, "Call the next witness."</li>
+              <li>The teacher said, "Do not make a noise."</li>
+              <li>Raza said, "Where are you going?"</li>
+              <li>They said, "We have done our duty."</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 7: درج ذیل میں سے کسی پانچ الفاظ کے جوڑوں کو اپنے جملوں میں استعمال کریں۔ (5)</h4>
+            <div class="grid grid-cols-2 gap-2 text-sm text-slate-700 mt-2">
+              <span>i. affect : effect</span>
+              <span>ii. bare : bear</span>
+              <span>iii. cool : cold</span>
+              <span>iv. diary : dairy</span>
+              <span>v. elder : older</span>
+              <span>vi. flour : floor</span>
+              <span>vii. meet : meat</span>
+              <span>viii. sail : sale</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 8: درج ذیل پیراگراف کا انگریزی میں ترجمہ کریں۔ (8)</h4>
+            <div class="bg-slate-50 p-4 rounded border border-slate-200 text-lg text-slate-800 font-urdu mb-2">
+              آزادی قلمت خود بخود ہے۔ اس کا پہلے کرتے رہے اور لگے رہے کہا تکلیف دی گئی کہ وہ کبھی اپنے ملک کے لیے بھی سوچیں گے۔ جس کو غلامی کا خاتمہ پسند نہیں وہ آزادی سے بھی خوش نہیں ہو سکتا۔ ہمیں ایسے لوگوں سے بچنا چاہیے۔ ہمارے نوجوان ہی ملک کا مستقبل ہیں۔ انہیں تعلیم کے زیور سے آراستہ کر کے ان کے اندر خود اعتمادی پیدا کرنی چاہیے۔ اگر ہمارے نوجوان بااختیار ہوں گے تو وطن ترقی کرے گا اور ہماری آنے والی نسلیں خوشحال ہوں گی۔
+            </div>
+            <p class="text-sm font-bold text-slate-800 mt-2">یا "Computers" کے موضوع پر دس جملوں کا پیراگراف لکھیں۔</p>
+          </div>
+        </div>
+      </div>
+
+      <TuitionAd subject="English" classLevel="Class 10" />
+
+      <!-- FAQ Section -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-6 border-b border-slate-200 pb-2">Frequently Asked Questions</h2>
+      <div class="space-y-4 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h4 class="font-bold text-slate-900 mb-2">{faq.q}</h4>
+            <p class="text-sm text-slate-600">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-slate-100 border border-slate-200 rounded-xl p-6 mt-10">
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Source & Disclaimer</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4"><strong>Source:</strong> The distribution below is transcribed from the English pairing instructions and model-paper material supplied for reference. It should be described as a textbook-based paper pattern unless a separate official PECTAA notification is available.</p>
+        <p class="text-sm text-slate-600 leading-relaxed"><strong>Note:</strong> This is a transcription of the textbook's printed pairing instructions. Students should follow any later examination instructions or updates issued by their relevant board.</p>
+      </div>
+
+    </div>
+  </section>
+</Layout>

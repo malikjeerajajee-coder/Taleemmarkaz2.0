@@ -1,0 +1,275 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import CTASection from '../../components/CTASection.astro';
+
+const siteUrl = "https://taleemmarkaz.com";
+const pageUrl = `${siteUrl}/pairing-schemes/`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}#webpage`,
+      "url": pageUrl,
+      "name": "Pairing Schemes – Class 9, 10, 11 & 12",
+      "description": "Find the latest pairing schemes for Class 9, 10, 11 and 12. Browse subject-wise paper patterns and chapter-wise marks distribution.",
+      "inLanguage": ["en-PK", "ur-PK"],
+      "isPartOf": { "@id": `${siteUrl}/#website` },
+      "author": {
+        "@type": "Person",
+        "name": "Malik Muhammad Ahsan Jahangir",
+        "jobTitle": "Lead Academic Author",
+        "alumniOf": "MPhil Biotechnology"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${siteUrl}/` },
+        { "@type": "ListItem", "position": 2, "name": "Pairing Schemes", "item": pageUrl }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where can I find the 2027 pairing scheme for my class?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Choose Class 9, 10, 11 or 12 from the directory above, then select your subject to open its available pairing scheme." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the pairing schemes the same for all boards?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Examination patterns and assessment documents can differ between educational boards. Always select the scheme relevant to your board." }
+        }
+      ]
+    }
+  ]
+};
+
+// Fixed Tailwind Colors mapping to avoid JIT purge issues
+const classes = [
+  {
+    id: "class-9",
+    name: "Class 9",
+    subtitle: "Matric Part 1",
+    bgClass: "bg-blue-50",
+    borderClass: "border-blue-100",
+    titleClass: "text-blue-900",
+    subtitleClass: "text-blue-700",
+    linkClass: "text-blue-600 hover:text-blue-800",
+    subjects: ["English", "Urdu", "Mathematics", "Physics", "Chemistry", "Biology", "Computer Science", "Pakistan Studies", "Islamic Studies"]
+  },
+  {
+    id: "class-10",
+    name: "Class 10",
+    subtitle: "Matric Part 2",
+    bgClass: "bg-emerald-50",
+    borderClass: "border-emerald-100",
+    titleClass: "text-emerald-900",
+    subtitleClass: "text-emerald-700",
+    linkClass: "text-emerald-600 hover:text-emerald-800",
+    subjects: ["English", "Urdu", "Mathematics", "Physics", "Chemistry", "Biology", "Computer Science", "Pakistan Studies", "Islamic Studies"]
+  },
+  {
+    id: "class-11",
+    name: "Class 11",
+    subtitle: "Intermediate Part 1",
+    bgClass: "bg-purple-50",
+    borderClass: "border-purple-100",
+    titleClass: "text-purple-900",
+    subtitleClass: "text-purple-700",
+    linkClass: "text-purple-600 hover:text-purple-800",
+    subjects: ["English", "Urdu", "Mathematics", "Physics", "Chemistry", "Biology", "Computer Science"]
+  },
+  {
+    id: "class-12",
+    name: "Class 12",
+    subtitle: "Intermediate Part 2",
+    bgClass: "bg-orange-50",
+    borderClass: "border-orange-100",
+    titleClass: "text-orange-900",
+    subtitleClass: "text-orange-700",
+    linkClass: "text-orange-600 hover:text-orange-800",
+    subjects: ["English", "Urdu", "Mathematics", "Physics", "Chemistry", "Biology", "Computer Science"]
+  }
+];
+
+const faqs = [
+  { q: "Where can I find the 2027 pairing scheme for my class?", a: "Choose Class 9, 10, 11 or 12 from the directory above, then select your subject to open its available pairing scheme." },
+  { q: "Are pairing schemes available for all subjects?", a: "Availability depends on the class, subject, educational board and official publication of the relevant scheme. We list subject pages when the corresponding resource is available." },
+  { q: "Are the 2027 pairing schemes the same for all boards?", a: "No. Examination patterns and assessment documents can differ between educational boards. Always select the scheme relevant to your board." },
+  { q: "Can I prepare for exams using only a pairing scheme?", a: "No. A pairing scheme is a revision guide, not a replacement for the complete syllabus. Study all prescribed chapters and use textbooks, notes, model papers and past papers alongside it." },
+  { q: "Are TaleemMarkaz pairing schemes free?", a: "Yes. TaleemMarkaz provides its educational resources free of charge, without subscriptions or access fees." }
+];
+---
+
+<Layout 
+  title="Pairing Schemes 2027 – Class 9, 10, 11 & 12 | TaleemMarkaz"
+  description="Find the latest 2027 pairing schemes for Class 9, 10, 11 and 12. Browse subject-wise paper patterns and chapter-wise marks distribution for all Pakistani boards."
+  canonical={pageUrl}
+  schema={schema}
+>
+  <Breadcrumbs items={[
+    { name: "Home", url: "/" },
+    { name: "Pairing Schemes", url: pageUrl }
+  ]} />
+
+  <HeroSection 
+    title="Pairing Schemes 2027"
+    subtitle="Find the latest available 2027 pairing schemes for Class 9, 10, 11 and 12. Browse subject-wise paper patterns and chapter-wise marks distribution to organize your exam preparation."
+    badgeText="Official 2027 Paper Patterns"
+  >
+    <AuthorBox 
+      name="Malik Muhammad Ahsan Jahangir"
+      role="Lead Academic Author"
+      qualifications="MPhil Biotechnology"
+      initials="MA"
+      theme="blue"
+      updatedDate="Nov 8, 2026"
+    />
+  </HeroSection>
+
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    
+    <!-- Directory Grid -->
+    <section class="mb-20">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl font-extrabold text-slate-900">Choose Your Class</h2>
+        <p class="text-slate-500 mt-2">Select your class below to find the relevant subject pairing scheme.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {classes.map((cls) => (
+          <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col">
+            <!-- Card Header -->
+            <div class={`${cls.bgClass} border-b ${cls.borderClass} p-5 text-center`}>
+              <h3 class={`text-xl font-extrabold ${cls.titleClass}`}>{cls.name}</h3>
+              <p class={`text-xs font-bold ${cls.subtitleClass} uppercase tracking-wider mt-1`}>{cls.subtitle}</p>
+            </div>
+            
+            <!-- Subject List -->
+            <div class="p-5 flex-grow">
+              <ul class="space-y-3 text-sm text-slate-600">
+                {cls.subjects.map((subject) => {
+                  // Generate clean URL slug (e.g., "Computer Science" -> "computer-science")
+                  const slug = subject.toLowerCase().replace(/\s+/g, '-');
+                  
+                  // Dynamic URL based on the file structure we just created
+                  const href = `/pairing-schemes/${cls.id}-${slug}/`;
+
+                  return (
+                    <li>
+                      <a href={href} class={`flex items-center justify-between font-semibold ${cls.linkClass} transition-colors group`}>
+                        {subject}
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+      <p class="text-xs text-slate-500 text-center mt-6 max-w-2xl mx-auto">
+        <em>Note: All pairing scheme pages are currently being populated by our academic team. Click on a subject to view the available paper pattern, or check back shortly for new content.</em>
+      </p>
+    </section>
+
+    <!-- SEO Content Sections -->
+    <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+      
+      <h2 class="text-2xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">What Is a Pairing Scheme?</h2>
+      <p>A pairing scheme is a guide that explains how questions may be distributed across chapters in an examination. Depending on the applicable board and subject, it may show the distribution of multiple-choice questions (MCQs), short questions and long questions.</p>
+      <p>Students use pairing schemes to understand the paper pattern and plan their revision. However, a pairing scheme should be used as a study guide, not as a replacement for the complete prescribed syllabus.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-8 mb-3">What You Can Find in a Pairing Scheme</h3>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>Chapter-wise question distribution.</li>
+        <li>MCQs distribution.</li>
+        <li>Short-question distribution.</li>
+        <li>Long-question combinations.</li>
+        <li>Marks distribution.</li>
+        <li>Subject-specific examination instructions.</li>
+      </ul>
+      <p class="text-sm text-slate-500 italic mt-2">The available details depend on the official scheme or assessment document for the relevant board and examination session.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">How to Use Pairing Schemes for Exam Preparation</h2>
+      <div class="grid sm:grid-cols-2 gap-4 my-6 not-prose">
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-3">
+          <div class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xs shrink-0">1</div>
+          <p class="text-sm text-slate-700">Select your class.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-3">
+          <div class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xs shrink-0">2</div>
+          <p class="text-sm text-slate-700">Open the pairing scheme for your subject.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-3">
+          <div class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xs shrink-0">3</div>
+          <p class="text-sm text-slate-700">Review the chapter-wise question distribution.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-3">
+          <div class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xs shrink-0">4</div>
+          <p class="text-sm text-slate-700">Use the paper pattern to organize your revision.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-3">
+          <div class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xs shrink-0">5</div>
+          <p class="text-sm text-slate-700">Practise questions from all chapters of your syllabus.</p>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 flex gap-3">
+          <div class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-xs shrink-0">6</div>
+          <p class="text-sm text-slate-700">Revise using relevant notes and past papers.</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">Pairing Schemes for Different Educational Boards</h2>
+      <p>Pairing schemes and examination patterns may differ between educational boards. Always check that a resource matches your class, subject, board and examination session.</p>
+      <p>TaleemMarkaz provides board-relevant educational resources where available, including materials for:</p>
+      
+      <div class="flex flex-wrap gap-2 my-4 not-prose">
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-semibold border border-slate-200">Punjab Boards</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-semibold border border-slate-200">Federal Board (FBISE)</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-semibold border border-slate-200">Sindh Boards</span>
+        <span class="bg-slate-100 text-slate-700 px-3 py-1.5 rounded-lg text-sm font-semibold border border-slate-200">KPK Boards</span>
+      </div>
+      
+      <p>For boards that publish assessment frameworks or model question papers instead of traditional pairing schemes, use the applicable official examination documents.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">Pairing Scheme vs. Model Paper vs. Smart Syllabus</h2>
+      <div class="space-y-4 my-6 not-prose">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h4 class="font-bold text-slate-900 mb-1">Pairing Scheme</h4>
+          <p class="text-sm text-slate-600">Explains the expected distribution of questions across chapters or sections of a subject.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h4 class="font-bold text-slate-900 mb-1">Model Paper</h4>
+          <p class="text-sm text-slate-600">Provides a sample examination paper showing the structure and types of questions students may encounter.</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h4 class="font-bold text-slate-900 mb-1">Smart Syllabus</h4>
+          <p class="text-sm text-slate-600">Identifies the prescribed syllabus content for a particular session, including any officially announced exclusions or reductions.</p>
+        </div>
+      </div>
+      <p>These resources serve different purposes. Students should consult all applicable official examination documents when preparing for board exams.</p>
+
+    </div>
+
+    <FAQSection faqs={faqs} title="Frequently Asked Questions" subtitle="Common questions about board pairing schemes." />
+    
+    <CTASection 
+      title="Prepare for Your Board Examinations"
+      description="Explore free educational resources for Classes 9 to 12, including subject notes, past papers, textbooks, model papers and examination preparation materials."
+      primaryText="Explore All Resources"
+      primaryUrl="/"
+      secondaryText="Download Past Papers"
+      secondaryUrl="/past-papers/"
+    />
+
+  </main>
+</Layout>

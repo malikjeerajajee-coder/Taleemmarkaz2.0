@@ -1,0 +1,32 @@
+{
+  "name": "studymarkaz-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.7",
+    "astro-compress": "^2.4.3",
+    "astro-robots-txt": "^1.0.0",
+    "astro-seo": "^1.2.0",
+    "astro-seo-schema": "^7.0.1",
+    "katex": "^0.19.1"
+  },
+  "optionalDependencies": {
+    "lightningcss-linux-arm64-musl": "^1.33.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.6.2",
+    "esbuild": "^0.28.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^3.4.19"
+  }
+}

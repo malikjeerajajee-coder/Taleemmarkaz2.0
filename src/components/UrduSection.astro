@@ -1,0 +1,16 @@
+---
+const { title, subtitle = "", bgClass = "bg-slate-50" } = Astro.props;
+---
+
+<section class={`${bgClass} border-t border-slate-200 py-16 px-4 font-urdu`} dir="rtl" lang="ur">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">{title}</h2>
+      {subtitle && <p class="text-xl text-slate-600">{subtitle}</p>}
+    </div>
+    
+    <div class="bg-white border border-slate-200 rounded-2xl p-8 md:p-10 text-lg text-slate-800 space-y-8">
+      <slot />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+---
+const { 
+  faqs = [], 
+  title = "Frequently Asked Questions", 
+  subtitle = "Common questions about this topic.",
+  sectionId = "faqs"
+} = Astro.props;
+---
+
+<section id={sectionId} class="max-w-4xl mx-auto px-4 py-16">
+  <div class="text-center mb-10">
+    <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Need More Information?</span>
+    <h2 class="text-3xl font-extrabold text-slate-900 mt-2">{title}</h2>
+    <p class="text-slate-500 mt-2">{subtitle}</p>
+  </div>
+
+  <div class="space-y-4">
+    {faqs.map((faq) => (
+      <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+          {faq.q}
+          <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4" set:html={faq.a} />
+      </details>
+    ))}
+  </div>
+</section>

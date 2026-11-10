@@ -1,0 +1,377 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const siteUrl = "https://taleemmarkaz.com";
+const pageUrl = `${siteUrl}/editorial-policy/`;
+
+const title = "Editorial Policy | TaleemMarkaz";
+const description =
+  "Discover how TaleemMarkaz prepares, organizes, reviews, and updates educational resources, past papers, notes, and exam preparation materials for Pakistani students.";
+
+const lastUpdated = "2026-11-08";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${pageUrl}#webpage`,
+  name: title,
+  url: pageUrl,
+  description,
+  inLanguage: ["en-PK", "ur-PK"],
+  dateModified: lastUpdated,
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": `${siteUrl}/#website`,
+    name: "TaleemMarkaz",
+    url: siteUrl,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "TaleemMarkaz",
+    url: siteUrl,
+  },
+  author: {
+    "@type": "Person",
+    "name": "Dr. Asrar Khan Janjua",
+    "jobTitle": "Islamic Studies Specialist",
+    "alumniOf": "Quaid-i-Azam University, Islamabad"
+  }
+};
+
+const sections = [
+  {
+    id: "mission",
+    title: "1. Our Editorial Mission",
+    content: "Our mission is to make educational resources easier to access and understand for students across Pakistan. We aim to organize useful study materials, examination resources, and learning guidance in a clear and student-friendly format.",
+  },
+  {
+    id: "content",
+    title: "2. Content We Publish",
+    content: "TaleemMarkaz covers educational resources for different classes and subjects. Depending on availability, our website may include notes, past papers, model papers, solved exercises, MCQs, important questions, study guides, and examination preparation materials.",
+  },
+  {
+    id: "creation",
+    title: "3. Content Creation and Research",
+    content: "We aim to prepare educational content using relevant textbooks, curriculum information, examination materials, and other suitable educational references. Content is organized to help students find and understand information more easily. The sources and preparation methods may differ depending on the type of resource.",
+  },
+  {
+    id: "accuracy",
+    title: "4. Accuracy and Verification",
+    content: "We make reasonable efforts to present educational information as accurately and clearly as possible. However, errors or outdated information may occasionally occur. Students should consult their relevant educational boards, schools, teachers, and official announcements for final examination requirements, schedules, syllabuses, and policy decisions.",
+  },
+  {
+    id: "sources",
+    title: "5. Sources and References",
+    content: "Educational materials may be informed by textbooks, curriculum documents, publicly available board resources, and other relevant educational references. Where appropriate, we aim to identify or link to the original source. Readers should consult the original publisher or official source when authoritative confirmation is needed.",
+  },
+  {
+    id: "updates",
+    title: "6. Content Review and Updates",
+    content: "Educational information can change over time. We may update pages when we identify outdated details, receive useful feedback, or find relevant new information. An updated date should reflect a meaningful content update rather than a minor formatting change.",
+  },
+  {
+    id: "corrections",
+    title: "7. Corrections Policy",
+    content: "We welcome reports about incorrect answers, typing mistakes, broken links, outdated information, and other content issues. When a reported issue is confirmed, we aim to correct the affected material as appropriate. Please include the page URL and a brief explanation when contacting us.",
+  },
+  {
+    id: "ai",
+    title: "8. Use of AI and Technology",
+    content: "Digital tools, including AI-assisted tools, may be used where appropriate to support research, organization, drafting, formatting, or other editorial tasks. Such tools can make mistakes. AI-generated or AI-assisted information should not be treated as automatically accurate, and relevant content should be checked before publication.",
+  },
+  {
+    id: "copyright",
+    title: "9. Copyright and Content Ownership",
+    content: "We respect the intellectual property rights of authors, educators, publishers, and other content owners. We aim to publish original material or use resources in a responsible manner, with appropriate attribution where applicable. If you believe material on this website infringes your rights, please contact us with the relevant page URL and supporting details.",
+  },
+  {
+    id: "independence",
+    title: "10. Editorial Independence",
+    content: "Our educational content should be useful to students and relevant to their learning needs. Where third-party links, promotions, or sponsored content are present, they should not be confused with official educational-board announcements or independent educational guidance. Any applicable commercial relationship should be disclosed clearly.",
+  },
+  {
+    id: "disclaimer",
+    title: "11. Educational Disclaimer",
+    content: "TaleemMarkaz is an educational resource platform. Our materials are intended to support learning and examination preparation. They do not replace official textbooks, classroom instruction, teachers' guidance, or announcements issued by educational boards and government authorities.",
+  },
+];
+
+const faqs = [
+  {
+    q: "How does TaleemMarkaz prepare educational content?",
+    a: "We aim to organize educational resources using relevant textbooks, curriculum information, examination materials, and other suitable references. The process may vary depending on the resource.",
+  },
+  {
+    q: "Are all past papers officially verified?",
+    a: "Not necessarily. Students should check the relevant educational board's official website or publication when they need to confirm the authenticity of a paper.",
+  },
+  {
+    q: "How can I report an incorrect answer?",
+    a: "Contact us with the page URL, the specific issue, and any supporting reference. We can then review the report.",
+  },
+  {
+    q: "Does TaleemMarkaz use AI?",
+    a: "Digital and AI-assisted tools may support certain editorial tasks. Their output can contain errors, so it should not be considered automatically accurate.",
+  },
+  {
+    q: "How often is educational content updated?",
+    a: "Content may be updated when relevant changes are identified or a correction is needed. Update frequency varies by topic and resource.",
+  },
+];
+---
+
+<Layout title={title} description={description} canonical={pageUrl} schema={schema}>
+  <!-- Custom CSS for Smooth Scrolling and Urdu Font -->
+  <style is:global>
+    html { scroll-behavior: smooth; }
+    .font-urdu, .font-urdu * {
+      font-family: 'Gulzar', serif !important;
+      line-height: 2.15 !important;
+    }
+    .font-urdu h2, .font-urdu h3 {
+      line-height: 1.9 !important;
+    }
+    .policy-content h3 {
+      scroll-margin-top: 100px;
+    }
+  </style>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 no-print">
+    <div class="max-w-5xl mx-auto text-sm text-slate-500 flex items-center gap-2">
+      <a href="/" class="hover:text-blue-600 transition-colors">Home</a> <span>/</span>
+      <span class="text-slate-900 font-semibold" aria-current="page">Editorial Policy</span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="relative bg-white border-b border-slate-200 px-4 py-16 md:py-20 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: radial-gradient(#2563eb 1px, transparent 1px); background-size: 24px 24px;"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+      <span class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-100 rounded-full px-4 py-1.5 text-sm font-bold mb-6">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Our Standards & Transparency
+      </span>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6">
+        Editorial Policy
+      </h1>
+
+      <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-10">
+        Our commitment to responsible educational content, accuracy, transparency, and continuous improvement.
+      </p>
+
+      <!-- AUTHOR & DATE E-E-A-T BLOCK -->
+      <div class="max-w-3xl mx-auto bg-white border border-slate-200 rounded-2xl p-5 md:p-6 text-left">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold text-xl md:text-2xl shrink-0 border-4 border-teal-100">
+              AJ
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-1">
+                <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Policy Author</span>
+              </div>
+              <a href="/authors/" class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-teal-600 transition-colors">
+                Dr. Asrar Khan Janjua
+              </a>
+              <p class="text-sm text-slate-600 mt-0.5">
+                PhD Scholar in Islamic Studies | Quaid-i-Azam University
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row md:flex-col lg:flex-row gap-6 md:gap-2 lg:gap-6 text-sm text-slate-500 md:border-l md:border-slate-200 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0 border-slate-200">
+            <div>
+              <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Published</span>
+              <time datetime="2026-11-08" class="font-semibold text-slate-700">Nov 8, 2026</time>
+            </div>
+            <div>
+              <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Updated</span>
+              <time datetime="2026-11-08" class="font-semibold text-slate-700">Nov 8, 2026</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-4 py-16">
+    
+    <!-- Intro Card -->
+    <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start gap-6 mb-12">
+      <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center shrink-0">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+      </div>
+      <div>
+        <h2 class="text-xl font-bold text-slate-900 mb-2">Why This Policy Matters</h2>
+        <p class="text-slate-700 leading-relaxed mb-3">At <strong>TaleemMarkaz</strong>, we believe students deserve educational resources that are clear, accessible, and responsibly presented. This editorial policy explains our approach to preparing, organizing, maintaining, and correcting content.</p>
+        <p class="text-slate-700 leading-relaxed">We want students, parents, and teachers to understand what they can expect from our website and how they can help us improve it.</p>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 mb-16">
+      <h2 class="text-xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">On This Page</h2>
+      <div class="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+        {sections.map((section) => (
+          <a href={`#${section.id}`} class="text-sm font-medium text-slate-600 hover:text-blue-600 flex items-center gap-2 group">
+            <span class="text-blue-600 font-bold group-hover:translate-x-1 transition-transform">→</span>
+            {section.title.replace(/^\d+\.\s*/, "")}
+          </a>
+        ))}
+        <a href="#urdu-policy" class="text-sm font-medium text-slate-600 hover:text-blue-600 flex items-center gap-2 group">
+          <span class="text-blue-600 font-bold group-hover:translate-x-1 transition-transform">→</span>
+          Urdu Editorial Policy
+        </a>
+        <a href="#faqs" class="text-sm font-medium text-slate-600 hover:text-blue-600 flex items-center gap-2 group">
+          <span class="text-blue-600 font-bold group-hover:translate-x-1 transition-transform">→</span>
+          Frequently Asked Questions
+        </a>
+      </div>
+    </div>
+
+    <!-- Policy Sections -->
+    <div class="mb-16">
+      <div class="text-center mb-10">
+        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Our Editorial Standards</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">How We Work</h2>
+        <p class="text-slate-500 mt-2">The principles that guide the educational information we publish.</p>
+      </div>
+
+      <div class="space-y-4">
+        {sections.map((section, index) => (
+          <article id={section.id} class="bg-white border border-slate-200 rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-6 policy-content hover:border-blue-400 transition-colors">
+            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg shrink-0">
+              {String(index + 1).padStart(2, '0')}
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">{section.title}</h3>
+              <p class="text-slate-600 leading-relaxed">{section.content}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <!-- Correction CTA -->
+    <div class="bg-slate-900 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
+      <div class="text-center md:text-left">
+        <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Help Us Improve</span>
+        <h2 class="text-3xl font-extrabold text-white mt-2 mb-3">Found an Error?</h2>
+        <p class="text-slate-300 max-w-xl leading-relaxed">If you notice an incorrect answer, outdated information, or a broken link, please let us know. Your feedback helps us improve our educational resources.</p>
+      </div>
+      <a href="/contact/" class="bg-white hover:bg-slate-100 text-slate-900 px-6 py-3 rounded-lg font-bold transition-colors shrink-0 flex items-center gap-2">
+        Report an Issue
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Urdu Policy Section -->
+  <section id="urdu-policy" class="bg-slate-50 border-t border-slate-200 py-16 px-4 font-urdu" lang="ur" dir="rtl">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center mb-12">
+        <span class="text-sm font-bold text-emerald-700">اردو میں ادارتی پالیسی</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">تعلیمی مواد کی تیاری اور درستگی کے اصول</h2>
+        <p class="text-xl text-slate-600">طلبہ کے لیے قابلِ اعتماد، مفید اور آسان تعلیمی معلومات فراہم کرنے کا ہمارا عزم۔</p>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-2xl p-8 md:p-10 mb-6 text-lg text-slate-800">
+        <h3 class="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">تعارف</h3>
+        <p class="mb-4">تعلیم ہر طالب علم کا بنیادی حق ہے۔ تعلیم مرکز کا مقصد پاکستان بھر کے طلبہ کو مختلف جماعتوں کے لیے مفید تعلیمی مواد، نوٹس، سابقہ امتحانی پرچے اور امتحان کی تیاری میں مددگار معلومات فراہم کرنا ہے۔</p>
+        <p>اس ادارتی پالیسی میں ہم وضاحت کرتے ہیں کہ ہماری ویب سائٹ پر موجود تعلیمی مواد کس طرح ترتیب دیا جاتا ہے، اس کی درستگی کا خیال کیسے رکھا جاتا ہے اور غلطیوں کی نشاندہی ہونے پر انہیں کیسے درست کیا جا سکتا ہے۔</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 text-lg text-slate-800">
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۱۔ ہمارا تعلیمی مقصد</h3>
+          <p class="text-slate-600">ہمارا مقصد طلبہ کے لیے تعلیمی وسائل کو آسان، قابلِ رسائی اور مفید بنانا ہے تاکہ وہ اپنی پڑھائی اور امتحانات کی تیاری بہتر انداز میں کر سکیں۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۲۔ ہماری ویب سائٹ پر موجود مواد</h3>
+          <p class="text-slate-600">تعلیم مرکز پر مختلف جماعتوں اور مضامین کے نوٹس، سابقہ پرچے، ماڈل پیپرز، حل شدہ مشقیں، معروضی سوالات، اہم سوالات اور امتحانی تیاری کے مواد شامل ہو سکتے ہیں۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۳۔ مواد کی تیاری اور تحقیق</h3>
+          <p class="text-slate-600">ہم مناسب تعلیمی کتابوں، نصاب، امتحانی مواد اور متعلقہ تعلیمی ذرائع سے رہنمائی حاصل کرنے کی کوشش کرتے ہیں۔ مختلف مواد کی تیاری کا طریقہ اس کی نوعیت کے مطابق مختلف ہو سکتا ہے۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۴۔ معلومات کی درستگی</h3>
+          <p class="text-slate-600">ہم کوشش کرتے ہیں کہ تعلیمی معلومات واضح اور درست ہوں۔ تاہم غلطی یا پرانی معلومات موجود ہونے کا امکان رہتا ہے۔ امتحانی تاریخوں، نصاب اور سرکاری فیصلوں کے لیے متعلقہ تعلیمی بورڈ کے سرکاری اعلانات کو ترجیح دیں۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۵۔ ذرائع اور حوالہ جات</h3>
+          <p class="text-slate-600">تعلیمی مواد کی تیاری میں درسی کتابوں، نصابی دستاویزات، تعلیمی بورڈز کے دستیاب مواد اور دیگر متعلقہ ذرائع سے رہنمائی لی جا سکتی ہے۔ جہاں مناسب ہو، اصل ذریعے کا حوالہ دینے کی کوشش کی جاتی ہے۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۶۔ مواد کی تازہ کاری</h3>
+          <p class="text-slate-600">تعلیمی معلومات وقت کے ساتھ تبدیل ہو سکتی ہیں۔ جب کسی صفحے میں پرانی معلومات یا درستگی کی ضرورت سامنے آئے تو ہم مناسب تبدیلی کرنے کی کوشش کرتے ہیں۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۷۔ غلطیوں کی اصلاح</h3>
+          <p class="text-slate-600">اگر آپ کو کسی جواب میں غلطی، ٹائپنگ کی غلطی، خراب لنک یا پرانی معلومات نظر آئیں تو ہمیں اطلاع دیں۔ براہِ کرم متعلقہ صفحے کا لنک اور مسئلے کی مختصر وضاحت بھی فراہم کریں۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۸۔ مصنوعی ذہانت کا استعمال</h3>
+          <p class="text-slate-600">تحقیق، مواد کی ترتیب، تحریر یا فارمیٹنگ جیسے بعض کاموں میں مصنوعی ذہانت کے ٹولز استعمال کیے جا سکتے ہیں۔ ایسے ٹولز غلطیاں کر سکتے ہیں، اس لیے ان سے حاصل ہونے والی معلومات کو خود بخود درست نہیں سمجھنا چاہیے۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۹۔ کاپی رائٹ کا احترام</h3>
+          <p class="text-slate-600">ہم مصنفین، اساتذہ، ناشرین اور دیگر مواد کے مالکان کے حقوق کا احترام کرتے ہیں۔ اگر آپ کو لگتا ہے کہ ہماری ویب سائٹ پر موجود کوئی مواد آپ کے حقوق کی خلاف ورزی کرتا ہے تو متعلقہ لنک اور تفصیلات کے ساتھ رابطہ کریں۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl">
+          <h3 class="font-bold text-slate-900 mb-2">۱۰۔ ادارتی آزادی</h3>
+          <p class="text-slate-600">ہماری کوشش ہے کہ تعلیمی مواد طلبہ کی ضروریات کے مطابق مفید ہو۔ اشتہارات، بیرونی روابط یا اسپانسر شدہ مواد کو سرکاری تعلیمی اعلانات یا آزاد تعلیمی رہنمائی کے طور پر پیش نہیں کیا جانا چاہیے۔</p>
+        </article>
+        <article class="bg-white border border-slate-200 p-6 rounded-xl md:col-span-2">
+          <h3 class="font-bold text-slate-900 mb-2">۱۱۔ تعلیمی وضاحت</h3>
+          <p class="text-slate-600">تعلیم مرکز ایک تعلیمی معلوماتی پلیٹ فارم ہے۔ یہاں موجود مواد پڑھائی اور امتحان کی تیاری میں مدد کے لیے ہے۔ یہ سرکاری نصابی کتب، اساتذہ کی رہنمائی یا تعلیمی بورڈز کے سرکاری اعلانات کا متبادل نہیں ہے۔</p>
+        </article>
+      </div>
+
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 text-center mt-6">
+        <h3 class="text-2xl font-bold text-emerald-900 mb-3">آپ کی رائے ہمارے لیے اہم ہے</h3>
+        <p class="text-emerald-800 mb-5 text-lg">اگر آپ کو کسی صفحے میں غلطی نظر آئے یا کوئی تجویز دینا چاہیں تو ہم سے رابطہ کریں۔ آپ کی رائے ہماری ویب سائٹ کو بہتر بنانے میں مددگار ہے۔</p>
+        <a href="/contact/" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">رابطہ کریں ←</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="max-w-5xl mx-auto px-4 py-16">
+    <div class="text-center mb-10">
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Need More Information?</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Frequently Asked Questions</h2>
+      <p class="text-slate-500 mt-2">Common questions about our editorial practices.</p>
+    </div>
+
+    <div class="space-y-4">
+      {faqs.map((faq) => (
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            {faq.q}
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            {faq.a}
+          </div>
+        </details>
+      ))}
+    </div>
+
+    <!-- Footer Note -->
+    <div class="mt-16 text-center text-sm text-slate-500 border-t border-slate-200 pt-8">
+      <p class="mb-2"><strong>Last updated:</strong> November 8, 2026</p>
+      <p class="mb-4">This policy may be updated as our editorial practices and website develop.</p>
+      <a href="/" class="text-blue-600 font-bold hover:underline transition-colors">← Back to TaleemMarkaz Home</a>
+    </div>
+  </section>
+
+</Layout>

@@ -1,0 +1,392 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const siteUrl = "https://taleemmarkaz.com";
+const pageUrl = `${siteUrl}/terms-of-service/`;
+
+const title = "Terms of Service | TaleemMarkaz";
+const description = "Read the Terms of Service for TaleemMarkaz. Understand the rules, copyright policies, AI accessibility guidelines, and acceptable use for our free educational platform.";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      name: title,
+      url: pageUrl,
+      description,
+      inLanguage: ["en-PK", "ur-PK"],
+      isPartOf: { "@id": `${siteUrl}/#website` },
+      about: { "@id": `${siteUrl}/#organization` },
+      author: {
+        "@type": "Person",
+        "name": "Malik Muhammad Ahsan Jahangir",
+        "jobTitle": "Lead Academic Author & Founder",
+        "alumniOf": "MPhil Biotechnology"
+      }
+    }
+  ]
+};
+
+const sections = [
+  { id: "introduction", title: "1. Introduction and Acceptance" },
+  { id: "about", title: "2. About TaleemMarkaz" },
+  { id: "free-access", title: "3. Free Access to Resources" },
+  { id: "acceptable-use", title: "4. Acceptable Use" },
+  { id: "intellectual-property", title: "5. Intellectual Property" },
+  { id: "accuracy", title: "6. Educational Content & Accuracy" },
+  { id: "user-submissions", title: "7. User-Submitted Content" },
+  { id: "ai-access", title: "8. AI & Automated Access" },
+  { id: "search-engines", title: "9. Search Engines & Indexing" },
+  { id: "third-party", title: "10. Third-Party Links" },
+  { id: "minor-safety", title: "11. Student & Minor Safety" },
+  { id: "availability", title: "12. Website Availability" },
+  { id: "warranties", title: "13. Disclaimer of Warranties" },
+  { id: "liability", title: "14. Limitation of Liability" },
+  { id: "privacy", title: "15. Privacy Policy" },
+  { id: "changes", title: "16. Changes to These Terms" },
+  { id: "governing-law", title: "17. Governing Law" },
+  { id: "contact", title: "18. Contact Information" },
+];
+---
+
+<Layout title={title} description={description} canonical={pageUrl} schema={schema}>
+  <!-- Custom CSS for Smooth Scrolling and Gulzar Font -->
+  <style is:global>
+    html { scroll-behavior: smooth; }
+    .font-urdu, .font-urdu * {
+      font-family: 'Gulzar', serif !important;
+      line-height: 2.15 !important;
+    }
+    .font-urdu h2, .font-urdu h3 { line-height: 1.9 !important; }
+  </style>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 no-print">
+    <div class="max-w-5xl mx-auto text-sm text-slate-500 flex items-center gap-2">
+      <a href="/" class="hover:text-blue-600 transition-colors">Home</a> <span>/</span>
+      <span class="text-slate-900 font-semibold" aria-current="page">Terms of Service</span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="relative bg-white border-b border-slate-200 px-4 py-16 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: radial-gradient(#2563eb 1px, transparent 1px); background-size: 24px 24px;"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+      <span class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 rounded-full px-4 py-1.5 text-sm font-bold mb-6">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Legal & Guidelines
+      </span>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6">
+        Terms of Service
+      </h1>
+
+      <p class="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto mb-10">
+        These Terms of Service explain the rules and conditions governing your access to and use of the TaleemMarkaz website, educational materials, features, and related services.
+      </p>
+
+      <!-- AUTHOR & DATE E-E-A-T BLOCK -->
+      <div class="max-w-3xl mx-auto bg-white border border-slate-200 rounded-2xl p-5 md:p-6 text-left">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl md:text-2xl shrink-0 border-4 border-blue-100">
+              MA
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-1">
+                <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Approved By</span>
+              </div>
+              <a href="/authors/" class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
+                Malik Muhammad Ahsan Jahangir
+              </a>
+              <p class="text-sm text-slate-600 mt-0.5">
+                Founder & Lead Academic Author
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row md:flex-col lg:flex-row gap-6 md:gap-2 lg:gap-6 text-sm text-slate-500 md:border-l md:border-slate-200 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0 border-slate-200">
+            <div>
+              <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Effective Date</span>
+              <time datetime="2026-11-08" class="font-semibold text-slate-700">Nov 8, 2026</time>
+            </div>
+            <div>
+              <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Last Updated</span>
+              <time datetime="2026-11-08" class="font-semibold text-slate-700">Nov 8, 2026</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="max-w-5xl mx-auto px-4 py-16">
+    
+    <!-- Table of Contents Grid -->
+    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8 mb-16">
+      <h2 class="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2">Table of Contents</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
+        {sections.map((section) => (
+          <a href={`#${section.id}`} class="text-sm font-medium text-slate-600 hover:text-blue-600 flex items-center gap-2 group">
+            <span class="text-blue-500 font-bold group-hover:translate-x-1 transition-transform">→</span>
+            {section.title}
+          </a>
+        ))}
+        <a href="#urdu-terms" class="text-sm font-medium text-slate-600 hover:text-blue-600 flex items-center gap-2 group font-urdu">
+          <span class="text-blue-500 font-bold group-hover:translate-x-1 transition-transform">→</span>
+          شرائط و ضوابط (اردو)
+        </a>
+      </div>
+    </div>
+
+    <!-- English Content -->
+    <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+      
+      <!-- 1. Introduction -->
+      <section id="introduction">
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">1. Introduction and Acceptance of Terms</h2>
+        <p>Welcome to <strong>TaleemMarkaz</strong>, a free educational platform dedicated to making quality learning resources accessible to students. These Terms of Service explain the rules and conditions governing your access to and use of the TaleemMarkaz website, educational materials, features, and related services.</p>
+        <p>By visiting, browsing, accessing, or using TaleemMarkaz, you agree to comply with these Terms of Service and our <a href="/privacy-policy/">Privacy Policy</a>. If you do not agree with these terms, please discontinue using our website.</p>
+      </section>
+
+      <!-- 2. About -->
+      <section id="about">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">2. About TaleemMarkaz</h2>
+        <p>TaleemMarkaz is an independent educational platform that provides free learning materials and academic resources for students from Class 1 to Class 12, with a particular focus on Matric (Classes 9–10) and Intermediate (Classes 11–12).</p>
+        <p>Our educational resources may include class-wise notes, chapter-wise explanations, solved exercises, MCQs, past-paper resources, and examination preparation materials for subjects like English, Urdu, Mathematics, Biology, Chemistry, Physics, Computer Science, Pakistan Studies, and Islamic Studies.</p>
+      </section>
+
+      <!-- 3. Free Access -->
+      <section id="free-access">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">3. Free Access to Educational Resources</h2>
+        <p>TaleemMarkaz is committed to providing free access to its educational resources. We do not charge subscription fees, we do not require paid memberships, and we do not display advertisements. Visitors may access publicly available educational content without paying an access fee.</p>
+      </section>
+
+      <!-- 4. Acceptable Use -->
+      <section id="acceptable-use">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">4. Acceptable Use of the Website</h2>
+        <p>We welcome students, teachers, parents, researchers, and other visitors to use TaleemMarkaz responsibly. You may browse public resources, use materials for personal learning, share links, and access pages through search engines and AI-powered tools.</p>
+        <p><strong>You must not:</strong></p>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Use the website for unlawful or fraudulent activities.</li>
+          <li>Attempt to damage, disrupt, or compromise website security.</li>
+          <li>Upload malicious software or deceptive content.</li>
+          <li>Misrepresent yourself as an official representative of TaleemMarkaz.</li>
+          <li>Copy or redistribute protected content in ways that violate intellectual property rights.</li>
+          <li>Use automated systems in a manner that overloads or harms our website.</li>
+        </ul>
+      </section>
+
+      <!-- 5. Intellectual Property -->
+      <section id="intellectual-property">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">5. Intellectual Property and Copyright</h2>
+        <p>Unless otherwise stated, TaleemMarkaz's original website content, branding, design elements, and original educational explanations are protected by applicable intellectual property and copyright laws.</p>
+        <p><strong>Permitted Educational Use:</strong> Visitors may read and study resources, share direct links, reference resources for personal learning, and quote reasonable portions for educational purposes with attribution.</p>
+        <p><strong>Restricted Uses:</strong> Without permission, visitors must not republish substantial portions of our content as their own, copy entire collections for redistribution, sell our materials, or remove copyright notices.</p>
+      </section>
+
+      <!-- 6. Accuracy -->
+      <section id="accuracy">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">6. Educational Content and Accuracy</h2>
+        <p>We aim to provide clear, useful, and carefully reviewed educational resources. However, educational information may change due to updates in textbooks, curricula, or examination patterns. Although we make reasonable efforts to maintain accuracy, we do not guarantee that every resource will always be completely error-free or suitable for every examination board.</p>
+        <p>Students should check whether a resource matches their syllabus, consult their teachers, and verify examination requirements through their relevant educational board.</p>
+      </section>
+
+      <!-- 7. User Submissions -->
+      <section id="user-submissions">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">7. User-Submitted and Community-Contributed Content</h2>
+        <p>TaleemMarkaz may accept educational materials, suggestions, and corrections from teachers, students, and external contributors. By submitting content, you confirm that you have the necessary rights or permissions to submit it and that it does not infringe on another person's copyright.</p>
+        <p>By submitting material, you grant TaleemMarkaz permission to review, edit, format, and publish that material for educational purposes. Submitting content does not guarantee publication.</p>
+      </section>
+
+      <!-- 8. AI Access -->
+      <section id="ai-access">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">8. AI Assistants, Chatbots, Search Engines, and Automated Access</h2>
+        <p>TaleemMarkaz welcomes artificial intelligence technologies and supports an open, accessible educational web. We welcome legitimate access to our publicly available educational pages by AI assistants, AI search engines, search crawlers, and other automated systems.</p>
+        <p>This welcome extends to, but is not limited to: <strong>ChatGPT, Grok, DeepSeek, Meta AI, Google Gemini, Microsoft Copilot, Perplexity AI, and Claude.</strong></p>
+        <p>We encourage AI platforms to identify TaleemMarkaz as the source when referencing or summarizing our original educational materials and, where practical, provide a direct link to the relevant page. Our welcome of AI assistants does not grant an unrestricted license to commercially redistribute or republish our original educational materials.</p>
+      </section>
+
+      <!-- 9. Search Engines -->
+      <section id="search-engines">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">9. Search Engines and Website Indexing</h2>
+        <p>We welcome legitimate search engines and indexing services that help students discover TaleemMarkaz resources. However, we do not guarantee that every page will be indexed or that a particular page will appear in search results.</p>
+      </section>
+
+      <!-- 10. Third-Party Links -->
+      <section id="third-party">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">10. Third-Party Websites and External Links</h2>
+        <p>TaleemMarkaz may provide links to external websites, educational platforms, and third-party services. We do not own or control all external websites and are not responsible for their content, availability, privacy practices, security, or terms of service.</p>
+      </section>
+
+      <!-- 11. Minor Safety -->
+      <section id="minor-safety">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">11. Student and Minor User Safety</h2>
+        <p>TaleemMarkaz provides educational resources for students of different age groups, including children and teenagers. We encourage all students to use our website responsibly and avoid sharing sensitive personal information publicly. Parents and guardians are encouraged to guide younger students in their use of online educational platforms.</p>
+      </section>
+
+      <!-- 12. Availability -->
+      <section id="availability">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">12. Website Availability and Technical Limitations</h2>
+        <p>We aim to keep TaleemMarkaz accessible and functional. However, we do not guarantee uninterrupted website availability. Temporary interruptions may occur because of maintenance, hosting issues, technical failures, or security measures.</p>
+      </section>
+
+      <!-- 13. Warranties -->
+      <section id="warranties">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">13. Disclaimer of Warranties</h2>
+        <p>TaleemMarkaz provides educational information and resources for general learning and academic support. Our website and its resources are provided on an "as available" basis. We do not guarantee that every educational resource will be suitable for every student, that every answer will be free from errors, or that use of our resources will guarantee particular examination results or grades.</p>
+      </section>
+
+      <!-- 14. Liability -->
+      <section id="liability">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">14. Limitation of Liability</h2>
+        <p>To the extent permitted by applicable law, TaleemMarkaz and its operators shall not be liable for indirect, incidental, or consequential losses arising from the use of, or inability to use, the website or its educational resources.</p>
+      </section>
+
+      <!-- 15. Privacy -->
+      <section id="privacy">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">15. Privacy Policy</h2>
+        <p>Your use of TaleemMarkaz is also subject to our <a href="/privacy-policy/">Privacy Policy</a>, which explains how we may collect, use, protect, and manage personal information.</p>
+      </section>
+
+      <!-- 16. Changes -->
+      <section id="changes">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">16. Changes to These Terms</h2>
+        <p>We may revise or update these Terms of Service when necessary to reflect changes in our website, educational services, technology, operational practices, or applicable legal requirements. Updated terms will be published on this page with a revised "Last Updated" date.</p>
+      </section>
+
+      <!-- 17. Governing Law -->
+      <section id="governing-law">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">17. Governing Law</h2>
+        <p>These Terms of Service shall be interpreted in accordance with applicable laws. Where legally appropriate, disputes relating to the use of TaleemMarkaz shall be handled by the competent courts having jurisdiction under applicable law.</p>
+      </section>
+
+      <!-- 18. Contact -->
+      <section id="contact">
+        <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">18. Contact Information</h2>
+        <p>If you have questions about these Terms of Service, copyright permissions, educational content, AI access, or website usage, please contact us:</p>
+        <ul class="list-none pl-0 space-y-2 font-medium">
+          <li><strong>Email:</strong> <a href="mailto:taleemmarkazofficial@gmail.com" class="text-blue-600 hover:underline">taleemmarkazofficial@gmail.com</a></li>
+          <li><strong>Website:</strong> <a href="https://taleemmarkaz.com" class="text-blue-600 hover:underline">taleemmarkaz.com</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Urdu Section -->
+  <section id="urdu-terms" class="bg-slate-50 border-t border-slate-200 py-16 px-4 font-urdu" dir="rtl" lang="ur">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center mb-12">
+        <span class="text-sm font-bold text-blue-600">شرائط و ضوابط</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">تعلیم مرکز – شرائط و ضوابط</h2>
+        <p class="text-xl text-slate-600">ہماری ویب سائٹ استعمال کرنے کے اصول اور شرائط۔</p>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-2xl p-8 md:p-10 text-lg text-slate-800 space-y-10">
+        
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">1. تعارف اور شرائط کی منظوری</h3>
+          <p>تعلیم مرکز میں خوش آمدید! تعلیم مرکز ایک مفت تعلیمی پلیٹ فارم ہے جس کا مقصد طلبہ کے لیے معیاری تعلیمی وسائل اور سیکھنے کے مواقع کو آسانی سے قابلِ رسائی بنانا ہے۔ یہ شرائط و ضوابط ہماری ویب سائٹ، تعلیمی مواد، سہولیات اور متعلقہ خدمات کے استعمال کے اصول واضح کرتے ہیں۔</p>
+          <p class="mt-2">تعلیم مرکز کی ویب سائٹ وزٹ کرنے یا استعمال کرنے کا مطلب ہے کہ آپ ان شرائط و ضوابط اور ہماری رازداری کی پالیسی سے اتفاق کرتے ہیں۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">2. تعلیم مرکز کے بارے میں</h3>
+          <p>تعلیم مرکز ایک آزاد تعلیمی پلیٹ فارم ہے جو جماعت اول سے بارہویں تک کے طلبہ کے لیے مفت تعلیمی مواد فراہم کرتا ہے۔ ہماری خصوصی توجہ میٹرک (نہم اور دہم) اور انٹرمیڈیٹ (یازدہم اور بارہویں) کی تعلیم پر ہے۔ ہماری ویب سائٹ پر نوٹس، حل شدہ مشقیں، کثیر الانتخابی سوالات (MCQs)، اور امتحانی تیاری کا مواد دستیاب ہے۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">3. تعلیمی مواد تک مفت رسائی</h3>
+          <p>تعلیم مرکز اپنے تعلیمی وسائل تک مفت رسائی فراہم کرنے کے لیے پُرعزم ہے۔ ہم اپنے تعلیمی مواد تک رسائی کے لیے کوئی سبسکرپشن فیس وصول نہیں کرتے اور نہ ہی اپنی ویب سائٹ پر اشتہارات دکھاتے ہیں۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">4. ویب سائٹ کا درست اور ذمہ دارانہ استعمال</h3>
+          <p>ہم طلبہ، اساتذہ، والدین اور دیگر صارفین کو تعلیم مرکز کے ذمہ دارانہ استعمال کی دعوت دیتے ہیں۔</p>
+          <p class="mt-2 font-bold">آپ درج ذیل کام نہیں کر سکتے:</p>
+          <ul class="list-disc pr-6 space-y-1 mt-2">
+            <li>ویب سائٹ کو غیر قانونی یا دھوکہ دہی کی سرگرمیوں کے لیے استعمال کرنا۔</li>
+            <li>ویب سائٹ کی سیکیورٹی کو نقصان پہنچانے یا اس کے نظام میں خلل ڈالنے کی کوشش کرنا۔</li>
+            <li>نقصان دہ سافٹ ویئر یا فائلیں اپ لوڈ کرنا۔</li>
+            <li>خود کو تعلیم مرکز کا باضابطہ نمائندہ ظاہر کرنا، جب تک اس کی اجازت نہ ہو۔</li>
+            <li>کسی دوسرے شخص کے حقوق یا کاپی رائٹ کی خلاف ورزی کرتے ہوئے محفوظ مواد کو نقل یا تقسیم کرنا۔</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">5. دانشورانہ ملکیت اور کاپی رائٹ</h3>
+          <p>تعلیم مرکز کا اصل تحریری مواد، برانڈنگ، ڈیزائن اور اصل تعلیمی وضاحتیں کاپی رائٹ قوانین کے تحت محفوظ ہیں۔ آپ تعلیمی مقاصد کے لیے صفحات کے لنکس شیئر کر سکتے ہیں اور مواد پڑھ سکتے ہیں۔ تاہم، مناسب اجازت کے بغیر مواد کو اپنے نام سے دوبارہ شائع کرنا، فروخت کرنا یا تجارتی طور پر تقسیم کرنا منع ہے۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">6. تعلیمی مواد کی درستگی اور معیار</h3>
+          <p>ہم واضح، مفید اور احتیاط سے جانچا گیا تعلیمی مواد فراہم کرنے کی کوشش کرتے ہیں۔ تاہم، نصابی کتابوں اور امتحانی طریقہ کار میں تبدیلیوں کی وجہ سے معلومات وقت کے ساتھ تبدیل ہو سکتی ہیں۔ ہم ہر مواد کے مکمل طور پر غلطیوں سے پاک ہونے کی ضمانت نہیں دیتے۔ طلبہ کو چاہیے کہ وہ اپنے اساتذہ اور سرکاری نصابی کتب سے رہنمائی حاصل کریں۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">7. صارفین کی جانب سے جمع کروایا گیا مواد</h3>
+          <p>اگر آپ تعلیم مرکز کو کوئی مواد، تجاویز یا اصلاحات جمع کرواتے ہیں، تو آپ تصدیق کرتے ہیں کہ آپ کو اس کے حقوق حاصل ہیں اور یہ کسی دوسرے کے کاپی رائٹ کی خلاف ورزی نہیں کرتا۔ مواد جمع کروانے سے آپ تعلیم مرکز کو اس کا جائزہ لینے اور تعلیمی مقاصد کے لیے شائع کرنے کی اجازت دیتے ہیں۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">8. مصنوعی ذہانت (AI) اور خودکار رسائی</h3>
+          <p>تعلیم مرکز مصنوعی ذہانت کی ٹیکنالوجیز کا خیر مقدم کرتا ہے اور ایک کھلے تعلیمی انٹرنیٹ کی حمایت کرتا ہے۔ ہم AI معاونین (جیسے ChatGPT, Grok, Google Gemini وغیرہ) کے ذریعے اپنے عوامی تعلیمی صفحات تک جائز رسائی کا خیر مقدم کرتے ہیں۔ ہم AI پلیٹ فارمز کی حوصلہ افزائی کرتے ہیں کہ وہ ہمارے مواد کا حوالہ دیتے وقت تعلیم مرکز کا نام ظاہر کریں اور اصل صفحے کا لنک فراہم کریں۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">9. سرچ انجنز اور ویب سائٹ کی انڈیکسنگ</h3>
+          <p>ہم ایسے جائز سرچ انجنز کا خیر مقدم کرتے ہیں جو طلبہ کو تعلیم مرکز کے وسائل دریافت کرنے میں مدد دیتے ہیں۔ تاہم، سرچ انجنز کے فیصلے ان کے اپنے نظام کے تابع ہوتے ہیں، ہم کسی مخصوص درجہ بندی کی ضمانت نہیں دیتے۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">10. تھرڈ پارٹی ویب سائٹس اور بیرونی لنکس</h3>
+          <p>ہماری ویب سائٹ پر بیرونی ویب سائٹس کے لنکس موجود ہو سکتے ہیں۔ ہم ان کے مواد، دستیابی، رازداری کی پالیسیوں یا سیکیورٹی کے ذمہ دار نہیں ہیں۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">11. طلبہ اور کم عمر صارفین کی حفاظت</h3>
+          <p>تعلیم مرکز مختلف عمر کے طلبہ کے لیے ہے۔ ہم طلبہ کو مشورہ دیتے ہیں کہ وہ اپنے پاس ورڈز یا گھر کا پتہ عوامی طور پر شیئر نہ کریں۔ والدین کو چاہیے کہ وہ کم عمر بچوں کی آن لائن سرگرمیوں میں رہنمائی کریں۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">12. ویب سائٹ کی دستیابی اور حدود</h3>
+          <p>ہم ویب سائٹ کو فعال رکھنے کی کوشش کرتے ہیں، تاہم ہم بلا تعطل دستیابی کی ضمانت نہیں دیتے۔ دیکھ بھال یا تکنیکی خرابیوں کی وجہ سے عارضی تعطل پیدا ہو سکتا ہے۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">13. ضمانت اور ذمہ داری کی حدود</h3>
+          <p>تعلیم مرکز تعلیمی معلومات عمومی سیکھنے کے لیے فراہم کرتا ہے۔ ہم اس بات کی ضمانت نہیں دیتے کہ ہر مواد ہر طالب علم کے لیے موزوں ہو گا یا ہر جواب مکمل طور پر غلطیوں سے پاک ہو گا۔ ہم کسی بھی بالواسطہ یا نتیجتاً ہونے والے نقصانات کے ذمہ دار نہیں ہوں گے۔</p>
+        </div>
+
+        <div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-3 border-b border-slate-100 pb-2">14. رازداری کی پالیسی اور رابطہ</h3>
+          <p>تعلیم مرکز کا استعمال ہماری رازداری کی پالیسی کے تابع ہے۔ اگر آپ کو ان شرائط و ضوابط سے متعلق کوئی سوال ہو تو ہم سے رابطہ کریں:</p>
+          <ul class="list-none pr-0 space-y-2 mt-3">
+            <li><strong>ای میل:</strong> <span dir="ltr">taleemmarkazofficial@gmail.com</span></li>
+            <li><strong>ویب سائٹ:</strong> <span dir="ltr">taleemmarkaz.com</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 text-center mt-6 font-urdu">
+        <h3 class="text-2xl font-bold text-emerald-900 mb-3">تعلیم مرکز استعمال کرنے کا شکریہ</h3>
+        <p class="text-emerald-800 mb-5 text-lg">تعلیم مرکز استعمال کرنے اور مفت تعلیم کے فروغ میں ہمارا ساتھ دینے کا شکریہ۔</p>
+        <a href="/" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">ہوم پیج پر جائیں ←</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Note -->
+  <div class="bg-white border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+    <p>These terms may be updated as our website and services develop.</p>
+    <a href="/" class="inline-block mt-2 text-blue-600 font-bold hover:underline">← Back to TaleemMarkaz Home</a>
+  </div>
+
+</Layout>

@@ -1,0 +1,647 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const siteUrl = 'https://taleemmarkaz.com/';
+const pageUrl = `${siteUrl}about/`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}#website`,
+      "url": siteUrl,
+      "name": "TaleemMarkaz",
+      "inLanguage": ["en-PK", "ur-PK"],
+      "publisher": {
+        "@id": `${siteUrl}#organization`
+      }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": `${siteUrl}#organization`,
+      "name": "TaleemMarkaz",
+      "url": siteUrl,
+      "description": "A free educational platform providing study notes, solved exercises, past papers and examination preparation resources for students in Pakistan from Class 1 to 12.",
+      "founder": {
+        "@type": "Person",
+        "name": "Malik Muhammad Ahsan Jahangir"
+      },
+      "knowsAbout": [
+        "Pakistani Education System",
+        "Matriculation Education",
+        "Intermediate Education",
+        "Board Examination Preparation",
+        "Educational Resources",
+        "School Education"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}authors/#dr-asrar-khan-janjua`,
+      "name": "Dr. Asrar Khan Janjua",
+      "jobTitle": "Islamic Studies Specialist",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Quaid-i-Azam University",
+        "url": "https://qau.edu.pk/"
+      },
+      "worksFor": {
+        "@id": `${siteUrl}#organization`
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": `${pageUrl}#webpage`,
+      "url": pageUrl,
+      "name": "About TaleemMarkaz - Our Mission, Educational Resources and Editorial Standards",
+      "description": "Discover TaleemMarkaz, its educational mission, free learning resources, teaching contributors and content review standards for Pakistani students.",
+      "isPartOf": {
+        "@id": `${siteUrl}#website`
+      },
+      "mainEntity": {
+        "@id": `${siteUrl}#organization`
+      },
+      "author": {
+        "@id": `${siteUrl}authors/#dr-asrar-khan-janjua`
+      },
+      "inLanguage": ["en-PK", "ur-PK"]
+    }
+  ]
+};
+---
+
+<Layout
+  title="About TaleemMarkaz | Free Education & Learning Resources in Pakistan"
+  description="Discover TaleemMarkaz, a free educational platform for Pakistani students. Explore our mission, Class 1–12 study resources, past papers, teaching contributors and editorial standards."
+  canonical={pageUrl}
+  schema={schema}
+>
+  <!-- Custom CSS for Smooth Scrolling and Gulzar Font -->
+  <style is:global>
+    html { scroll-behavior: smooth; }
+    .font-urdu, .font-urdu * {
+      font-family: 'Gulzar', serif !important;
+    }
+    .font-urdu p, .font-urdu li {
+      line-height: 2.15 !important;
+    }
+    .font-urdu h2, .font-urdu h3 {
+      line-height: 1.9 !important;
+    }
+    .about-content h2 {
+      scroll-margin-top: 100px;
+    }
+  </style>
+
+  <!-- BREADCRUMB -->
+  <nav aria-label="Breadcrumb" class="bg-slate-50 border-b border-slate-200 px-4 py-3">
+    <div class="max-w-5xl mx-auto text-sm text-slate-500 flex items-center gap-2">
+      <a href="/" class="hover:text-blue-600 transition-colors">Home</a>
+      <span>/</span>
+      <span class="text-slate-900 font-semibold" aria-current="page">About Us</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative bg-white border-b border-slate-200 px-4 py-16 md:py-20 overflow-hidden">
+    <!-- Subtle dot pattern background -->
+    <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: radial-gradient(#2563eb 1px, transparent 1px); background-size: 24px 24px;"></div>
+    
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+      <span class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 rounded-full px-4 py-1.5 text-sm font-bold mb-6">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Free Educational Resources for Pakistan
+      </span>
+
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6">
+        About <span class="text-blue-600">TaleemMarkaz</span>
+      </h1>
+
+      <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto mb-10">
+        Making quality education accessible to every student. Free study notes, solved exercises, past papers, and examination preparation resources for students across Pakistan.
+      </p>
+
+      <!-- AUTHOR & DATE E-E-A-T BLOCK -->
+      <div class="max-w-3xl mx-auto bg-white border border-slate-200 rounded-2xl p-5 md:p-6 text-left">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-14 h-14 md:w-16 md:h-16 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold text-xl md:text-2xl shrink-0 border-4 border-teal-100">
+              AJ
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-1">
+                <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Page Author</span>
+              </div>
+              <a href="/authors/" class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-teal-600 transition-colors">
+                Dr. Asrar Khan Janjua
+              </a>
+              <p class="text-sm text-slate-600 mt-0.5">
+                PhD Scholar in Islamic Studies | Quaid-i-Azam University
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row md:flex-col lg:flex-row gap-6 md:gap-2 lg:gap-6 text-sm text-slate-500 md:border-l md:border-slate-200 md:pl-6 pt-4 md:pt-0 border-t md:border-t-0 border-slate-200">
+            <div>
+              <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Published</span>
+              <time datetime="2026-11-08" class="font-semibold text-slate-700">Nov 8, 2026</time>
+            </div>
+            <div>
+              <span class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Updated</span>
+              <time datetime="2026-11-08" class="font-semibold text-slate-700">Nov 8, 2026</time>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LANGUAGE NAVIGATION -->
+      <div class="flex justify-center gap-3 mt-10">
+        <a href="#english-content" class="bg-slate-900 hover:bg-slate-800 text-white rounded-lg px-6 py-2.5 text-sm font-bold transition-colors">
+          English
+        </a>
+        <a href="#urdu-content" class="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-6 py-2.5 text-sm font-bold font-urdu transition-colors">
+          اردو
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK NAVIGATION -->
+  <div class="bg-slate-100 border-b border-slate-200 px-4 py-5 sticky top-20 z-40 hidden md:block">
+    <div class="max-w-5xl mx-auto flex flex-wrap gap-2 text-sm justify-center">
+      <a href="#our-mission" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Our Mission</a>
+      <a href="#classes" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Classes 1–12</a>
+      <a href="#boards" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Education Boards</a>
+      <a href="#subjects" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Subjects</a>
+      <a href="#resources" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Study Resources</a>
+      <a href="#editorial-standards" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Editorial Standards</a>
+      <a href="#faq" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">FAQs</a>
+    </div>
+  </div>
+
+  <!-- ENGLISH CONTENT -->
+  <main id="english-content" class="max-w-5xl mx-auto px-4 py-16 about-content">
+    
+    <!-- INTRODUCTION -->
+    <section class="mb-16">
+      <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+        <h2 class="text-3xl font-extrabold text-slate-900 mb-6 border-b border-slate-200 pb-2">Welcome to TaleemMarkaz</h2>
+        <p>TaleemMarkaz is a free online educational platform created to help students in Pakistan access useful learning materials and prepare more effectively for their school and board examinations. Our resources are designed for students from Class 1 to Class 12, with particular attention to Matriculation and Intermediate education.</p>
+        <p>We understand that finding appropriate study materials, reliable notes, solved exercises, and previous examination papers can be challenging. Students often have to visit multiple websites to find resources relevant to their class, subject, and educational board.</p>
+        <p>TaleemMarkaz aims to make this process easier by organizing educational resources in one accessible place. Our goal is to help learners understand their subjects, practise important concepts, and become more familiar with examination formats.</p>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section id="our-mission" class="mb-16 bg-blue-50 border border-blue-200 rounded-2xl p-8 md:p-10">
+      <div class="mb-6">
+        <span class="text-sm font-bold uppercase tracking-wider text-blue-700">Our Purpose</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Our Mission: Quality Education Without Financial Barriers</h2>
+      </div>
+      
+      <p class="text-slate-700 mb-6 text-lg">Our mission is to make educational resources accessible to students regardless of their financial circumstances. We believe that useful study materials and learning opportunities should not be limited to students who can afford expensive subscriptions or additional educational services.</p>
+      <p class="text-slate-700 mb-8 text-lg">That is why TaleemMarkaz provides its educational content without subscription charges or membership fees. We also aim to maintain an advertisement-free learning environment, allowing students to focus on their studies.</p>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-white rounded-xl p-5 border border-blue-100">
+          <h3 class="font-bold text-slate-900 mb-2">Accessible Learning</h3>
+          <p class="text-sm text-slate-600">Educational resources that students can access without mandatory subscriptions or membership payments.</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 border border-blue-100">
+          <h3 class="font-bold text-slate-900 mb-2">Student-Focused Content</h3>
+          <p class="text-sm text-slate-600">Organized study materials designed around classes, subjects, and examination preparation.</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 border border-blue-100">
+          <h3 class="font-bold text-slate-900 mb-2">Better Understanding</h3>
+          <p class="text-sm text-slate-600">Notes, explanations, and solved exercises to help learners understand important concepts.</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 border border-blue-100">
+          <h3 class="font-bold text-slate-900 mb-2">Continuous Improvement</h3>
+          <p class="text-sm text-slate-600">Improving the organization, usefulness, and accuracy of our educational resources.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLASSES -->
+    <section id="classes" class="mb-16">
+      <h2 class="text-3xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">Educational Resources for Class 1 to 12</h2>
+      <p class="text-slate-600 mb-8 text-lg">TaleemMarkaz organizes learning materials according to different academic levels. This structure helps students locate relevant notes, exercises, and examination preparation materials more easily.</p>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="bg-white border border-slate-200 rounded-xl p-6 hover:border-blue-400 transition-colors">
+          <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">Primary Education</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Class 1 to 5</h3>
+          <p class="text-sm text-slate-600 mb-4">Foundational learning materials for developing essential academic skills.</p>
+          <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5">
+            <li>Class-wise notes</li>
+            <li>Basic Mathematics</li>
+            <li>English and Urdu learning</li>
+            <li>Science and general knowledge</li>
+            <li>Practice exercises</li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-6 hover:border-purple-400 transition-colors">
+          <span class="text-xs font-bold text-purple-600 uppercase tracking-wider">Middle Education</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Class 6 to 8</h3>
+          <p class="text-sm text-slate-600 mb-4">Learning resources for strengthening subject knowledge and preparing for secondary education.</p>
+          <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5">
+            <li>Class 6, 7 and 8 notes</li>
+            <li>Mathematics and Science</li>
+            <li>English and Urdu</li>
+            <li>Computer Science</li>
+            <li>Subject-wise exercises</li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-6 hover:border-emerald-400 transition-colors">
+          <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Matriculation</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Class 9 and 10</h3>
+          <p class="text-sm text-slate-600 mb-4">A major area of our educational focus is helping Matric students prepare for their board examinations.</p>
+          <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5">
+            <li>9th class notes</li>
+            <li>10th class notes</li>
+            <li>Class 9 and 10 past papers</li>
+            <li>Solved textbook exercises</li>
+            <li>Chapter-wise study materials</li>
+            <li>Subject-wise practice questions</li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-6 hover:border-orange-400 transition-colors">
+          <span class="text-xs font-bold text-orange-600 uppercase tracking-wider">Intermediate</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Class 11 and 12</h3>
+          <p class="text-sm text-slate-600 mb-4">Learning resources for students pursuing FSc, FA, ICS, and ICom programmes.</p>
+          <ul class="text-sm text-slate-600 space-y-2 list-disc pl-5">
+            <li>1st Year notes</li>
+            <li>2nd Year notes</li>
+            <li>FSc Part 1 and Part 2</li>
+            <li>Intermediate past papers</li>
+            <li>Chapter-wise solved exercises</li>
+            <li>Examination practice materials</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOARDS -->
+    <section id="boards" class="mb-16">
+      <h2 class="text-3xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">Educational Boards and Curricula in Pakistan</h2>
+      <p class="text-slate-600 mb-4 text-lg">Pakistan has several educational boards and examination systems. Students may follow different textbooks, syllabuses, and examination patterns depending on their region and board.</p>
+      <p class="text-slate-600 mb-8 text-lg">TaleemMarkaz aims to organize resources for students studying under different Pakistani educational boards. Our intended coverage includes:</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-2">Federal Board (FBISE)</h3>
+          <p class="text-sm text-slate-600">Islamabad and affiliated institutions</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-2">Punjab Boards (BISE)</h3>
+          <p class="text-sm text-slate-600">Lahore, Rawalpindi, Multan, and other regions</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-2">Sindh Boards</h3>
+          <p class="text-sm text-slate-600">Karachi, Hyderabad, Sukkur, and other regions</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-2">Khyber Pakhtunkhwa Boards</h3>
+          <p class="text-sm text-slate-600">Peshawar, Mardan, Abbottabad, and others</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-2">Balochistan Board</h3>
+          <p class="text-sm text-slate-600">Balochistan educational board resources</p>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-2">AJK Board</h3>
+          <p class="text-sm text-slate-600">Azad Jammu and Kashmir examination resources</p>
+        </div>
+      </div>
+      <p class="text-sm text-slate-500 mt-4 bg-slate-50 p-4 rounded-lg border border-slate-200"><strong>Note:</strong> The availability of individual notes, past papers, and other resources varies by board, subject, class, and academic year. Students should check the relevant board for current syllabus and examination notifications.</p>
+    </section>
+
+    <!-- SUBJECTS -->
+    <section id="subjects" class="mb-16">
+      <h2 class="text-3xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">Subjects Covered on TaleemMarkaz</h2>
+      <p class="text-slate-600 mb-8 text-lg">Our educational resources cover a range of academic subjects commonly studied in Pakistani schools and colleges.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider text-blue-600">Science Subjects</h3>
+          <ul class="text-sm text-slate-600 space-y-2 font-medium">
+            <li>Biology</li>
+            <li>Chemistry</li>
+            <li>Physics</li>
+            <li>General Science</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider text-emerald-600">Math & Technology</h3>
+          <ul class="text-sm text-slate-600 space-y-2 font-medium">
+            <li>Mathematics</li>
+            <li>Computer Science</li>
+            <li>Information Technology</li>
+            <li>Numerical Practice</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider text-orange-600">Languages</h3>
+          <ul class="text-sm text-slate-600 space-y-2 font-medium">
+            <li>English</li>
+            <li>Urdu</li>
+            <li>English Grammar</li>
+            <li>Urdu Grammar</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-slate-200 rounded-xl p-5">
+          <h3 class="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wider text-purple-600">Humanities</h3>
+          <ul class="text-sm text-slate-600 space-y-2 font-medium">
+            <li>Pakistan Studies</li>
+            <li>Islamic Studies</li>
+            <li>History</li>
+            <li>Geography</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources" class="mb-16">
+      <h2 class="text-3xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">What Educational Resources Can Students Find?</h2>
+      <p class="text-slate-600 mb-8 text-lg">Our aim is to make it easier for students to find educational content that supports classroom learning and independent examination preparation.</p>
+
+      <div class="space-y-4">
+        <div class="flex items-start gap-4 bg-white border border-slate-200 p-5 rounded-xl">
+          <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold shrink-0">01</div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Class-Wise and Chapter-Wise Notes</h3>
+            <p class="text-sm text-slate-600">Organized study notes that help students review important concepts and understand individual chapters.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white border border-slate-200 p-5 rounded-xl">
+          <div class="w-10 h-10 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center font-bold shrink-0">02</div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Class 9 to 12 Past Papers</h3>
+            <p class="text-sm text-slate-600">Previous examination papers that help students become familiar with question formats, subject coverage, and the style of board examinations.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white border border-slate-200 p-5 rounded-xl">
+          <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold shrink-0">03</div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Solved Exercises and Explanations</h3>
+            <p class="text-sm text-slate-600">Step-by-step solutions and explanations designed to support understanding of textbook questions and academic concepts.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 bg-white border border-slate-200 p-5 rounded-xl">
+          <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center font-bold shrink-0">04</div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 mb-1">Examination Preparation Materials</h3>
+            <p class="text-sm text-slate-600">Practice questions, revision materials, and subject-related resources to support preparation for school and board examinations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL STANDARDS -->
+    <section id="editorial-standards" class="mb-16 bg-slate-900 rounded-2xl p-8 md:p-10 text-white">
+      <h2 class="text-3xl font-extrabold mb-4">Our Editorial Standards and Content Review Process</h2>
+      <p class="text-slate-300 mb-6 text-lg">Educational accuracy matters. Students rely on study materials to understand concepts and prepare for examinations, so the quality and relevance of educational content deserve careful attention.</p>
+      <p class="text-slate-300 mb-8 text-lg">TaleemMarkaz aims to maintain clear editorial standards when preparing, reviewing, and publishing educational materials. The review process may vary according to the type and source of the content.</p>
+
+      <div class="space-y-5 bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <div>
+          <h3 class="font-bold text-white mb-1">1. Educational Accuracy</h3>
+          <p class="text-sm text-slate-400">We aim to check educational explanations, facts, calculations, and answers for accuracy before publication.</p>
+        </div>
+        <div class="w-full h-px bg-slate-700"></div>
+        <div>
+          <h3 class="font-bold text-white mb-1">2. Syllabus and Academic Relevance</h3>
+          <p class="text-sm text-slate-400">Resources should be relevant to the intended class, subject, and educational curriculum. Where possible, relevant textbook and board references are considered.</p>
+        </div>
+        <div class="w-full h-px bg-slate-700"></div>
+        <div>
+          <h3 class="font-bold text-white mb-1">3. Clarity and Presentation</h3>
+          <p class="text-sm text-slate-400">We focus on understandable explanations, appropriate formatting, and organized presentation to make educational content easier to use.</p>
+        </div>
+        <div class="w-full h-px bg-slate-700"></div>
+        <div>
+          <h3 class="font-bold text-white mb-1">4. Quality Review</h3>
+          <p class="text-sm text-slate-400">Content is checked for possible mistakes, missing information, inconsistencies, and misleading statements.</p>
+        </div>
+        <div class="w-full h-px bg-slate-700"></div>
+        <div>
+          <h3 class="font-bold text-white mb-1">5. Feedback and Corrections</h3>
+          <p class="text-sm text-slate-400">We welcome feedback from students, teachers, and visitors. Reported issues can be reviewed and corrected where necessary.</p>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-6 border-t border-slate-700">
+        <p class="text-sm text-slate-400">
+          For corrections or content-related feedback, please visit our <a href="/contact/" class="text-blue-400 font-bold hover:underline transition-colors">Contact Us page</a>. Read our <a href="/editorial-policy/" class="text-blue-700 font-bold hover:underline">Editorial Policy</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- TRANSPARENCY & VISION -->
+    <section class="mb-16">
+      <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+        <h2 class="text-3xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">Transparency, Responsibility and Student Trust</h2>
+        <p>We believe that an educational platform should communicate clearly about its purpose, content, and limitations. Students should be able to understand where educational materials come from and how they are intended to be used.</p>
+        <p>Past examination papers are useful for practice, but they do not guarantee the questions that will appear in future examinations. Students should use them alongside their prescribed textbooks, current syllabuses, and official board announcements.</p>
+        <p>We also recognize that educational boards may update their curricula and examination policies. Students should always consult their relevant board for the latest official information.</p>
+
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">Our Vision for the Future of Education</h2>
+        <p>We want TaleemMarkaz to become a useful and dependable educational resource for students throughout Pakistan. Our long-term vision is to expand our learning materials, improve content organization, and make educational information easier to access.</p>
+        <p>We aim to work with qualified educators and subject contributors, improve our content review practices, and respond to the changing educational needs of Pakistani students.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="mb-16">
+      <h2 class="text-3xl font-extrabold text-slate-900 mb-6 border-b border-slate-200 pb-2">Frequently Asked Questions</h2>
+      
+      <div class="space-y-4">
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            What is TaleemMarkaz?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            TaleemMarkaz is a free online educational platform providing study notes, solved exercises, past papers, and learning resources for students in Pakistan from Class 1 to Class 12.
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            Is TaleemMarkaz completely free?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            Yes. TaleemMarkaz aims to make its educational resources available without mandatory subscription charges or membership fees.
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            Which classes are covered on TaleemMarkaz?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            Our intended coverage includes Class 1 to Class 12, including primary, middle, Matriculation, and Intermediate education. Resource availability varies by class and subject.
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            Can I find Class 9 and 10 past papers?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            TaleemMarkaz provides or aims to provide Matriculation examination preparation materials, including Class 9 and Class 10 past papers. Availability varies by subject, board, and year.
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            Does TaleemMarkaz support Federal Board and Punjab Boards?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            Our intended coverage includes Federal Board (FBISE), Punjab Boards, and other Pakistani educational boards. Students should check individual resource pages for board-specific availability.
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            Who prepares the educational materials?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            Educational materials may be prepared by contributors, teachers, and content authors. Author and reviewer information is provided on individual content pages wherever applicable.
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            How can I report an error in educational content?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            You can contact the TaleemMarkaz team through the <a href="/contact/" class="text-blue-600 font-bold hover:underline">Contact Us page</a> to report mistakes or suggest corrections.
+          </div>
+        </details>
+
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden">
+          <summary class="flex justify-between items-center font-bold text-slate-900 cursor-pointer p-5 hover:bg-slate-50 transition-colors list-none">
+            Are past papers enough to prepare for board examinations?
+            <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+            Past papers are useful practice resources, but they should not replace textbooks, the current syllabus, classroom learning, and regular revision.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-blue-600 rounded-2xl p-8 md:p-12 text-center text-white border border-blue-700">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-5 tracking-tight">
+        Learn Better. Prepare Smarter. Grow Further.
+      </h2>
+      <p class="text-blue-100 max-w-2xl mx-auto mb-8 text-lg">
+        Explore educational resources, study materials, and examination preparation content designed to support students throughout their academic journey.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/" class="bg-white text-blue-700 hover:bg-slate-50 px-6 py-3 rounded-lg font-bold transition-colors">
+          Explore TaleemMarkaz
+        </a>
+        <a href="/contact/" class="bg-blue-700 text-white hover:bg-blue-800 border border-blue-500 px-6 py-3 rounded-lg font-bold transition-colors">
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- URDU CONTENT -->
+  <section id="urdu-content" class="bg-slate-50 border-t border-slate-200 py-16 px-4 font-urdu" dir="rtl" lang="ur">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-sm text-blue-700 font-bold">تعلیم سب کے لیے</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-3 mb-4">تعلیم مرکز کے بارے میں</h2>
+        <p class="text-xl text-slate-600">معیاری تعلیم، مفت تعلیمی وسائل اور بہتر مستقبل</p>
+      </div>
+
+      <div class="space-y-10 text-slate-800 text-lg bg-white border border-slate-200 rounded-2xl p-8 md:p-10">
+        
+        <section>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">تعلیم مرکز کیا ہے؟</h3>
+          <p class="mb-4">تعلیم مرکز (TaleemMarkaz) پاکستان کے طلبہ کے لیے ایک مفت آن لائن تعلیمی پلیٹ فارم ہے۔ اس کا مقصد جماعت اول سے بارہویں جماعت تک کے طلبہ کو مفید تعلیمی مواد، نوٹس، حل شدہ مشقیں اور امتحانات کی تیاری کے وسائل تک آسان رسائی فراہم کرنا ہے۔</p>
+          <p>ہم سمجھتے ہیں کہ معیاری تعلیمی مواد تک رسائی ہر طالب علم کے لیے اہم ہے۔ اسی لیے ہم تعلیمی وسائل کو ایک منظم اور آسان انداز میں پیش کرنے کی کوشش کرتے ہیں تاکہ طلبہ اپنی جماعت اور مضمون کے مطابق مطلوبہ مواد تلاش کر سکیں۔</p>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">ہمارا مشن</h3>
+          <p class="mb-4">ہمارا بنیادی مقصد معیاری تعلیمی وسائل کو ہر طالب علم کے لیے قابلِ رسائی بنانا ہے، تاکہ مالی مشکلات کسی طالب علم کی تعلیم اور سیکھنے کے مواقع میں رکاوٹ نہ بنیں۔</p>
+          <p>تعلیم مرکز پر ہم بغیر لازمی سبسکرپشن، ممبرشپ یا فیس کے تعلیمی مواد فراہم کرنے کی کوشش کرتے ہیں۔ ہماری کوشش ہے کہ طلبہ کو اشتہارات سے پاک ماحول میں اپنی تعلیم پر توجہ دینے کا موقع ملے۔</p>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">جماعت اول سے بارہویں تک تعلیمی مواد</h3>
+          <p class="mb-4">تعلیم مرکز پر تعلیمی وسائل کو مختلف جماعتوں اور تعلیمی مراحل کے مطابق منظم کرنے کی کوشش کی جاتی ہے۔</p>
+          <ul class="list-disc pr-7 space-y-3">
+            <li><strong>پرائمری تعلیم (جماعت 1 تا 5):</strong> بنیادی مضامین، ابتدائی ریاضی، اردو، انگریزی اور دیگر تعلیمی مواد۔</li>
+            <li><strong>مڈل تعلیم (جماعت 6 تا 8):</strong> سائنس، ریاضی، کمپیوٹر، اردو اور انگریزی کے تعلیمی وسائل۔</li>
+            <li><strong>میٹرک (جماعت 9 اور 10):</strong> نویں اور دسویں جماعت کے نوٹس، حل شدہ مشقیں، ماضی کے امتحانی پرچے اور امتحانی تیاری کا مواد۔</li>
+            <li><strong>انٹرمیڈیٹ (جماعت 11 اور 12):</strong> فرسٹ ایئر، سیکنڈ ایئر، ایف ایس سی، ایف اے، آئی سی ایس اور آئی کام کے تعلیمی وسائل۔</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">پاکستان کے تعلیمی بورڈز</h3>
+          <p class="mb-4">پاکستان میں مختلف تعلیمی بورڈز کے نصاب اور امتحانی نظام موجود ہیں۔ تعلیم مرکز کا مقصد مختلف بورڈز کے طلبہ کے لیے متعلقہ تعلیمی مواد فراہم کرنا ہے۔</p>
+          <ul class="list-disc pr-7 space-y-2">
+            <li>فیڈرل بورڈ (FBISE)</li>
+            <li>پنجاب کے تعلیمی بورڈز</li>
+            <li>سندھ کے تعلیمی بورڈز</li>
+            <li>خیبر پختونخوا کے تعلیمی بورڈز</li>
+            <li>بلوچستان بورڈ</li>
+            <li>آزاد جموں و کشمیر بورڈ</li>
+          </ul>
+          <p class="text-base text-slate-500 mt-4 bg-slate-50 p-3 rounded-lg">نوٹ: ہر بورڈ، جماعت اور مضمون کے لیے مواد کی دستیابی مختلف ہو سکتی ہے۔ طلبہ کو تازہ ترین نصاب اور امتحانی معلومات کے لیے متعلقہ بورڈ سے رجوع کرنا چاہیے۔</p>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">تعلیمی مواد کی جانچ اور معیار</h3>
+          <p class="mb-4">تعلیمی مواد کی درستگی اور افادیت طلبہ کی بہتر تعلیم کے لیے بہت اہم ہے۔ اسی لیے تعلیم مرکز پر ہم تعلیمی مواد کی تیاری، جائزے اور اشاعت کے لیے واضح معیار اپنانے کی کوشش کرتے ہیں۔</p>
+          <ol class="list-decimal pr-7 space-y-3">
+            <li><strong>درستگی کی جانچ:</strong> تعلیمی معلومات، جوابات اور وضاحتوں کی درستگی کا جائزہ لینا۔</li>
+            <li><strong>نصاب سے مطابقت:</strong> مواد کو متعلقہ جماعت، مضمون اور نصاب کے مطابق رکھنے کی کوشش کرنا۔</li>
+            <li><strong>وضاحت اور پیشکش:</strong> مواد کو آسان، واضح اور منظم انداز میں پیش کرنا۔</li>
+            <li><strong>معیار کا جائزہ:</strong> ممکنہ غلطیوں، تضادات اور نامکمل معلومات کی جانچ کرنا۔</li>
+            <li><strong>اصلاح اور بہتری:</strong> طلبہ اور اساتذہ کی تجاویز کی بنیاد پر ضروری اصلاحات کرنا۔</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">ماضی کے امتحانی پرچوں کی اہمیت</h3>
+          <p class="mb-4">ماضی کے امتحانی پرچے طلبہ کو امتحانات کے سوالات کے انداز، اہم موضوعات اور امتحانی طریقہ کار سے واقف ہونے میں مدد دیتے ہیں۔</p>
+          <p>تاہم صرف ماضی کے پرچوں پر انحصار کرنا کافی نہیں ہے۔ بہتر تیاری کے لیے نصابی کتب، موجودہ نصاب، اساتذہ کی رہنمائی اور باقاعدہ مشق بھی ضروری ہے۔</p>
+        </section>
+
+        <section>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">ہمارا مستقبل کا وژن</h3>
+          <p>ہمارا وژن تعلیم مرکز کو پاکستان کے طلبہ کے لیے ایک مفید، قابلِ اعتماد اور آسان تعلیمی پلیٹ فارم بنانا ہے۔ ہم اپنے تعلیمی وسائل میں وسعت لانے، اہل اساتذہ کے ساتھ تعاون کرنے اور تعلیمی مواد کے معیار کو بہتر بنانے کے لیے پُرعزم ہیں۔</p>
+        </section>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+          <h3 class="text-2xl font-bold text-blue-800 mb-3">تعلیم مرکز – معیاری تعلیم، بالکل مفت</h3>
+          <p class="text-blue-900">نہ لازمی فیس، نہ سبسکرپشن، نہ اشتہارات۔ صرف تعلیم اور سیکھنے کے بہتر مواقع۔</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</Layout>
