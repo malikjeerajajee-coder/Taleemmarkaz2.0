@@ -1,5 +1,4 @@
 ---
-import Link from '../components/Link.astro';
 
 const { 
   title = "Learn Better. Prepare Smarter. Grow Further.",
@@ -20,13 +19,13 @@ const {
       {description}
     </p>
     <div class="flex flex-wrap justify-center gap-4">
-      <Link href={primaryUrl} class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-bold transition-colors">
+      <a href={primaryUrl} class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-bold transition-colors">
         {primaryText}
-      </Link>
+      </a>
       {secondaryText && (
-        <Link href={secondaryUrl} class="bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-lg font-bold transition-colors">
+        <a href={secondaryUrl} class="bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-lg font-bold transition-colors">
           {secondaryText}
-        </Link>
+        </a>
       )}
     </div>
   </div>

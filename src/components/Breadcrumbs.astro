@@ -1,5 +1,4 @@
 ---
-import Link from '../components/Link.astro';
 
 const { items = [] } = Astro.props;
 const siteUrl = "https://taleemmarkaz.com";
@@ -28,7 +27,7 @@ const schema = items.length > 0 ? {
             <span class="text-slate-900 font-semibold" aria-current="page">{item.name}</span>
           ) : (
             <>
-              <Link href={item.url} class="hover:text-blue-600 transition-colors">{item.name}</Link>
+              <a href={item.url} class="hover:text-blue-600 transition-colors">{item.name}</a>
               <span class="text-slate-400">/</span>
             </>
           )}
