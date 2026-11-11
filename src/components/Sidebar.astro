@@ -10,7 +10,7 @@
   
   <!-- Mobile Close Button -->
   <div class="flex items-center justify-between p-4 border-b border-slate-200 lg:hidden">
-    <a href={import.meta.env.BASE_URL} class="text-xl font-extrabold text-slate-900 tracking-tight">Taleem<span class="text-blue-600">Markaz</span></a>
+    <a href={`${import.meta.env.BASE_URL}/`} class="text-xl font-extrabold text-slate-900 tracking-tight">Taleem<span class="text-blue-600">Markaz</span></a>
     <button id="sidebar-close" type="button" class="text-slate-500 hover:text-slate-900 p-1 bg-slate-100 rounded-md" aria-label="Close navigation">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
     </button>
@@ -21,13 +21,13 @@
     <div>
       <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 px-2">Exam Resources</h3>
       <ul class="space-y-1">
-        <li><a href={`${import.meta.env.BASE_URL}notes/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Chapter Notes</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}past-papers/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Past Papers</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}pairing-schemes/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Pairing Schemes</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}date-sheets/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Date Sheets</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}textbooks/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Textbooks</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}guess-papers/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Guess Papers</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}result-gazettes/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Result Gazettes</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/notes/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Chapter Notes</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/past-papers/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Past Papers</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/pairing-schemes/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Pairing Schemes</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/date-sheets/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Date Sheets</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/textbooks/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Textbooks</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/guess-papers/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Guess Papers</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/result-gazettes/`} class="block px-2 py-2 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-700">Result Gazettes</a></li>
       </ul>
     </div>
 
@@ -35,10 +35,10 @@
     <div>
       <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 px-2">Browse by Class</h3>
       <ul class="space-y-1">
-        <li><a href={`${import.meta.env.BASE_URL}class-9/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Class 9 (Matric)</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}class-10/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Class 10 (Matric)</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}class-11/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Class 11 (Inter)</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}class-12/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Class 12 (Inter)</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/class-9/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Class 9 (Matric)</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/class-10/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Class 10 (Matric)</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/class-11/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Class 11 (Inter)</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/class-12/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Class 12 (Inter)</a></li>
       </ul>
     </div>
 
@@ -46,10 +46,10 @@
     <div>
       <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 px-2">Top Boards</h3>
       <ul class="space-y-1">
-        <li><a href={`${import.meta.env.BASE_URL}boards/punjab-board/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Punjab Board</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}boards/fbise/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Federal Board (FBISE)</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}boards/sindh-board/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Sindh Board</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}boards/kpk-board/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">KPK Board</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/boards/punjab-board/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Punjab Board</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/boards/fbise/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Federal Board (FBISE)</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/boards/sindh-board/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Sindh Board</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/boards/kpk-board/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">KPK Board</a></li>
       </ul>
     </div>
   
@@ -57,9 +57,9 @@
     <div>
       <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 px-2">Trust & Info</h3>
       <ul class="space-y-1">
-        <li><a href={`${import.meta.env.BASE_URL}about/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">About Us</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}editorial-policy/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Editorial Policy</a></li>
-        <li><a href={`${import.meta.env.BASE_URL}contact/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Contact Us</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/about/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">About Us</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/editorial-policy/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Editorial Policy</a></li>
+        <li><a href={`${import.meta.env.BASE_URL}/contact/`} class="block px-2 py-1.5 text-sm font-medium text-slate-600 hover:text-blue-600">Contact Us</a></li>
       </ul>
     </div>
   </nav>

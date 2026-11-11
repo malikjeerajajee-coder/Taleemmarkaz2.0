@@ -43,7 +43,7 @@ const schema = {
   <!-- Breadcrumbs -->
   <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 no-print">
     <div class="max-w-4xl mx-auto text-sm text-slate-500 flex items-center gap-2">
-      <a href={import.meta.env.BASE_URL} class="hover:text-blue-600 transition-colors">Home</a> <span>/</span>
+      <a href={`${import.meta.env.BASE_URL}/`} class="hover:text-blue-600 transition-colors">Home</a> <span>/</span>
       <span class="text-slate-900 font-semibold" aria-current="page">Privacy Policy</span>
     </div>
   </div>
@@ -78,7 +78,7 @@ const schema = {
                 <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Approved By</span>
               </div>
-              <a href={`${import.meta.env.BASE_URL}authors/`} class="block text-base font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
+              <a href={`${import.meta.env.BASE_URL}/authors/`} class="block text-base font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
                 Malik Muhammad Ahsan Jahangir
               </a>
               <p class="text-xs text-slate-600">Founder & Lead Academic Author</p>
@@ -241,7 +241,7 @@ const schema = {
   <!-- Footer Note -->
   <div class="bg-white border-t border-slate-200 py-8 text-center text-sm text-slate-500">
     <p>This policy may be updated as our website and practices develop.</p>
-    <a href={import.meta.env.BASE_URL} class="inline-block mt-2 text-blue-600 font-bold hover:underline">← Back to TaleemMarkaz Home</a>
+    <a href={`${import.meta.env.BASE_URL}/`} class="inline-block mt-2 text-blue-600 font-bold hover:underline">← Back to TaleemMarkaz Home</a>
   </div>
 
 </Layout>

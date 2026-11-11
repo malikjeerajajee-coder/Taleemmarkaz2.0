@@ -65,7 +65,7 @@ const sections = [
   <!-- Breadcrumbs -->
   <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 no-print">
     <div class="max-w-5xl mx-auto text-sm text-slate-500 flex items-center gap-2">
-      <a href={import.meta.env.BASE_URL} class="hover:text-blue-600 transition-colors">Home</a> <span>/</span>
+      <a href={`${import.meta.env.BASE_URL}/`} class="hover:text-blue-600 transition-colors">Home</a> <span>/</span>
       <span class="text-slate-900 font-semibold" aria-current="page">Terms of Service</span>
     </div>
   </div>
@@ -100,7 +100,7 @@ const sections = [
                 <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Approved By</span>
               </div>
-              <a href={`${import.meta.env.BASE_URL}authors/`} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
+              <a href={`${import.meta.env.BASE_URL}/authors/`} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
                 Malik Muhammad Ahsan Jahangir
               </a>
               <p class="text-sm text-slate-600 mt-0.5">
@@ -151,7 +151,7 @@ const sections = [
       <section id="introduction">
         <h2 class="text-2xl font-extrabold text-slate-900 mb-4 border-b border-slate-200 pb-2">1. Introduction and Acceptance of Terms</h2>
         <p>Welcome to <strong>TaleemMarkaz</strong>, a free educational platform dedicated to making quality learning resources accessible to students. These Terms of Service explain the rules and conditions governing your access to and use of the TaleemMarkaz website, educational materials, features, and related services.</p>
-        <p>By visiting, browsing, accessing, or using TaleemMarkaz, you agree to comply with these Terms of Service and our <a href={`${import.meta.env.BASE_URL}privacy-policy/`}>Privacy Policy</a>. If you do not agree with these terms, please discontinue using our website.</p>
+        <p>By visiting, browsing, accessing, or using TaleemMarkaz, you agree to comply with these Terms of Service and our <a href={`${import.meta.env.BASE_URL}/privacy-policy/`}>Privacy Policy</a>. If you do not agree with these terms, please discontinue using our website.</p>
       </section>
 
       <!-- 2. About -->
@@ -251,7 +251,7 @@ const sections = [
       <!-- 15. Privacy -->
       <section id="privacy">
         <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">15. Privacy Policy</h2>
-        <p>Your use of TaleemMarkaz is also subject to our <a href={`${import.meta.env.BASE_URL}privacy-policy/`}>Privacy Policy</a>, which explains how we may collect, use, protect, and manage personal information.</p>
+        <p>Your use of TaleemMarkaz is also subject to our <a href={`${import.meta.env.BASE_URL}/privacy-policy/`}>Privacy Policy</a>, which explains how we may collect, use, protect, and manage personal information.</p>
       </section>
 
       <!-- 16. Changes -->
@@ -377,7 +377,7 @@ const sections = [
       <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 text-center mt-6 font-urdu">
         <h3 class="text-2xl font-bold text-emerald-900 mb-3">تعلیم مرکز استعمال کرنے کا شکریہ</h3>
         <p class="text-emerald-800 mb-5 text-lg">تعلیم مرکز استعمال کرنے اور مفت تعلیم کے فروغ میں ہمارا ساتھ دینے کا شکریہ۔</p>
-        <a href={import.meta.env.BASE_URL} class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">ہوم پیج پر جائیں ←</a>
+        <a href={`${import.meta.env.BASE_URL}/`} class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg transition-colors">ہوم پیج پر جائیں ←</a>
       </div>
 
     </div>
@@ -386,7 +386,7 @@ const sections = [
   <!-- Footer Note -->
   <div class="bg-white border-t border-slate-200 py-8 text-center text-sm text-slate-500">
     <p>These terms may be updated as our website and services develop.</p>
-    <a href={import.meta.env.BASE_URL} class="inline-block mt-2 text-blue-600 font-bold hover:underline">← Back to TaleemMarkaz Home</a>
+    <a href={`${import.meta.env.BASE_URL}/`} class="inline-block mt-2 text-blue-600 font-bold hover:underline">← Back to TaleemMarkaz Home</a>
   </div>
 
 </Layout>
