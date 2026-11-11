@@ -104,7 +104,7 @@ const schema = {
     
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
       <!-- Notes -->
-      <a href={import.meta.env.BASE_URL + "notes/"} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-blue-500 hover:bg-blue-50/30 transition-all group flex flex-col items-center text-center">
+      <a href={`${import.meta.env.BASE_URL}notes/`} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-blue-500 hover:bg-blue-50/30 transition-all group flex flex-col items-center text-center">
         <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
         </div>
@@ -112,7 +112,7 @@ const schema = {
         <p class="text-slate-500 text-sm">Solved exercises & key points</p>
       </a>
       <!-- Past Papers -->
-      <a href={import.meta.env.BASE_URL + "past-papers/"} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-orange-500 hover:bg-orange-50/30 transition-all group flex flex-col items-center text-center">
+      <a href={`${import.meta.env.BASE_URL}past-papers/`} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-orange-500 hover:bg-orange-50/30 transition-all group flex flex-col items-center text-center">
         <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-orange-500 group-hover:text-white transition-colors">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
         </div>
@@ -120,7 +120,7 @@ const schema = {
         <p class="text-slate-500 text-sm">10-year solved board archives</p>
       </a>
       <!-- Pairing Schemes -->
-      <a href={import.meta.env.BASE_URL + "pairing-schemes/"} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-emerald-500 hover:bg-emerald-50/30 transition-all group flex flex-col items-center text-center">
+      <a href={`${import.meta.env.BASE_URL}pairing-schemes/`} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-emerald-500 hover:bg-emerald-50/30 transition-all group flex flex-col items-center text-center">
         <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
         </div>
@@ -128,7 +128,7 @@ const schema = {
         <p class="text-slate-500 text-sm">Chapter-wise marks distribution</p>
       </a>
       <!-- Date Sheets -->
-      <a href={import.meta.env.BASE_URL + "date-sheets/"} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-green-500 hover:bg-green-50/30 transition-all group flex flex-col items-center text-center">
+      <a href={`${import.meta.env.BASE_URL}date-sheets/`} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-green-500 hover:bg-green-50/30 transition-all group flex flex-col items-center text-center">
         <div class="w-14 h-14 bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-500 group-hover:text-white transition-colors">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
         </div>
@@ -136,7 +136,7 @@ const schema = {
         <p class="text-slate-500 text-sm">Official upcoming schedules</p>
       </a>
       <!-- Textbooks -->
-      <a href={import.meta.env.BASE_URL + "textbooks/"} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-purple-500 hover:bg-purple-50/30 transition-all group flex flex-col items-center text-center">
+      <a href={`${import.meta.env.BASE_URL}textbooks/`} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-purple-500 hover:bg-purple-50/30 transition-all group flex flex-col items-center text-center">
         <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-purple-500 group-hover:text-white transition-colors">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
         </div>
@@ -144,7 +144,7 @@ const schema = {
         <p class="text-slate-500 text-sm">PCTB & official board books</p>
       </a>
       <!-- Guess Papers -->
-      <a href={import.meta.env.BASE_URL + "guess-papers/"} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-pink-500 hover:bg-pink-50/30 transition-all group flex flex-col items-center text-center">
+      <a href={`${import.meta.env.BASE_URL}guess-papers/`} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-pink-500 hover:bg-pink-50/30 transition-all group flex flex-col items-center text-center">
         <div class="w-14 h-14 bg-pink-50 text-pink-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-pink-500 group-hover:text-white transition-colors">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
         </div>
@@ -152,7 +152,7 @@ const schema = {
         <p class="text-slate-500 text-sm">Supplementary revision notes</p>
       </a>
       <!-- Result Gazettes -->
-      <a href={import.meta.env.BASE_URL + "result-gazettes/"} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-cyan-500 hover:bg-cyan-50/30 transition-all group flex flex-col items-center text-center">
+      <a href={`${import.meta.env.BASE_URL}result-gazettes/`} class="bg-white border border-slate-200 rounded-xl p-6 hover:border-cyan-500 hover:bg-cyan-50/30 transition-all group flex flex-col items-center text-center">
         <div class="w-14 h-14 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center mb-4 group-hover:bg-cyan-500 group-hover:text-white transition-colors">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
@@ -160,7 +160,7 @@ const schema = {
         <p class="text-slate-500 text-sm">BISE results & gazette PDFs</p>
       </a>
       <!-- Faculty -->
-      <a href={import.meta.env.BASE_URL + "authors/"} class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:bg-slate-800 transition-colors group flex flex-col items-center text-center">
+      <a href={`${import.meta.env.BASE_URL}authors/`} class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:bg-slate-800 transition-colors group flex flex-col items-center text-center">
         <div class="w-14 h-14 bg-slate-800 text-white rounded-full flex items-center justify-center mb-4 border border-slate-700">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
         </div>
@@ -210,22 +210,22 @@ const schema = {
           <div class="bg-slate-50 border border-slate-200 p-5 rounded-lg">
             <h3 class="font-bold text-lg text-slate-900 mb-2">Class 9 Notes, Books & Past Papers</h3>
             <p class="text-sm text-slate-600 mb-3">Start your Matric journey with Class 9 educational resources. Explore available textbooks, chapter-wise study notes, subject materials, MCQs and previous board papers.</p>
-            <a href={import.meta.env.BASE_URL + "class-9/"} class="text-blue-600 font-semibold text-sm hover:underline">Explore Class 9 Resources →</a>
+            <a href={`${import.meta.env.BASE_URL}class-9/`} class="text-blue-600 font-semibold text-sm hover:underline">Explore Class 9 Resources →</a>
           </div>
           <div class="bg-slate-50 border border-slate-200 p-5 rounded-lg">
             <h3 class="font-bold text-lg text-slate-900 mb-2">Class 10 Notes, Books & Past Papers</h3>
             <p class="text-sm text-slate-600 mb-3">Prepare for your Matric Part 2 examinations with Class 10 study materials. Browse subject-wise textbooks, solved exercises, MCQs and previous papers.</p>
-            <a href={import.meta.env.BASE_URL + "class-10/"} class="text-blue-600 font-semibold text-sm hover:underline">Explore Class 10 Resources →</a>
+            <a href={`${import.meta.env.BASE_URL}class-10/`} class="text-blue-600 font-semibold text-sm hover:underline">Explore Class 10 Resources →</a>
           </div>
           <div class="bg-slate-50 border border-slate-200 p-5 rounded-lg">
             <h3 class="font-bold text-lg text-slate-900 mb-2">1st Year Notes, Books & Past Papers</h3>
             <p class="text-sm text-slate-600 mb-3">Access Intermediate Part 1 resources for FSc, ICS, FA and other study groups. Find subject-wise textbooks and previous board papers.</p>
-            <a href={import.meta.env.BASE_URL + "class-11/"} class="text-blue-600 font-semibold text-sm hover:underline">Explore 1st Year Resources →</a>
+            <a href={`${import.meta.env.BASE_URL}class-11/`} class="text-blue-600 font-semibold text-sm hover:underline">Explore 1st Year Resources →</a>
           </div>
           <div class="bg-slate-50 border border-slate-200 p-5 rounded-lg">
             <h3 class="font-bold text-lg text-slate-900 mb-2">2nd Year Notes, Books & Past Papers</h3>
             <p class="text-sm text-slate-600 mb-3">Get ready for your Intermediate Part 2 examinations with Class 12 educational resources. Explore available textbooks and revision resources.</p>
-            <a href={import.meta.env.BASE_URL + "class-12/"} class="text-blue-600 font-semibold text-sm hover:underline">Explore 2nd Year Resources →</a>
+            <a href={`${import.meta.env.BASE_URL}class-12/`} class="text-blue-600 font-semibold text-sm hover:underline">Explore 2nd Year Resources →</a>
           </div>
         </div>
       </div>

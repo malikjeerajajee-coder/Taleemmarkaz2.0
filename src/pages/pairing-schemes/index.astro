@@ -161,7 +161,7 @@ const faqs = [
                   const slug = subject.toLowerCase().replace(/\s+/g, '-');
                   
                   // Dynamic URL based on the file structure we just created
-                  const href = `/pairing-schemes/${cls.id}-${slug}/`;
+                  const href = `${import.meta.env.BASE_URL}pairing-schemes/${cls.id}-${slug}/`;
 
                   return (
                     <li>

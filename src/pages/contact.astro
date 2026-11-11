@@ -100,7 +100,7 @@ const schema = {
                 <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Page Maintained By</span>
               </div>
-              <a href={import.meta.env.BASE_URL + "authors/"} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
+              <a href={`${import.meta.env.BASE_URL}authors/`} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
                 Malik Muhammad Ahsan Jahangir
               </a>
               <p class="text-sm text-slate-600 mt-0.5">
@@ -210,7 +210,7 @@ const schema = {
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
             <h4 class="font-bold text-slate-900 text-sm mb-2">Privacy matters</h4>
             <p class="text-xs text-slate-600 leading-relaxed mb-3">Please avoid sharing passwords, identity documents, or other sensitive personal information through this form.</p>
-            <a href={import.meta.env.BASE_URL + "privacy-policy/"} class="text-xs font-bold text-blue-600 hover:underline">Read our Privacy Policy →</a>
+            <a href={`${import.meta.env.BASE_URL}privacy-policy/`} class="text-xs font-bold text-blue-600 hover:underline">Read our Privacy Policy →</a>
           </div>
         </div>
 
@@ -259,7 +259,7 @@ const schema = {
             <div class="flex items-start gap-2 pt-2">
               <input type="checkbox" id="privacy" name="privacy" required class="mt-1 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
               <label for="privacy" class="text-xs text-slate-600 leading-relaxed">
-                I agree to the processing of my information according to the <a href={import.meta.env.BASE_URL + "privacy-policy/"} class="text-blue-600 font-bold hover:underline">Privacy Policy</a>.
+                I agree to the processing of my information according to the <a href={`${import.meta.env.BASE_URL}privacy-policy/`} class="text-blue-600 font-bold hover:underline">Privacy Policy</a>.
               </label>
             </div>
 
