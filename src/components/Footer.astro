@@ -6,7 +6,7 @@
       
       <!-- Column 1: Brand & Author (Takes up 4 columns) -->
       <div class="col-span-1 md:col-span-4">
-        <a href="/" class="flex items-center gap-2 mb-4">
+        <a href={import.meta.env.BASE_URL} class="flex items-center gap-2 mb-4">
           <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">T</div>
           <span class="text-xl font-extrabold text-slate-900 tracking-tight">Taleem<span class="text-blue-600">Markaz</span></span>
         </a>
@@ -28,14 +28,14 @@
       <div class="col-span-1 md:col-span-4">
         <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">All Study Resources</h4>
         <ul class="grid grid-cols-2 gap-y-3 gap-x-4 text-sm text-slate-600">
-          <li><a href="/notes/" class="hover:text-blue-600 transition-colors">Chapter Notes</a></li>
-          <li><a href="/past-papers/" class="hover:text-blue-600 transition-colors">Past Papers</a></li>
-          <li><a href="/textbooks/" class="hover:text-blue-600 transition-colors">Textbooks</a></li>
-          <li><a href="/pairing-schemes/" class="hover:text-blue-600 transition-colors">Pairing Schemes</a></li>
-          <li><a href="/guess-papers/" class="hover:text-blue-600 transition-colors">Guess Papers</a></li>
-          <li><a href="/date-sheets/" class="hover:text-blue-600 transition-colors">Date Sheets</a></li>
-          <li><a href="/result-gazettes/" class="hover:text-blue-600 transition-colors">Result Gazettes</a></li>
-          <li><a href="/authors/" class="text-blue-600 font-semibold hover:underline">Our Expert Faculty</a></li>
+          <li><a href={import.meta.env.BASE_URL + "notes/"} class="hover:text-blue-600 transition-colors">Chapter Notes</a></li>
+          <li><a href={import.meta.env.BASE_URL + "past-papers/"} class="hover:text-blue-600 transition-colors">Past Papers</a></li>
+          <li><a href={import.meta.env.BASE_URL + "textbooks/"} class="hover:text-blue-600 transition-colors">Textbooks</a></li>
+          <li><a href={import.meta.env.BASE_URL + "pairing-schemes/"} class="hover:text-blue-600 transition-colors">Pairing Schemes</a></li>
+          <li><a href={import.meta.env.BASE_URL + "guess-papers/"} class="hover:text-blue-600 transition-colors">Guess Papers</a></li>
+          <li><a href={import.meta.env.BASE_URL + "date-sheets/"} class="hover:text-blue-600 transition-colors">Date Sheets</a></li>
+          <li><a href={import.meta.env.BASE_URL + "result-gazettes/"} class="hover:text-blue-600 transition-colors">Result Gazettes</a></li>
+          <li><a href={import.meta.env.BASE_URL + "authors/"} class="text-blue-600 font-semibold hover:underline">Our Expert Faculty</a></li>
         </ul>
       </div>
 
@@ -43,10 +43,10 @@
       <div class="col-span-1 md:col-span-2">
         <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Top Boards</h4>
         <ul class="space-y-3 text-sm text-slate-600">
-          <li><a href="/boards/punjab-board/" class="hover:text-blue-600 transition-colors">Punjab Board</a></li>
-          <li><a href="/boards/sindh-board/" class="hover:text-blue-600 transition-colors">Sindh Board</a></li>
-          <li><a href="/boards/fbise/" class="hover:text-blue-600 transition-colors">Federal Board</a></li>
-          <li><a href="/boards/kpk-board/" class="hover:text-blue-600 transition-colors">KPK Board</a></li>
+          <li><a href={import.meta.env.BASE_URL + "boards/punjab-board/"} class="hover:text-blue-600 transition-colors">Punjab Board</a></li>
+          <li><a href={import.meta.env.BASE_URL + "boards/sindh-board/"} class="hover:text-blue-600 transition-colors">Sindh Board</a></li>
+          <li><a href={import.meta.env.BASE_URL + "boards/fbise/"} class="hover:text-blue-600 transition-colors">Federal Board</a></li>
+          <li><a href={import.meta.env.BASE_URL + "boards/kpk-board/"} class="hover:text-blue-600 transition-colors">KPK Board</a></li>
         </ul>
       </div>
 
@@ -54,11 +54,11 @@
       <div class="col-span-1 md:col-span-2">
         <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Company</h4>
         <ul class="space-y-3 text-sm text-slate-600">
-          <li><a href="/about/" class="hover:text-blue-600 transition-colors">About Us</a></li>
-          <li><a href="/editorial-policy/" class="hover:text-blue-600">Editorial Policy</a></li>
-          <li><a href="/contact/" class="hover:text-blue-600 transition-colors">Contact</a></li>
-          <li><a href="/privacy-policy/" class="hover:text-blue-600 transition-colors">Privacy Policy</a></li>
-          <li><a href="/terms-of-service/" class="hover:text-blue-600 transition-colors">Terms of Service</a></li>
+          <li><a href={import.meta.env.BASE_URL + "about/"} class="hover:text-blue-600 transition-colors">About Us</a></li>
+          <li><a href={import.meta.env.BASE_URL + "editorial-policy/"} class="hover:text-blue-600">Editorial Policy</a></li>
+          <li><a href={import.meta.env.BASE_URL + "contact/"} class="hover:text-blue-600 transition-colors">Contact</a></li>
+          <li><a href={import.meta.env.BASE_URL + "privacy-policy/"} class="hover:text-blue-600 transition-colors">Privacy Policy</a></li>
+          <li><a href={import.meta.env.BASE_URL + "terms-of-service/"} class="hover:text-blue-600 transition-colors">Terms of Service</a></li>
         </ul>
       </div>
     </div>
@@ -68,7 +68,7 @@
       <p>&copy; 2027 TaleemMarkaz. All rights reserved.</p>
       <p class="flex items-center gap-1">
         Verified by 
-        <a href="/authors/" class="text-slate-900 font-semibold hover:text-blue-600 transition-colors">
+        <a href={import.meta.env.BASE_URL + "authors/"} class="text-slate-900 font-semibold hover:text-blue-600 transition-colors">
           Malik Muhammad Ahsan Jahangir
         </a> 
         <span class="mx-1 text-slate-300">|</span> 
