@@ -1,4 +1,6 @@
 ---
+import Link from '../components/Link.astro';
+
 const { links = [], title = "Related Resources" } = Astro.props;
 // Example links array: 
 // [{ title: "Class 9 Physics Notes", url: "/class-9/physics-notes/", desc: "Solved exercises" }]
@@ -8,10 +10,10 @@ const { links = [], title = "Related Resources" } = Astro.props;
   <h3 class="text-lg font-extrabold text-slate-900 mb-5 border-b border-slate-200 pb-2">{title}</h3>
   <div class="grid sm:grid-cols-2 gap-4">
     {links.map((link) => (
-      <a href={link.url} class="group bg-white border border-slate-200 p-4 rounded-xl hover:border-blue-500 transition-colors block">
+      <Link href={link.url} class="group bg-white border border-slate-200 p-4 rounded-xl hover:border-blue-500 transition-colors block">
         <h4 class="font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-1">{link.title}</h4>
         {link.desc && <p class="text-xs text-slate-500">{link.desc}</p>}
-      </a>
+      </Link>
     ))}
   </div>
 </section>

@@ -1,4 +1,6 @@
 ---
+import Link from '../components/Link.astro';
+
 const { 
   title = "Learn Better. Prepare Smarter. Grow Further.",
   description = "Explore educational resources, study materials, and examination preparation content designed to support students throughout their academic journey.",
@@ -18,13 +20,13 @@ const {
       {description}
     </p>
     <div class="flex flex-wrap justify-center gap-4">
-      <a href={primaryUrl} class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-bold transition-colors">
+      <Link href={primaryUrl} class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-bold transition-colors">
         {primaryText}
-      </a>
+      </Link>
       {secondaryText && (
-        <a href={secondaryUrl} class="bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-lg font-bold transition-colors">
+        <Link href={secondaryUrl} class="bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-lg font-bold transition-colors">
           {secondaryText}
-        </a>
+        </Link>
       )}
     </div>
   </div>

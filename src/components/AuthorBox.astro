@@ -1,4 +1,6 @@
 ---
+import Link from '../components/Link.astro';
+
 const { 
   name = "Malik Muhammad Ahsan Jahangir", 
   role = "Lead Academic Author", 
@@ -31,9 +33,9 @@ const currentTheme = themeClasses[theme] || themeClasses.blue;
           <svg class={`w-4 h-4 ${currentTheme.icon}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Academically Reviewed By</span>
         </div>
-        <a href={authorUrl} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
+        <Link href={authorUrl} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
           {name}
-        </a>
+        </Link>
         <p class="text-sm text-slate-600 mt-0.5">
           {role} {university ? `| ${university}` : ""} <br class="sm:hidden" /> {qualifications}
         </p>

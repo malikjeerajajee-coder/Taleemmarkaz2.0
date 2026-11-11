@@ -1,4 +1,6 @@
 ---
+import Link from '../../components/Link.astro';
+
 import Layout from '../../layouts/Layout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import HeroSection from '../../components/HeroSection.astro';
@@ -165,10 +167,10 @@ const faqs = [
 
                   return (
                     <li>
-                      <a href={href} class={`flex items-center justify-between font-semibold ${cls.linkClass} transition-colors group`}>
+                      <Link href={href} class={`flex items-center justify-between font-semibold ${cls.linkClass} transition-colors group`}>
                         {subject}
                         <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-                      </a>
+                      </Link>
                     </li>
                   );
                 })}

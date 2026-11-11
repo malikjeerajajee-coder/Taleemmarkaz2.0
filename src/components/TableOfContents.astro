@@ -1,4 +1,6 @@
 ---
+import Link from '../components/Link.astro';
+
 const { items = [], title = "On This Page" } = Astro.props;
 ---
 
@@ -6,10 +8,10 @@ const { items = [], title = "On This Page" } = Astro.props;
   <h2 class="text-xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2">{title}</h2>
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
     {items.map((item) => (
-      <a href={`#${item.id}`} class="text-sm font-medium text-slate-600 hover:text-blue-600 flex items-center gap-2 group">
+      <Link href={`#${item.id}`} class="text-sm font-medium text-slate-600 hover:text-blue-600 flex items-center gap-2 group">
         <span class="text-blue-500 font-bold group-hover:translate-x-1 transition-transform">→</span>
         {item.title}
-      </a>
+      </Link>
     ))}
   </div>
 </div>

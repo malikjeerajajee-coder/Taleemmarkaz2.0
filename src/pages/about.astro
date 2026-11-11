@@ -1,4 +1,6 @@
 ---
+import Link from '../components/Link.astro';
+
 import Layout from '../layouts/Layout.astro';
 
 const siteUrl = 'https://taleemmarkaz.com/';
@@ -97,7 +99,7 @@ const schema = {
   <!-- BREADCRUMB -->
   <nav aria-label="Breadcrumb" class="bg-slate-50 border-b border-slate-200 px-4 py-3">
     <div class="max-w-5xl mx-auto text-sm text-slate-500 flex items-center gap-2">
-      <a href={`${import.meta.env.BASE_URL}/`} class="hover:text-blue-600 transition-colors">Home</a>
+      <Link href={`${import.meta.env.BASE_URL}/`} class="hover:text-blue-600 transition-colors">Home</Link>
       <span>/</span>
       <span class="text-slate-900 font-semibold" aria-current="page">About Us</span>
     </div>
@@ -134,9 +136,9 @@ const schema = {
                 <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Page Author</span>
               </div>
-              <a href={`${import.meta.env.BASE_URL}/authors/`} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-teal-600 transition-colors">
+              <Link href={`${import.meta.env.BASE_URL}/authors/`} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-teal-600 transition-colors">
                 Dr. Asrar Khan Janjua
-              </a>
+              </Link>
               <p class="text-sm text-slate-600 mt-0.5">
                 PhD Scholar in Islamic Studies | Quaid-i-Azam University
               </p>
@@ -158,12 +160,12 @@ const schema = {
 
       <!-- LANGUAGE NAVIGATION -->
       <div class="flex justify-center gap-3 mt-10">
-        <a href="#english-content" class="bg-slate-900 hover:bg-slate-800 text-white rounded-lg px-6 py-2.5 text-sm font-bold transition-colors">
+        <Link href="#english-content" class="bg-slate-900 hover:bg-slate-800 text-white rounded-lg px-6 py-2.5 text-sm font-bold transition-colors">
           English
-        </a>
-        <a href="#urdu-content" class="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-6 py-2.5 text-sm font-bold font-urdu transition-colors">
+        </Link>
+        <Link href="#urdu-content" class="bg-blue-600 hover:bg-blue-700 text-white rounded-lg px-6 py-2.5 text-sm font-bold font-urdu transition-colors">
           اردو
-        </a>
+        </Link>
       </div>
     </div>
   </header>
@@ -171,13 +173,13 @@ const schema = {
   <!-- QUICK NAVIGATION -->
   <div class="bg-slate-100 border-b border-slate-200 px-4 py-5 sticky top-20 z-40 hidden md:block">
     <div class="max-w-5xl mx-auto flex flex-wrap gap-2 text-sm justify-center">
-      <a href="#our-mission" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Our Mission</a>
-      <a href="#classes" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Classes 1–12</a>
-      <a href="#boards" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Education Boards</a>
-      <a href="#subjects" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Subjects</a>
-      <a href="#resources" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Study Resources</a>
-      <a href="#editorial-standards" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Editorial Standards</a>
-      <a href="#faq" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">FAQs</a>
+      <Link href="#our-mission" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Our Mission</Link>
+      <Link href="#classes" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Classes 1–12</Link>
+      <Link href="#boards" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Education Boards</Link>
+      <Link href="#subjects" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Subjects</Link>
+      <Link href="#resources" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Study Resources</Link>
+      <Link href="#editorial-standards" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">Editorial Standards</Link>
+      <Link href="#faq" class="bg-white border border-slate-200 text-slate-700 font-medium rounded-full px-4 py-2 hover:border-blue-500 hover:text-blue-600 transition-colors">FAQs</Link>
     </div>
   </div>
 
@@ -438,7 +440,7 @@ const schema = {
 
       <div class="mt-6 pt-6 border-t border-slate-700">
         <p class="text-sm text-slate-400">
-          For corrections or content-related feedback, please visit our <a href={`${import.meta.env.BASE_URL}/contact/`} class="text-blue-400 font-bold hover:underline transition-colors">Contact Us page</a>. Read our <a href={`${import.meta.env.BASE_URL}/editorial-policy/`} class="text-blue-700 font-bold hover:underline">Editorial Policy</a>.
+          For corrections or content-related feedback, please visit our <Link href={`${import.meta.env.BASE_URL}/contact/`} class="text-blue-400 font-bold hover:underline transition-colors">Contact Us page</Link>. Read our <Link href={`${import.meta.env.BASE_URL}/editorial-policy/`} class="text-blue-700 font-bold hover:underline">Editorial Policy</Link>.
         </p>
       </div>
     </section>
@@ -528,7 +530,7 @@ const schema = {
             <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </summary>
           <div class="px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
-            You can contact the TaleemMarkaz team through the <a href={`${import.meta.env.BASE_URL}/contact/`} class="text-blue-600 font-bold hover:underline">Contact Us page</a> to report mistakes or suggest corrections.
+            You can contact the TaleemMarkaz team through the <Link href={`${import.meta.env.BASE_URL}/contact/`} class="text-blue-600 font-bold hover:underline">Contact Us page</Link> to report mistakes or suggest corrections.
           </div>
         </details>
 
@@ -553,12 +555,12 @@ const schema = {
         Explore educational resources, study materials, and examination preparation content designed to support students throughout their academic journey.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href={`${import.meta.env.BASE_URL}/`} class="bg-white text-blue-700 hover:bg-slate-50 px-6 py-3 rounded-lg font-bold transition-colors">
+        <Link href={`${import.meta.env.BASE_URL}/`} class="bg-white text-blue-700 hover:bg-slate-50 px-6 py-3 rounded-lg font-bold transition-colors">
           Explore TaleemMarkaz
-        </a>
-        <a href={`${import.meta.env.BASE_URL}/contact/`} class="bg-blue-700 text-white hover:bg-blue-800 border border-blue-500 px-6 py-3 rounded-lg font-bold transition-colors">
+        </Link>
+        <Link href={`${import.meta.env.BASE_URL}/contact/`} class="bg-blue-700 text-white hover:bg-blue-800 border border-blue-500 px-6 py-3 rounded-lg font-bold transition-colors">
           Contact Us
-        </a>
+        </Link>
       </div>
     </section>
 

@@ -1,4 +1,6 @@
 ---
+import Link from '../components/Link.astro';
+
 import Layout from "../layouts/Layout.astro";
 
 const siteUrl = "https://taleemmarkaz.com";
@@ -65,7 +67,7 @@ const schema = {
   <!-- Breadcrumbs -->
   <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 no-print">
     <div class="max-w-5xl mx-auto text-sm text-slate-500 flex items-center gap-2">
-      <a href={`${import.meta.env.BASE_URL}/`} class="hover:text-blue-600 transition-colors">Home</a> <span>/</span>
+      <Link href={`${import.meta.env.BASE_URL}/`} class="hover:text-blue-600 transition-colors">Home</Link> <span>/</span>
       <span class="text-slate-900 font-semibold" aria-current="page">Contact Us</span>
     </div>
   </div>
@@ -100,9 +102,9 @@ const schema = {
                 <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Page Maintained By</span>
               </div>
-              <a href={`${import.meta.env.BASE_URL}/authors/`} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
+              <Link href={`${import.meta.env.BASE_URL}/authors/`} class="block text-lg md:text-xl font-extrabold text-slate-900 hover:text-blue-600 transition-colors">
                 Malik Muhammad Ahsan Jahangir
-              </a>
+              </Link>
               <p class="text-sm text-slate-600 mt-0.5">
                 Lead Academic Author | BS (Hons) Microbiology & MPhil Biotechnology
               </p>
@@ -140,9 +142,9 @@ const schema = {
           <h3 class="text-xl font-bold text-slate-900 mb-2">WhatsApp</h3>
           <p class="text-sm text-slate-600 mb-4 flex-grow">Message us directly for general questions, feedback, and inquiries.</p>
           <strong class="text-slate-900 font-bold mb-5">{displayPhone}</strong>
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2">
+          <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2">
             Chat on WhatsApp
-          </a>
+          </Link>
         </article>
 
         <!-- Email -->
@@ -153,9 +155,9 @@ const schema = {
           <h3 class="text-xl font-bold text-slate-900 mb-2">Email</h3>
           <p class="text-sm text-slate-600 mb-4 flex-grow">Send us detailed questions, correction requests, or suggestions.</p>
           <strong class="text-slate-900 font-bold mb-5 text-sm break-all">{email}</strong>
-          <a href={`mailto:${email}?subject=Inquiry - TaleemMarkaz`} class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2">
+          <Link href={`mailto:${email}?subject=Inquiry - TaleemMarkaz`} class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2">
             Send an Email
-          </a>
+          </Link>
         </article>
 
         <!-- Phone -->
@@ -166,9 +168,9 @@ const schema = {
           <h3 class="text-xl font-bold text-slate-900 mb-2">Phone</h3>
           <p class="text-sm text-slate-600 mb-4 flex-grow">Use our contact number for direct phone inquiries when available.</p>
           <strong class="text-slate-900 font-bold mb-5">{displayPhone}</strong>
-          <a href={`tel:${phone}`} class="w-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 font-bold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2">
+          <Link href={`tel:${phone}`} class="w-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 font-bold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2">
             Call Us
-          </a>
+          </Link>
         </article>
       </div>
     </section>
@@ -210,7 +212,7 @@ const schema = {
           <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
             <h4 class="font-bold text-slate-900 text-sm mb-2">Privacy matters</h4>
             <p class="text-xs text-slate-600 leading-relaxed mb-3">Please avoid sharing passwords, identity documents, or other sensitive personal information through this form.</p>
-            <a href={`${import.meta.env.BASE_URL}/privacy-policy/`} class="text-xs font-bold text-blue-600 hover:underline">Read our Privacy Policy →</a>
+            <Link href={`${import.meta.env.BASE_URL}/privacy-policy/`} class="text-xs font-bold text-blue-600 hover:underline">Read our Privacy Policy →</Link>
           </div>
         </div>
 
@@ -259,7 +261,7 @@ const schema = {
             <div class="flex items-start gap-2 pt-2">
               <input type="checkbox" id="privacy" name="privacy" required class="mt-1 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
               <label for="privacy" class="text-xs text-slate-600 leading-relaxed">
-                I agree to the processing of my information according to the <a href={`${import.meta.env.BASE_URL}/privacy-policy/`} class="text-blue-600 font-bold hover:underline">Privacy Policy</a>.
+                I agree to the processing of my information according to the <Link href={`${import.meta.env.BASE_URL}/privacy-policy/`} class="text-blue-600 font-bold hover:underline">Privacy Policy</Link>.
               </label>
             </div>
 
@@ -290,7 +292,7 @@ const schema = {
           <h3 class="font-bold text-slate-900 mb-3">واٹس ایپ</h3>
           <p class="text-slate-600 text-sm mb-4 h-16">تعلیمی سوالات، تجاویز یا عمومی معلومات کے لیے ہمیں واٹس ایپ پر پیغام بھیجیں۔</p>
           <strong class="block text-slate-900 mb-4" dir="ltr">{displayPhone}</strong>
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="inline-block bg-green-50 text-green-700 font-bold px-4 py-2 rounded-lg hover:bg-green-100 transition-colors">پیغام بھیجیں</a>
+          <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" class="inline-block bg-green-50 text-green-700 font-bold px-4 py-2 rounded-lg hover:bg-green-100 transition-colors">پیغام بھیجیں</Link>
         </article>
         
         <!-- Urdu Email -->
@@ -298,7 +300,7 @@ const schema = {
           <h3 class="font-bold text-slate-900 mb-3">ای میل</h3>
           <p class="text-slate-600 text-sm mb-4 h-16">سوالات، شکایات اور تجاویز کے لیے ہمیں ای میل بھیجیں۔</p>
           <strong class="block text-slate-900 mb-4 text-sm" dir="ltr">{email}</strong>
-          <a href={`mailto:${email}`} class="inline-block bg-blue-50 text-blue-700 font-bold px-4 py-2 rounded-lg hover:bg-blue-100 transition-colors">ای میل بھیجیں</a>
+          <Link href={`mailto:${email}`} class="inline-block bg-blue-50 text-blue-700 font-bold px-4 py-2 rounded-lg hover:bg-blue-100 transition-colors">ای میل بھیجیں</Link>
         </article>
 
         <!-- Urdu Phone -->
@@ -306,14 +308,14 @@ const schema = {
           <h3 class="font-bold text-slate-900 mb-3">فون</h3>
           <p class="text-slate-600 text-sm mb-4 h-16">فون پر رابطے کے لیے ہمارا درج ذیل نمبر استعمال کریں۔</p>
           <strong class="block text-slate-900 mb-4" dir="ltr">{displayPhone}</strong>
-          <a href={`tel:${phone}`} class="inline-block bg-slate-100 text-slate-700 font-bold px-4 py-2 rounded-lg hover:bg-slate-200 transition-colors">ہمیں کال کریں</a>
+          <Link href={`tel:${phone}`} class="inline-block bg-slate-100 text-slate-700 font-bold px-4 py-2 rounded-lg hover:bg-slate-200 transition-colors">ہمیں کال کریں</Link>
         </article>
       </div>
 
       <div class="bg-white border border-slate-200 rounded-2xl p-8 text-center mt-6">
         <h3 class="text-2xl font-bold text-slate-900 mb-3">آپ کی رائے ہمارے لیے اہم ہے</h3>
         <p class="text-slate-600 mb-6 text-lg">اگر آپ کو ہماری ویب سائٹ پر کسی معلومات میں غلطی نظر آئے، کوئی لنک کام نہ کر رہا ہو یا آپ کوئی تجویز دینا چاہتے ہوں تو براہِ کرم ہم سے رابطہ کریں۔</p>
-        <a href="#contact-form" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-3 rounded-lg transition-colors">رابطہ فارم پر جائیں ←</a>
+        <Link href="#contact-form" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-3 rounded-lg transition-colors">رابطہ فارم پر جائیں ←</Link>
       </div>
 
     </div>
