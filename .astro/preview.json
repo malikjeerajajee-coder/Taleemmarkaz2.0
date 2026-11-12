@@ -1,14 +1,14 @@
 {
-	"pid": 32030,
+	"pid": 15769,
 	"port": 4321,
 	"url": "http://localhost:4321",
 	"urls": {
 		"local": [
-			"http://localhost:4321/"
+			"http://localhost:4321/Taleemmarkaz2.0/"
 		],
 		"network": [],
 		"networkInterfaceNames": []
 	},
 	"background": false,
-	"startedAt": "2026-11-10T15:42:19.599Z"
+	"startedAt": "2026-11-12T19:03:33.713Z"
 }
