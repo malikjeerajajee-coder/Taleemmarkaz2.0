@@ -1,0 +1,357 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TuitionAd from '../../components/TuitionAd.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+
+const pageUrl = "https://taleemmarkaz.com/pairing-schemes/class-10-urdu/";
+
+const faqs = [
+  { q: "What is the total marks of Class 10 Urdu paper 2027?", a: "The Urdu paper carries 75 marks in total, divided into 15 marks for the Objective section and 60 marks for the Subjective section." },
+  { q: "How much time is allowed for the Urdu paper?", a: "The total time allowed is 2 hours and 30 minutes. The objective part is usually allotted 20 minutes, while the subjective part gets 2 hours and 10 minutes." },
+  { q: "How many MCQs are included in the 10th Class Urdu paper?", a: "There are 15 MCQs in total. They cover Prose (7), Nazm (2), Ghazal (1), Vocabulary (1), Pronunciation (1), Rhetorical Devices (1), and Grammar (2)." },
+  { q: "How many questions are in the subjective section?", a: "There are 6 subjective questions (Q.2 to Q.7). They include Tashreeh (poetry explanation), Nasri Iqtibas (prose explanation), Short Questions, Khulasa (summary), Mazmoon (essay), and Tafheem (comprehension)." }
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Class 10 Urdu Pairing Scheme 2027 Punjab Board – Official Paper Pattern & Model Paper",
+      "description": "Get the official Class 10 Urdu Pairing Scheme 2027 for Punjab Boards. Check the 75-mark paper pattern, chapter-wise distribution, grammar, and complete Urdu model paper.",
+      "author": {
+        "@type": "Person",
+        "name": "Ms. Ayesha Rehman",
+        "jobTitle": "Urdu Specialist",
+        "alumniOf": "Quaid-i-Azam University",
+        "url": "https://taleemmarkaz.com/authors/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TaleemMarkaz",
+        "logo": { "@type": "ImageObject", "url": "https://taleemmarkaz.com/logo.png" }
+      },
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-13"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://taleemmarkaz.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Pairing Schemes", "item": "https://taleemmarkaz.com/pairing-schemes/"},
+        {"@type": "ListItem", "position": 3, "name": "Class 10 Urdu", "item": pageUrl}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+      }))
+    }
+  ]
+};
+---
+
+<Layout 
+  title="Class 10 Urdu Pairing Scheme 2027 Punjab Board – Official Pattern"
+  description="Get the official Class 10 Urdu Pairing Scheme 2027 for Punjab Boards. Check the 75-mark paper pattern, chapter-wise distribution, grammar, and complete Urdu model paper."
+  canonical={pageUrl}
+  schema={schema}
+>
+  <style is:global>
+    html, body { overflow-x: hidden; }
+    .font-urdu { font-family: 'Gulzar', serif; line-height: 3.2; font-size: 1.15rem; }
+    .font-urdu li { margin-bottom: 0.5rem; }
+    table { table-layout: auto; width: 100%; }
+    td, th { vertical-align: middle !important; }
+
+    @media print {
+      header, footer, nav, .no-print, .breadcrumbs, .author-card { display: none !important; }
+      body { background: white !important; color: black !important; font-size: 12pt; overflow-x: visible; }
+      main { padding: 0 !important; margin: 0 !important; }
+      .max-w-4xl { max-width: 100% !important; }
+      .print-header { display: flex !important; align-items: center; justify-content: space-between; border-bottom: 2px solid #db2777; padding-bottom: 10px; margin-bottom: 20px; }
+      .print-header h1 { font-size: 16pt; margin: 0; color: #0f172a; }
+      table { page-break-inside: avoid; }
+      tr { page-break-inside: avoid; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      .font-urdu { font-size: 14pt; line-height: 2.8; }
+    }
+    .print-header { display: none; }
+  </style>
+
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 breadcrumbs no-print w-full overflow-hidden">
+    <div class="max-w-5xl mx-auto text-sm text-slate-500 flex flex-wrap items-center gap-2">
+      <a href="/" class="hover:text-pink-600">Home</a> <span>/</span>
+      <a href="/pairing-schemes/" class="hover:text-pink-600">Pairing Schemes</a> <span>/</span>
+      <span class="text-slate-900 font-medium">Class 10 Urdu</span>
+    </div>
+  </div>
+
+  <section class="bg-white pt-12 pb-8 px-4 border-b border-slate-200 w-full overflow-hidden">
+    <div class="max-w-4xl mx-auto">
+      <div class="print-header">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-pink-600 text-white rounded flex items-center justify-center font-bold text-lg">T</div>
+          <span class="text-xl font-extrabold text-slate-900">TaleemMarkaz</span>
+        </div>
+        <span class="text-sm font-semibold text-slate-500">taleemmarkaz.com</span>
+      </div>
+
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-50 border border-pink-200 text-pink-700 text-xs font-bold uppercase tracking-wider mb-4 no-print">
+        🚨 Official 2027 Guide
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4 font-urdu" dir="rtl">
+        Class 10 Urdu Pairing Scheme 2027 <br> <span class="text-pink-600">(Punjab Board)</span>
+      </h1>
+      <p class="text-lg text-slate-600 mb-6 max-w-3xl font-urdu" dir="rtl">
+        Below is the official paper pattern, pairing scheme, and a complete model paper for Class 10 Urdu under the Punjab Boards (PECTAA / Single National Curriculum guidelines).
+      </p>
+
+      <button onclick="window.print()" class="no-print bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-flex items-center gap-2 shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Download PDF with Logo
+      </button>
+
+      <div class="mt-8">
+        <AuthorBox 
+          name="Ms. Ayesha Rehman"
+          role="Urdu Specialist"
+          qualifications="BS Urdu Language"
+          university="Quaid-i-Azam University"
+          initials="AR"
+          theme="purple"
+          publishedDate="Nov 8, 2026"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 py-12 w-full overflow-hidden">
+    <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+      
+      <div class="bg-pink-50 border-l-4 border-pink-600 p-6 rounded-r-xl mb-10 not-prose font-urdu" dir="rtl">
+        <h3 class="text-xl font-bold text-pink-900 mb-3 flex items-center gap-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          اہم معلومات
+        </h3>
+        <p class="text-pink-800 mb-2"><strong>کل نمبر: 75 (معروضی: 15 | انشائی: 60)</strong></p>
+        <p class="text-pink-800 mb-2"><strong>کل وقت: 2 گھنٹے 30 منٹ</strong></p>
+        <p class="text-pink-800 text-sm">یہ پیپر پیٹرن پنجاب کے تمام 9 تعلیمی بورڈز (لاہور، راولپنڈی، گوجرانوالہ، ملتان، فیصل آباد، سرگودھا، بہاولپور، ساہیوال، ڈی جی خان) پر لاگو ہے۔</p>
+      </div>
+
+      <!-- Objective Section -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2 font-urdu" dir="rtl">حصہ معروضی (Objective Section) — 15 نمبر</h2>
+      <div class="font-urdu text-lg text-slate-700 mb-4" dir="rtl">
+        <p>سوال نمبر 1: کل 15 کثیر الانتخابی سوالات (MCQs) شامل ہوں گے، ہر سوال 1 نمبر کا ہوگا۔</p>
+      </div>
+      
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose font-urdu" dir="rtl">
+        <table class="w-full text-right border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">حصہ</th>
+              <th class="p-3 font-bold text-slate-900">نصابی مواد</th>
+              <th class="p-3 font-bold text-slate-900 text-center">تقسیم</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">نثر (Prose)</td><td class="p-3">کتاب کے 10 اسباق میں سے ہر سبق سے 1 MCQ</td><td class="p-3 text-center font-bold text-pink-600">7</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">نظم (Nazm)</td><td class="p-3">آدمی نامہ، نمودِ صبح، خطاب بہ جوانانِ اسلام وغیرہ</td><td class="p-3 text-center font-bold text-pink-600">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">غزل (Ghazal)</td><td class="p-3">غالب، مومن، حسرت موہانی، زہرہ نگاہ</td><td class="p-3 text-center font-bold text-pink-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">مترادف / دو معنی الفاظ</td><td class="p-3">نصابی مشقیں اور الفاظ</td><td class="p-3 text-center font-bold text-pink-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">تلفظ و اعراب</td><td class="p-3">درست تلفظ اور اعراب</td><td class="p-3 text-center font-bold text-pink-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">تشبیہ و استعارہ</td><td class="p-3">ادبی اصطلاحات اور صنائع</td><td class="p-3 text-center font-bold text-pink-600">1</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">صرف و نحو (Grammar)</td><td class="p-3">نصابی مشقوں سے بنیادی گرامر</td><td class="p-3 text-center font-bold text-pink-600">2</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">کل</td><td class="p-3"></td><td class="p-3 text-center text-pink-600">15</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Subjective Section -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2 font-urdu" dir="rtl">حصہ انشائی (Subjective Section) — 60 نمبر</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose font-urdu" dir="rtl">
+        <table class="w-full text-right border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900 w-12 text-center">سوال</th>
+              <th class="p-3 font-bold text-slate-900">سوال کی نوعیت</th>
+              <th class="p-3 font-bold text-slate-900">تفصیل</th>
+              <th class="p-3 font-bold text-slate-900 text-center">نمبر</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900 text-center">2</td>
+              <td class="p-3">اشعار کی تشریح</td>
+              <td class="p-3">حصہ نظم: 4 میں سے 3 (2x3 = 6) | حصہ غزل: 3 میں سے 2 (2x2 = 4)</td>
+              <td class="p-3 text-center font-bold text-pink-600">10</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900 text-center">3</td>
+              <td class="p-3">نثری اقتباسات کی تشریح</td>
+              <td class="p-3">2 اقتباسات (پہلے 5 اسباق سے 1، آخری 5 سے 1) مع حوالہ متن و مصنف (5+5)</td>
+              <td class="p-3 text-center font-bold text-pink-600">10</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900 text-center">4</td>
+              <td class="p-3">مختصر سوالات کے جوابات</td>
+              <td class="p-3">کل 8 میں سے 5 سوالات حل کریں (نثر 4، نظم 2، غزل 2)</td>
+              <td class="p-3 text-center font-bold text-pink-600">10</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900 text-center">5</td>
+              <td class="p-3">سبق کا خلاصہ</td>
+              <td class="p-3">دیے گئے 2 اسباق میں سے کسی 1 کا خلاصہ لکھیں</td>
+              <td class="p-3 text-center font-bold text-pink-600">5</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900 text-center">6</td>
+              <td class="p-3">مضمون نویسی (Essay)</td>
+              <td class="p-3">دیے گئے 3 عنوانات میں سے کسی 1 پر تفصیلی مضمون لکھیں</td>
+              <td class="p-3 text-center font-bold text-pink-600">15</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="p-3 font-medium text-slate-900 text-center">7</td>
+              <td class="p-3">تفہیمِ عبارت (Comprehension)</td>
+              <td class="p-3">ایک پیراگراف اور اس کے آخر میں 5 سوالات (ہر سوال 2 نمبر)</td>
+              <td class="p-3 text-center font-bold text-pink-600">10</td>
+            </tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3"></td><td class="p-3">کل</td><td class="p-3"></td><td class="p-3 text-center text-pink-600">60</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MODEL PAPER -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2 font-urdu" dir="rtl">Class 10 Urdu Model Paper 2027 (ماڈل پیپر)</h2>
+      
+      <!-- Objective Model Paper -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6 font-urdu" dir="rtl">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">حصہ معروضی (Objective Type) — کل نمبر: 15 | وقت: 20 منٹ</h3>
+        </div>
+        <div class="p-6">
+          <p class="text-sm font-bold text-slate-800 mb-4">سوال نمبر 1: درست جواب کا انتخاب کریں۔ (1x15 = 15)</p>
+          <ol class="list-decimal pr-6 space-y-4 text-slate-700">
+            <li>سبق "اخلاقِ نبوی ﷺ" کس مصنف کی تحریر ہے؟ <br> <span class="text-slate-500">(الف) مولانا الطاف حسین حالی (ب) شبلی نعمانی (ج) اشفاق احمد (د) میرزا ادیب</span></li>
+            <li>سرسید احمد خان کا بچپن کس شہر میں گزرا؟ <br> <span class="text-slate-500">(الف) علی گڑھ (ب) آگرہ (ج) دہلی (د) لکھنؤ</span></li>
+            <li>افسانہ "کفّارہ" کس کی تخلیق ہے؟ <br> <span class="text-slate-500">(الف) منشی پریم چند (ب) پطرس بخاری (ج) شفیع عقیل (د) غلام الثقلین نقوی</span></li>
+            <li>مضمون "سویرے جو کل آنکھ میری کھلی" میں مصنف کو کس امتحان کی فکر لاحق تھی؟ <br> <span class="text-slate-500">(الف) ایف اے (ب) بی اے (ج) ایم اے (د) میٹرک</span></li>
+            <li>"بابل کے کھنڈر" کس صنفِ ادب سے تعلق رکھتا ہے؟ <br> <span class="text-slate-500">(الف) افسانہ (ب) سفرنامہ (ج) خاکہ (د) ڈراما</span></li>
+            <li>"اولڈ ایج ہوم" کے مصنف کون ہیں؟ <br> <span class="text-slate-500">(الف) ڈاکٹر ابو اللیث صدیقی (ب) جمیل الدین عالی (ج) میرزا ادیب (د) اشفاق احمد</span></li>
+            <li>سبق "کچھ ذریعۂ تعلیم کے باب میں" کے مصنف کا نام کیا ہے؟ <br> <span class="text-slate-500">(الف) ڈاکٹر ابو اللیث صدیقی (ب) شبلی نعمانی (ج) الطاف حسین حالی (د) پطرس بخاری</span></li>
+            <li>نظم "آدمی نامہ" کس شاعر کی تخلیق ہے؟ <br> <span class="text-slate-500">(الف) علامہ محمد اقبال (ب) نظیر اکبر آبادی (ج) میر انیس (د) انور مسعود</span></li>
+            <li>نظم "نمودِ صبح" کس صنفِ سخن میں لکھی گئی ہے؟ <br> <span class="text-slate-500">(الف) مسدس (ب) مثنوی (ج) مرثیہ / سلام (د) قطعہ</span></li>
+            <li>غزل "بازیچۂ اطفال ہے دنیا میرے آگے" کس شاعر کا کلام ہے؟ <br> <span class="text-slate-500">(الف) مومن خاں مومن (ب) مرزا غالب (ج) حسرت موہانی (د) زہرا نگاه</span></li>
+            <li>لفظ "عالم" کے دو درست معانی کون سے ہیں؟ <br> <span class="text-slate-500">(الف) دنیا اور جاننے والا (ب) علم اور کتاب (ج) استاد اور شاگرد (د) آسمان اور زمین</span></li>
+            <li>درست اعراب والا لفظ منتخب کریں: <br> <span class="text-slate-500">(الف) مُحَسِّن (ب) مُحْسِن (ج) مَحْسَن (د) مِحْسِن</span></li>
+            <li>"میرا بیٹا شیر کی طرح بہادر ہے" — قواعد کی رو سے یہ جملہ کس کی مثال ہے؟ <br> <span class="text-slate-500">(الف) استعارہ (ب) تشبیہ (ج) تلمیح (د) مجازِ مرسل</span></li>
+            <li>وہ اسم جو کسی خاص شخص، جگہ یا چیز کا نام ہو، کہلاتا ہے: <br> <span class="text-slate-500">(الف) اسمِ نکرہ (ب) اسمِ معرفہ (ج) اسمِ ضمیر (د) اسمِ صفت</span></li>
+            <li>جملہ "احمد نے خط لکھا" میں "لکھا" قواعد کی رو سے کیا ہے؟ <br> <span class="text-slate-500">(الف) فاعل (ب) مفعول (ج) فعل (د) حرف</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Subjective Model Paper -->
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6 font-urdu" dir="rtl">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">حصہ انشائی (Subjective Type) — کل نمبر: 60 | وقت: 2 گھنٹے 10 منٹ</h3>
+        </div>
+        <div class="p-6 space-y-8">
+          
+          <div>
+            <h4 class="font-bold text-slate-900 mb-3 text-lg border-b border-slate-100 pb-1">سوال نمبر 2: درج ذیل اشعار کی تشریح کیجیے۔ نظم کے شاعر کا نام اور عنوان بھی تحریر کریں۔ (10 نمبر)</h4>
+            <div class="mb-4">
+              <p class="font-bold text-slate-800 mb-2">(الف) حصہ نظم (کوئی سے تین اشعار — 6 نمبر):</p>
+              <ul class="list-disc pr-6 space-y-2 text-slate-700">
+                <li>دنیا میں بادشاہ ہے سو ہے وہ بھی آدمی / اور مفلس و گدا ہے سو ہے وہ بھی آدمی</li>
+                <li>کبھی اے نوجواں مسلم! تدبّر بھی کیا تو نے / وہ کیا گردوں تھا تو جس کا ہے اک ٹوٹا ہوا تارا</li>
+                <li>تجھے اس قوم نے پالا ہے آغوشِ محبت میں / کچل ڈالا تھا جس نے پاؤں میں تاجِ سرِ دارا</li>
+                <li>آمدِ صبح کی خبر لائی نسیمِ سحری / کھل گئے غنچے، چمن میں ہوئی تازہ نظری</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-bold text-slate-800 mb-2">(ب) حصہ غزل (کوئی سے دو اشعار — 4 نمبر):</p>
+              <ul class="list-disc pr-6 space-y-2 text-slate-700">
+                <li>بازیچۂ اطفال ہے دنیا میرے آگے / ہوتا ہے شب و روز تماشا میرے آگے</li>
+                <li>تم مرے پاس ہوتے ہو گویا / جب کوئی دوسرا نہیں ہوتا</li>
+                <li>ہے مشقِ سخن جاری، چکی کی مشقت بھی / اک طرفہ تماشا ہے حسرتؔ کی طبیعت بھی</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-3 text-lg border-b border-slate-100 pb-1">سوال نمبر 3: درج ذیل نثری اقتباسات کی تشریح کیجیے۔ سبق کا عنوان، مصنف کا نام اور خط کشیدہ الفاظ کے معانی بھی لکھیں۔ (5+5 = 10 نمبر)</h4>
+            <div class="space-y-4 text-slate-700">
+              <p><strong>(الف)</strong> "رسولِ اکرم ﷺ کی ذاتِ اقدس تمام انسانوں کے لیے بہترین نمونہ ہے۔ آپ ﷺ نے ہمیشہ عفو و درگزر سے کام لیا اور اپنے بدترین دشمنوں کو بھی معاف فرما دیا۔ آپ ﷺ کی گفتگو نہایت شیریں اور مختصر ہوتی تھی، جس سے سننے والوں کے دلوں پر گہرا اثر پڑتا تھا۔" <em class="text-sm text-slate-500">(حوالہ: اخلاقِ نبوی ﷺ)</em></p>
+              <p><strong>(ب)</strong> "شہروں کی تیز رفتار زندگی نے انسان کو اپنوں سے دور کر دیا ہے۔ اولڈ ایج ہوم دراصل ہمارے معاشرتی رویوں کی تبدیلی کا ایک آئینہ ہے جہاں وہ بزرگ پناہ لینے پر مجبور ہیں جنھوں نے اپنی ساری عمر اولاد کی پرورش میں گزار دی۔" <em class="text-sm text-slate-500">(حوالہ: اولڈ ایج ہوم)</em></p>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-3 text-lg border-b border-slate-100 pb-1">سوال نمبر 4: درج ذیل میں سے کوئی سے پانچ سوالات کے مختصر جوابات تحریر کیجیے۔ (2x5 = 10 نمبر)</h4>
+            <ol class="list-decimal pr-6 space-y-2 text-slate-700">
+              <li>حضور اکرم ﷺ کی مجلس کے کیا آداب تھے؟</li>
+              <li>سرسید احمد خان کے بچپن کے کسی ایک دلچسپ واقعے کا ذکر کریں۔</li>
+              <li>"سویرے جو کل آنکھ میری کھلی" میں لالہ جی نے مصنف کو صبح جگانے کے لیے کیا تدبیر کی؟</li>
+              <li>بابل کے کھنڈر دیکھ کر مصنف کے دل میں کیا خیالات پیدا ہوئے؟</li>
+              <li>نظم "آدمی نامہ" میں شاعر نے انسان کے کن مختلف روپوں کا ذکر کیا ہے؟</li>
+              <li>علامہ اقبال نے نوجوانِ مسلم کو کس بات پر غور و فکر (تدبّر) کرنے کی تلقین کی ہے؟</li>
+              <li>مرزا غالب کو دنیا بچوں کا کھیل کیوں نظر آتی ہے؟</li>
+              <li>حسرت موہانی نے جیل کی مشقت اور شاعری کو کس طرح یکجا بیان کیا ہے؟</li>
+            </ol>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-3 text-lg border-b border-slate-100 pb-1">سوال نمبر 5: درج ذیل میں سے کسی ایک سبق کا خلاصہ تحریر کیجیے اور مصنف کا نام بھی لکھیں۔ (5 نمبر)</h4>
+            <ul class="list-disc pr-6 space-y-2 text-slate-700">
+              <li>(الف) مُحسنِ محلہ (اشفاق احمد)</li>
+              <li>(ب) میرا گاؤں (سید غلام الثقلین نقوی)</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-3 text-lg border-b border-slate-100 pb-1">سوال نمبر 6: درج ذیل میں سے کسی ایک عنوان پر جامع مضمون تحریر کیجیے۔ (15 نمبر)</h4>
+            <ul class="list-disc pr-6 space-y-2 text-slate-700">
+              <li>محنت کی برکتیں</li>
+              <li>والدین کا احترام</li>
+              <li>سائنس کے کرشمے</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-3 text-lg border-b border-slate-100 pb-1">سوال نمبر 7: درج ذیل عبارت کو غور سے پڑھیں اور آخر میں دیے گئے سوالات کے جوابات تحریر کریں۔ (2x5 = 10 نمبر)</h4>
+            <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 mb-4 text-slate-800 text-lg">
+              "وقت ایک ایسی قیمتی دولت ہے جو ایک بار ہاتھ سے نکل جائے تو دوبارہ واپس نہیں آتی۔ دنیا کی تمام ترقی یافتہ اقوام نے وقت کی قدر و قیمت کو پہچانا اور ہر لمحے کو تعمیری کاموں میں صرف کیا۔ جو طالب علم وقت کی پابندی کرتے ہیں اور اپنا کام کل پر نہیں ٹالتے، وہی امتحان اور عملی زندگی میں کامیابی حاصل کرتے ہیں۔ اس کے برعکس سستی اور کاہلی انسان کو پستی کی طرف لے جاتی ہے۔"
+            </div>
+            <p class="font-bold mb-2">سوالات:</p>
+            <ol class="list-decimal pr-6 space-y-2 text-slate-700">
+              <li>وقت کو کیسی دولت قرار دیا گیا ہے؟</li>
+              <li>ترقی یافتہ اقوام کی کامیابی کا راز کیا ہے؟</li>
+              <li>کون سے طالب علم زندگی میں کامیاب ہوتے ہیں؟</li>
+              <li>سستی اور کاہلی کا کیا انجام ہوتا ہے؟</li>
+              <li>اس عبارت کا مناسب عنوان تجویز کیجیے۔</li>
+            </ol>
+          </div>
+
+        </div>
+      </div>
+
+      <TuitionAd subject="Urdu" classLevel="Class 10" />
+
+      <!-- FAQ Section -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-6 border-b border-slate-200 pb-2 font-urdu" dir="rtl">Frequently Asked Questions</h2>
+      <div class="space-y-4 not-prose font-urdu" dir="rtl">
+        {faqs.map(faq => (
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h4 class="font-bold text-slate-900 mb-2">{faq.q}</h4>
+            <p class="text-sm text-slate-600">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+</Layout>

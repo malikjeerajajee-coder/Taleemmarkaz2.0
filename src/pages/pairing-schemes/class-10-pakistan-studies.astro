@@ -1,0 +1,540 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TuitionAd from '../../components/TuitionAd.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+
+const pageUrl = "https://taleemmarkaz.com/pairing-schemes/class-10-pakistan-studies/";
+
+const faqs = [
+  { q: "What is the total marks of 10th Class Pakistan Studies 2027?", a: "According to the supplied paper pattern, the Pakistan Studies paper carries 100 marks, including 20 objective marks, 50 short-question marks, and 30 detailed-question marks." },
+  { q: "How many MCQs are included in the Class 10 Pak Studies paper?", a: "There are 20 compulsory MCQs, and each question carries one mark." },
+  { q: "How many chapters are included in the new PECTAA Pakistan Studies book?", a: "The supplied 2026-28 syllabus contains eight chapters." },
+  { q: "How many short questions should students attempt?", a: "Students attempt 25 short questions: eight in Q.2, eight in Q.3, and nine in Q.4." },
+  { q: "How many long questions are included in the pairing scheme?", a: "Five detailed questions are provided, and students attempt any three. Each carries 10 marks." },
+  { q: "Which chapter has the highest MCQ distribution?", a: "Chapter 3, History of Pakistan (1971 to Present), has the highest allocation with four MCQs." },
+  { q: "Is the 2027 Pakistan Studies pairing scheme the same for all Punjab Boards?", a: "The supplied scheme is intended for all nine Punjab Boards. Students should verify the final pattern with their respective board." },
+  { q: "Is the new Pakistan Studies syllabus different from the previous syllabus?", a: "Yes, the supplied new-book structure uses a revised chapter sequence and updated topics for the 2026-28 session." },
+  { q: "Where can students find the official Pakistan Studies textbook?", a: "Students can visit the Punjab Education Curriculum, Training and Assessment Authority website to access its available textbook resources." }
+];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "10th Class Pakistan Studies Pairing Scheme 2027 Punjab Board – New PECTAA Syllabus, Paper Pattern & Model Paper",
+      "description": "Get 10th Class Pakistan Studies Pairing Scheme 2027 for Punjab Boards. Check the new PECTAA syllabus, chapter-wise MCQs, short questions, long questions, paper pattern and SLO-based model paper.",
+      "author": {
+        "@type": "Person",
+        "name": "Ms. Naima Batool",
+        "jobTitle": "Pakistan Studies Specialist",
+        "alumniOf": "MPhil History",
+        "url": "https://taleemmarkaz.com/authors/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TaleemMarkaz",
+        "logo": { "@type": "ImageObject", "url": "https://taleemmarkaz.com/logo.png" }
+      },
+      "datePublished": "2026-11-08",
+      "dateModified": "2026-11-13"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://taleemmarkaz.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Pairing Schemes", "item": "https://taleemmarkaz.com/pairing-schemes/"},
+        {"@type": "ListItem", "position": 3, "name": "Class 10 Pakistan Studies", "item": pageUrl}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+      }))
+    }
+  ]
+};
+---
+
+<Layout 
+  title="10th Class Pakistan Studies Pairing Scheme 2027 – Punjab Board"
+  description="Get 10th Class Pakistan Studies Pairing Scheme 2027 for Punjab Boards. Check the new PECTAA syllabus, chapter-wise MCQs, short questions, long questions, paper pattern and SLO-based model paper."
+  canonical={pageUrl}
+  schema={schema}
+>
+  <style is:global>
+    html, body { overflow-x: hidden; }
+    .font-urdu { font-family: 'Gulzar', serif; line-height: 3.2; font-size: 1.15rem; }
+    .font-urdu li { margin-bottom: 0.5rem; }
+    table { table-layout: auto; width: 100%; }
+    td, th { vertical-align: middle !important; }
+
+    @media print {
+      header, footer, nav, .no-print, .breadcrumbs, .author-card { display: none !important; }
+      body { background: white !important; color: black !important; font-size: 12pt; overflow-x: visible; }
+      main { padding: 0 !important; margin: 0 !important; }
+      .max-w-4xl { max-width: 100% !important; }
+      .print-header { display: flex !important; align-items: center; justify-content: space-between; border-bottom: 2px solid #0d9488; padding-bottom: 10px; margin-bottom: 20px; }
+      .print-header h1 { font-size: 16pt; margin: 0; color: #0f172a; }
+      table { page-break-inside: avoid; }
+      tr { page-break-inside: avoid; }
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      .font-urdu { font-size: 14pt; line-height: 2.8; }
+    }
+    .print-header { display: none; }
+  </style>
+
+  <div class="bg-slate-100 border-b border-slate-200 py-3 px-4 breadcrumbs no-print w-full overflow-hidden">
+    <div class="max-w-5xl mx-auto text-sm text-slate-500 flex flex-wrap items-center gap-2">
+      <a href="/" class="hover:text-teal-600">Home</a> <span>/</span>
+      <a href="/pairing-schemes/" class="hover:text-teal-600">Pairing Schemes</a> <span>/</span>
+      <span class="text-slate-900 font-medium">Class 10 Pakistan Studies</span>
+    </div>
+  </div>
+
+  <section class="bg-white pt-12 pb-8 px-4 border-b border-slate-200 w-full overflow-hidden">
+    <div class="max-w-4xl mx-auto">
+      <div class="print-header">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-teal-600 text-white rounded flex items-center justify-center font-bold text-lg">T</div>
+          <span class="text-xl font-extrabold text-slate-900">TaleemMarkaz</span>
+        </div>
+        <span class="text-sm font-semibold text-slate-500">taleemmarkaz.com</span>
+      </div>
+
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-700 text-xs font-bold uppercase tracking-wider mb-4 no-print">
+        🚨 Official 2027 Guide
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+        10th Class Pakistan Studies Pairing Scheme 2027 <span class="text-teal-600">(Punjab Board)</span>
+      </h1>
+      <p class="text-lg text-slate-600 mb-6 max-w-3xl">
+        The 10th Class Pakistan Studies Pairing Scheme 2027 is an important examination preparation guide for Matric Part 2 students studying under Punjab Boards. The new PECTAA Class 10 Pakistan Studies syllabus for the 2026-28 session includes eight chapters covering Pakistan's ideological foundation, Pakistan Movement, history, international affairs, geography, economic development, society, culture, and women's empowerment.
+      </p>
+
+      <button onclick="window.print()" class="no-print bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-flex items-center gap-2 shadow-sm">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        Download PDF with Logo
+      </button>
+
+      <div class="mt-8">
+        <AuthorBox 
+          name="Ms. Naima Batool"
+          role="Pakistan Studies Specialist"
+          qualifications="MPhil History"
+          university="University of Agriculture, Faisalabad"
+          initials="NB"
+          theme="teal"
+          publishedDate="Nov 8, 2026"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 py-12 w-full overflow-hidden">
+    <div class="prose prose-slate prose-lg max-w-none text-slate-700">
+      
+      <!-- IMPORTANT ALERT -->
+      <div class="bg-red-50 border-l-4 border-red-600 p-6 rounded-r-xl mb-10 not-prose">
+        <h3 class="text-xl font-bold text-red-900 mb-3 flex items-center gap-2">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          Important Verification Notice
+        </h3>
+        <p class="text-red-800 mb-2"><strong>Please read carefully:</strong> The chapter-wise scheme below is based on the supplied 2027 pairing information.</p>
+        <p class="text-red-800 text-sm">Students should verify the final examination scheme against the latest PECTAA or relevant BISE notification before relying on it as an official board-issued document.</p>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">10th Class Pakistan Studies Pairing Scheme 2027 – Quick Overview</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900 w-1/3">Class</td><td class="p-3">10th Class</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Subject</td><td class="p-3">Pakistan Studies</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Common Name</td><td class="p-3">Pak Studies</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Academic Session</td><td class="p-3">2026-27</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Examination</td><td class="p-3">Annual Exams 2027</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Curriculum</td><td class="p-3">New PECTAA Syllabus</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Total Chapters</td><td class="p-3">8</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Total Marks</td><td class="p-3">100</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Objective Marks</td><td class="p-3">20</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Subjective Marks</td><td class="p-3">80</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Applicable Region</td><td class="p-3">Punjab Boards</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- NEW CURRICULUM CONTEXT SECTION -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Official PECTAA & BISE Curriculum Context</h2>
+      <div class="bg-teal-50 border-l-4 border-teal-600 p-6 rounded-r-xl mb-8 not-prose">
+        <p class="text-teal-900 mb-4 font-medium">The pairing scheme and blueprint are derived from the official assessment frameworks, curriculum updates, and paper pattern guidelines issued for Punjab Boards under the updated PECTAA curriculum implementation for Class 10 Pakistan Studies (Mutalia-e-Pakistan).</p>
+        <p class="text-teal-900 mb-2 font-bold">Specifically, this structure is compiled from:</p>
+        <ul class="list-disc pl-5 text-teal-900 space-y-2">
+          <li><strong>The 8-Chapter Syllabus Alignment:</strong> Reflecting the updated content distribution layout adopted for the new textbook cycle.</li>
+          <li><strong>Board Blueprint Standards:</strong> The distribution rules for 100 total marks (20 objective, 50 short questions across three groups, and 3 out of 5 long essay questions) matching standard BISE assessment specifications for Punjab.</li>
+          <li><strong>SLO-Based (Student Learning Outcomes) Pattern:</strong> Formatted to mimic official model assessment templates that transition away from rote memorization toward conceptual and analytical questioning.</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">10th Class Pakistan Studies Paper Pattern 2027</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Paper Section</th>
+              <th class="p-3 font-bold text-slate-900 text-center">Total Marks</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Objective (MCQs)</td><td class="p-3 text-center font-bold text-teal-600">20</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Short Questions</td><td class="p-3 text-center font-bold text-teal-600">50</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Detailed Questions</td><td class="p-3 text-center font-bold text-teal-600">30</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Grand Total</td><td class="p-3 text-center text-teal-600">100</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm mb-6">Students must attempt all 20 MCQs, 25 short questions, and 3 detailed questions according to the specified choices.</p>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">Chapter-Wise MCQs Pairing Scheme 2027</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Chapter</th>
+              <th class="p-3 font-bold text-slate-900">Chapter Name</th>
+              <th class="p-3 font-bold text-slate-900 text-center">MCQs</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">1</td><td class="p-3">Ideological Basis of Pakistan</td><td class="p-3 text-center font-bold text-teal-600">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">2</td><td class="p-3">Pakistan Movement and Creation of Pakistan</td><td class="p-3 text-center font-bold text-teal-600">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">3</td><td class="p-3">History of Pakistan (1971 to Present)</td><td class="p-3 text-center font-bold text-teal-600">4</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">4</td><td class="p-3">Pakistan and World Affairs</td><td class="p-3 text-center font-bold text-teal-600">3</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">5</td><td class="p-3">Land and Environment</td><td class="p-3 text-center font-bold text-teal-600">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">6</td><td class="p-3">Economic Development</td><td class="p-3 text-center font-bold text-teal-600">2</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">7</td><td class="p-3">Population, Society and Culture of Pakistan</td><td class="p-3 text-center font-bold text-teal-600">3</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">8</td><td class="p-3">Empowerment of Women</td><td class="p-3 text-center font-bold text-teal-600">2</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Total</td><td class="p-3">All 8 Chapters</td><td class="p-3 text-center text-teal-600">20</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">10th Class Pak Studies Short Questions Pairing Scheme 2027</h2>
+      <p class="text-sm mb-4">The subjective section includes three groups of short questions. Each short question carries two marks. Students must attempt 25 short questions in total.</p>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Question 2 – Chapters 1, 2 and 6</h3>
+      <div class="overflow-x-auto w-full max-w-full my-4 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead><tr class="bg-slate-100 border-b border-slate-200"><th class="p-3 font-bold text-slate-900">Detail</th><th class="p-3 font-bold text-slate-900 text-center">Marks / Questions</th></tr></thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Chapters</td><td class="p-3 text-center">1, 2, 6</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Total Questions</td><td class="p-3 text-center">12</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Questions to Attempt</td><td class="p-3 text-center font-bold text-teal-600">8</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Marks per Question</td><td class="p-3 text-center">2</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Total Marks</td><td class="p-3 text-center text-teal-600">16</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Question 3 – Chapters 4 and 7</h3>
+      <div class="overflow-x-auto w-full max-w-full my-4 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead><tr class="bg-slate-100 border-b border-slate-200"><th class="p-3 font-bold text-slate-900">Detail</th><th class="p-3 font-bold text-slate-900 text-center">Marks / Questions</th></tr></thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Chapters</td><td class="p-3 text-center">4, 7</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Total Questions</td><td class="p-3 text-center">12</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Questions to Attempt</td><td class="p-3 text-center font-bold text-teal-600">8</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Marks per Question</td><td class="p-3 text-center">2</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Total Marks</td><td class="p-3 text-center text-teal-600">16</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-slate-900 mt-6 mb-2">Question 4 – Chapters 3, 5 and 8</h3>
+      <div class="overflow-x-auto w-full max-w-full my-4 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead><tr class="bg-slate-100 border-b border-slate-200"><th class="p-3 font-bold text-slate-900">Detail</th><th class="p-3 font-bold text-slate-900 text-center">Marks / Questions</th></tr></thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Chapters</td><td class="p-3 text-center">3, 5, 8</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Total Questions</td><td class="p-3 text-center">13</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Questions to Attempt</td><td class="p-3 text-center font-bold text-teal-600">9</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Marks per Question</td><td class="p-3 text-center">2</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Total Marks</td><td class="p-3 text-center text-teal-600">18</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">10th Class Pakistan Studies Long Questions Pairing Scheme 2027</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Question</th>
+              <th class="p-3 font-bold text-slate-900">Chapter Pairing</th>
+              <th class="p-3 font-bold text-slate-900 text-center">Marks</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.5</td><td class="p-3">Chapter 1 or Chapter 2</td><td class="p-3 text-center font-bold text-teal-600">10</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.6</td><td class="p-3">Chapter 3</td><td class="p-3 text-center font-bold text-teal-600">10</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.7</td><td class="p-3">Chapter 4</td><td class="p-3 text-center font-bold text-teal-600">10</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.8</td><td class="p-3">Chapter 5 or Chapter 6</td><td class="p-3 text-center font-bold text-teal-600">10</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">Q.9</td><td class="p-3">Chapter 7 or Chapter 8</td><td class="p-3 text-center font-bold text-teal-600">10</td></tr>
+            <tr class="bg-slate-50 font-bold"><td class="p-3">Total Attempted</td><td class="p-3">Any 3 out of 5</td><td class="p-3 text-center text-teal-600">30</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-4 border-b border-slate-200 pb-2">New PECTAA Class 10 Pakistan Studies Syllabus 2026-28</h2>
+      <div class="overflow-x-auto w-full max-w-full my-6 border border-slate-200 rounded-lg not-prose">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200">
+              <th class="p-3 font-bold text-slate-900">Chapter</th>
+              <th class="p-3 font-bold text-slate-900">English Title</th>
+              <th class="p-3 font-bold text-slate-900">Urdu Title</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">1</td><td class="p-3">Ideological Basis of Pakistan</td><td class="p-3 font-urdu" dir="rtl">پاکستان کی نظریاتی اساس</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">2</td><td class="p-3">Pakistan Movement and Creation of Pakistan</td><td class="p-3 font-urdu" dir="rtl">تحریک پاکستان اور پاکستان کا قیام</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">3</td><td class="p-3">History of Pakistan (1971 to Present)</td><td class="p-3 font-urdu" dir="rtl">تاریخ پاکستان (1971ء تا حال)</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">4</td><td class="p-3">Pakistan and World Affairs</td><td class="p-3 font-urdu" dir="rtl">پاکستان اور عالمی امور</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">5</td><td class="p-3">Land and Environment</td><td class="p-3 font-urdu" dir="rtl">زمین اور ماحول</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">6</td><td class="p-3">Economic Development</td><td class="p-3 font-urdu" dir="rtl">معاشی ترقی</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">7</td><td class="p-3">Population, Society and Culture of Pakistan</td><td class="p-3 font-urdu" dir="rtl">آبادی، معاشرہ اور پاکستان کی ثقافت</td></tr>
+            <tr class="hover:bg-slate-50"><td class="p-3 font-medium text-slate-900">8</td><td class="p-3">Empowerment of Women</td><td class="p-3 font-urdu" dir="rtl">خواتین کو بااختیار بنانا</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ENGLISH MODEL PAPER -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2">English Model Paper 2027 (SLO-Based)</h2>
+      
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">Objective Model Paper</h3>
+          <p class="text-sm text-slate-600">Total Marks: 20</p>
+        </div>
+        <div class="p-4 w-full overflow-hidden">
+          <p class="text-sm font-bold text-slate-800 mb-4">Choose the correct answer:</p>
+          <ul class="text-sm text-slate-700 space-y-3 list-decimal pl-5">
+            <li>Who first used the term Two-Nation Theory in the context of the Indian subcontinent? <br> <span class="text-slate-500">A. Allama Iqbal B. Sir Syed Ahmad Khan C. Quaid-e-Azam D. Chaudhry Rehmat Ali</span></li>
+            <li>In which year was the Lahore Resolution passed? <br> <span class="text-slate-500">A. 1930 B. 1940 C. 1946 D. 1947</span></li>
+            <li>Under which Constitution of Pakistan was Islam declared the state religion for the first time? <br> <span class="text-slate-500">A. 1956 B. 1962 C. 1973 D. Interim 1947</span></li>
+            <li>Which constitutional amendment restored the parliamentary form of government by curtailing presidential powers? <br> <span class="text-slate-500">A. 8th Amendment B. 13th Amendment C. 17th Amendment D. 18th Amendment</span></li>
+            <li>The Wakhan Corridor separates Pakistan from which Central Asian state? <br> <span class="text-slate-500">A. Uzbekistan B. Tajikistan C. Turkmenistan D. Kazakhstan</span></li>
+            <li>Which major international organization has Pakistan served on as a non-permanent Security Council member multiple times? <br> <span class="text-slate-500">A. ASEAN B. UN C. EU D. African Union</span></li>
+            <li>Which barrage is constructed on the River Indus near Sukkur? <br> <span class="text-slate-500">A. Guddu Barrage B. Lloyd Barrage C. Taunsa Barrage D. Chashma Barrage</span></li>
+            <li>Which sector contributes the largest share to Pakistan's GDP? <br> <span class="text-slate-500">A. Agriculture B. Manufacturing C. Services D. Mining</span></li>
+            <li>Which Pakistani regional language uses the Shahmukhi script in Punjab? <br> <span class="text-slate-500">A. Sindhi B. Pashto C. Punjabi D. Balochi</span></li>
+            <li>Under the Punjab Protection of Women Against Violence Act, which facility provides immediate shelter and legal aid to affected women? <br> <span class="text-slate-500">A. Dar-ul-Aman B. Bait-ul-Mal C. Khidmat Markaz D. Ombudsman Office</span></li>
+          </ul>
+          <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 mt-4">
+            <p class="text-xs text-slate-600"><strong>Supplied answer key:</strong> 1-B, 2-B, 3-C, 4-D, 5-B, 6-B, 7-B, 8-C, 9-C, 10-A.</p>
+            <p class="text-xs text-slate-500 mt-2 italic">Note: These are practice questions, not a confirmed official 2027 board MCQ paper.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">Subjective Model Paper</h3>
+          <p class="text-sm text-slate-600">Total Marks: 80</p>
+        </div>
+        <div class="p-4 space-y-6">
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.2: Write short answers to any EIGHT questions. (8 × 2 = 16 Marks)</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-2">
+              <li>Define Ideology in light of Islamic principles.</li>
+              <li>State two objectives of the establishment of the All-India Muslim League in 1906.</li>
+              <li>What was the core demand of the Simla Deputation?</li>
+              <li>Mention two key points of Quaid-e-Azam's Fourteen Points.</li>
+              <li>Why did the Cripps Mission fail in 1942?</li>
+              <li>Define Economic Development.</li>
+              <li>Differentiate between cottage industry and small-scale industry.</li>
+              <li>Name four major cash crops of Pakistan.</li>
+              <li>What is meant by e-commerce and how does it support Pakistan's economy?</li>
+              <li>State two major challenges faced by Pakistan's energy sector.</li>
+              <li>Write two points on the significance of the Radcliffe Award's injustice to Pakistan.</li>
+              <li>How does the Objectives Resolution (1949) serve as the foundation of Pakistan's constitutional history?</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.3: Write short answers to any EIGHT questions. (8 × 2 = 16 Marks)</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-2">
+              <li>Define Foreign Policy.</li>
+              <li>State two primary objectives of Pakistan's foreign policy.</li>
+              <li>What is the strategic importance of Gwadar Port under CPEC?</li>
+              <li>Name four founding member states of SAARC.</li>
+              <li>Briefly explain the Kashmir dispute in the context of UN resolutions.</li>
+              <li>Define Population Density and mention the most densely populated province of Pakistan.</li>
+              <li>State two causes of rapid urbanization in Pakistan.</li>
+              <li>Name four prominent Sufi poets of Pakistan and their respective languages.</li>
+              <li>How do national festivals promote cultural harmony in Pakistan?</li>
+              <li>Mention two steps taken to promote technical and vocational education in Pakistan.</li>
+              <li>What role does the OIC play in addressing issues of the Muslim Ummah?</li>
+              <li>Differentiate between Literacy Rate and Net Enrollment Rate.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Q.4: Write short answers to any NINE questions. (9 × 2 = 18 Marks)</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-2">
+              <li>State two major causes of the separation of East Pakistan in 1971.</li>
+              <li>Write two salient Islamic provisions of the 1973 Constitution.</li>
+              <li>What was the significance of the 1974 Islamic Summit Conference in Lahore?</li>
+              <li>Mention two major administrative reforms introduced during the 1970s.</li>
+              <li>What is Global Warming and how does it impact Pakistan's glaciers?</li>
+              <li>Differentiate between Deforestation and Desertification.</li>
+              <li>State two preventive measures to control smog in Punjab.</li>
+              <li>Name four major natural regions of Pakistan.</li>
+              <li>Define Women Empowerment.</li>
+              <li>State two constitutional rights guaranteed to women under the 1973 Constitution of Pakistan.</li>
+              <li>Mention two laws enacted in Pakistan to protect women against workplace harassment.</li>
+              <li>How do women entrepreneurs contribute to household and national economic growth?</li>
+              <li>Write two steps taken by the government to increase female literacy in rural areas.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">Detailed Questions (Attempt any 3 out of 5) (30 Marks)</h4>
+            <ul class="list-decimal pl-5 text-sm text-slate-700 space-y-2">
+              <li>Explain the Ideology of Pakistan in the light of the pronouncements of Allama Muhammad Iqbal and Quaid-e-Azam Muhammad Ali Jinnah. <em>(Chapter 1 or 2)</em></li>
+              <li>Analyze the salient features of the Constitution of the Islamic Republic of Pakistan 1973. <em>(Chapter 3)</em></li>
+              <li>Discuss Pakistan's relations with the People's Republic of China, highlighting the economic and strategic impact of CPEC. <em>(Chapter 4)</em></li>
+              <li>Identify the major environmental hazards facing Pakistan today and suggest practical measures for sustainable environmental protection. <em>(Chapter 5 or 6)</em></li>
+              <li>Evaluate the role of women in the development of Pakistan and discuss the legislative measures taken for their protection and empowerment. <em>(Chapter 7 or 8)</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- URDU MODEL PAPER -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-12 mb-4 border-b border-slate-200 pb-2 font-urdu" dir="rtl">Urdu Model Paper 2027 (اردو ماڈل پیپر)</h2>
+      
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6 font-urdu" dir="rtl">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">معروضی ماڈل پیپر (Objective Model Paper)</h3>
+          <p class="text-sm text-slate-600">کل نمبر: 20</p>
+        </div>
+        <div class="p-4 w-full overflow-hidden">
+          <p class="text-sm font-bold text-slate-800 mb-4">درست جواب کا انتخاب کریں:</p>
+          <ul class="text-sm text-slate-700 space-y-3 list-decimal pr-5">
+            <li>برصغیر کی سیاست میں دو قومی نظریے کا لفظ سب سے پہلے کس نے استعمال کیا؟ <br> <span class="text-slate-500">A. علامہ اقبال B. سر سید احمد خان C. قائد اعظم D. چوہدری رحمت علی</span></li>
+            <li>قرارداد لاہور کس سال منظور ہوئی؟ <br> <span class="text-slate-500">A. 1930 B. 1940 C. 1946 D. 1947</span></li>
+            <li>پاکستان کے کس آئین کے تحت پہلی بار اسلام کو ریاست کا مذہب قرار دیا گیا؟ <br> <span class="text-slate-500">A. 1956 B. 1962 C. 1973 D. عبوری 1947</span></li>
+            <li>کس آئینی ترمیم نے صدارتی اختیارات میں کمی کرکے پارلیمانی نظام حکومت بحال کیا؟ <br> <span class="text-slate-500">A. 8th Amendment B. 13th Amendment C. 17th Amendment D. 18th Amendment</span></li>
+            <li>وخان کوریڈور پاکستان کو کس وسطی ایشیائی ریاست سے الگ کرتا ہے؟ <br> <span class="text-slate-500">A. ازبکستان B. تاجکستان C. ترکمانستان D. قازقستان</span></li>
+            <li>پاکستان نے کس بڑی بین الاقوامی تنظیم کی سلامتی کونسل میں متعدد بار غیر مستقل رکن کے طور پر خدمات انجام دی ہیں؟ <br> <span class="text-slate-500">A. ASEAN B. UN C. EU D. African Union</span></li>
+            <li>سکھر کے قریب دریائے سندھ پر کون سا بیراج تعمیر کیا گیا ہے؟ <br> <span class="text-slate-500">A. گڈو بیراج B. لائیڈ بیراج C. تونسہ بیراج D. چشمہ بیراج</span></li>
+            <li>پاکستان کی جی ڈی پی میں سب سے بڑا حصہ کون سا شعبہ ڈالتا ہے؟ <br> <span class="text-slate-500">A. زراعت B. مینوفیکچرنگ C. خدمات D. کان کنی</span></li>
+            <li>پنجاب میں کون سی پاکستانی علاقائی زبان شاہ مکھی رسم الخط استعمال کرتی ہے؟ <br> <span class="text-slate-500">A. سندھی B. پشتو C. پنجابی D. بلوچی</span></li>
+            <li>پنجاب تحفظ خواتین از تشدد ایکٹ کے تحت کون سی سہولت متاثرہ خواتین کو فوری پناہ اور قانونی امداد فراہم کرتی ہے؟ <br> <span class="text-slate-500">A. دارالامان B. بیت المال C. خدمت مرکز D. محتسب دفتر</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-xl overflow-hidden not-prose my-6 font-urdu" dir="rtl">
+        <div class="bg-slate-100 p-4 border-b border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900">انشائیہ ماڈل پیپر (Subjective Model Paper)</h3>
+          <p class="text-sm text-slate-600">کل نمبر: 80</p>
+        </div>
+        <div class="p-4 space-y-6">
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 2: کوئی سے آٹھ (8) سوالات کے مختصر جوابات لکھیں۔ (8 × 2 = 16 نمبر)</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-2">
+              <li>اسلامی اصولوں کی روشنی میں نظریے کی تعریف کریں۔</li>
+              <li>1906 میں آل انڈیا مسلم لیگ کے قیام کے دو مقاصد بتائیں۔</li>
+              <li>شملہ وفد کا بنیادی مطالبہ کیا تھا؟</li>
+              <li>قائد اعظم کے چودہ نکات کے دو اہم نکات بتائیں۔</li>
+              <li>1942 میں کرپس مشن کیوں ناکام ہوا؟</li>
+              <li>معاشی ترقی کی تعریف کریں۔</li>
+              <li>کوٹیج انڈسٹری اور چھوٹے پیمانے کی صنعت میں کیا فرق ہے؟</li>
+              <li>پاکستان کی چار اہم نقد آور فصلوں کے نام بتائیں۔</li>
+              <li>ای کامرس سے کیا مراد ہے اور یہ پاکستان کی معیشت کو کیسے سہارا دیتا ہے؟</li>
+              <li>پاکستان کے توانائی کے شعبے کو درپیش دو بڑے چیلنجز بتائیں۔</li>
+              <li>ریڈکلف ایوارڈ کی پاکستان کے ساتھ ہونے والی ناانصافی کی اہمیت پر دو نکات لکھیں۔</li>
+              <li>قرارداد مقاصد (1949) پاکستان کی آئینی تاریخ کی بنیاد کیسے ہے؟</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 3: کوئی سے آٹھ (8) سوالات کے مختصر جوابات لکھیں۔ (8 × 2 = 16 نمبر)</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-2">
+              <li>خارجہ پالیسی کی تعریف کریں۔</li>
+              <li>پاکستان کی خارجہ پالیسی کے دو بنیادی مقاصد بتائیں۔</li>
+              <li>سی پیک کے تحت گوادر پورٹ کی اسٹریٹجک اہمیت کیا ہے؟</li>
+              <li>سارک (SAARC) کے چار بانی رکن ممالک کے نام بتائیں۔</li>
+              <li>اقوام متحدہ کی قراردادوں کے تناظر میں مسئلہ کشمیر کی مختصر وضاحت کریں۔</li>
+              <li>آبادی کی کثافت کی تعریف کریں اور پاکستان کا سب سے گنجان آباد صوبہ بتائیں۔</li>
+              <li>پاکستان میں تیزی سے شہری کاری کی دو وجوہات بتائیں۔</li>
+              <li>پاکستان کے چار ممتاز صوفی شعراء اور ان کی زبانوں کے نام بتائیں۔</li>
+              <li>قومی تہوار پاکستان میں ثقافتی ہم آہنگی کو کیسے فروغ دیتے ہیں؟</li>
+              <li>پاکستان میں تکنیکی اور پیشہ ورانہ تعلیم کے فروغ کے لیے اٹھائے گئے دو اقدامات بتائیں۔</li>
+              <li>امت مسلمہ کے مسائل حل کرنے میں او آئی سی کیا کردار ادا کرتی ہے؟</li>
+              <li>شرح خواندگی اور خالص اندراج کی شرح میں کیا فرق ہے؟</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">سوال 4: کوئی سے نو (9) سوالات کے مختصر جوابات لکھیں۔ (9 × 2 = 18 نمبر)</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-2">
+              <li>1971 میں مشرقی پاکستان کی علیحدگی کی دو بڑی وجوہات بتائیں۔</li>
+              <li>1973 کے آئین کی دو اہم اسلامی دفعات لکھیں۔</li>
+              <li>لاہور میں 1974 کی اسلامی سربراہی کانفرنس کی کیا اہمیت تھی؟</li>
+              <li>1970 کی دہائی میں متعارف کرائی گئی دو بڑی انتظامی اصلاحات بتائیں۔</li>
+              <li>گلوبل وارمنگ کیا ہے اور یہ پاکستان کے گلیشیئرز کو کیسے متاثر کرتی ہے؟</li>
+              <li>جنگلات کی کٹائی اور صحرائی کاری میں کیا فرق ہے؟</li>
+              <li>پنجاب میں اسموگ پر قابو پانے کے لیے دو حفاظتی اقدامات بتائیں۔</li>
+              <li>پاکستان کے چار بڑے قدرتی خطوں کے نام بتائیں۔</li>
+              <li>خواتین کو بااختیار بنانے کی تعریف کریں۔</li>
+              <li>1973 کے آئین پاکستان کے تحت خواتین کو حاصل دو آئینی حقوق بتائیں۔</li>
+              <li>کام کی جگہ پر ہراسانی سے خواتین کے تحفظ کے لیے پاکستان میں بنائے گئے دو قوانین کا ذکر کریں۔</li>
+              <li>خواتین کاروباری افراد گھریلو اور قومی معاشی ترقی میں کیسے کردار ادا کرتی ہیں؟</li>
+              <li>دیہی علاقوں میں خواتین کی خواندگی بڑھانے کے لیے حکومت کے اٹھائے گئے دو اقدامات لکھیں۔</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-slate-900 mb-2">تفصیلی سوالات (کسی بھی 3 سوالات کے جوابات لکھیں) (30 نمبر)</h4>
+            <ul class="list-decimal pr-5 text-sm text-slate-700 space-y-3">
+              <li>علامہ محمد اقبال اور قائد اعظم محمد علی جناح کے بیانات کی روشنی میں نظریہ پاکستان کی وضاحت کریں۔ <em>(باب 1 یا 2)</em></li>
+              <li>اسلامی جمہوریہ پاکستان کے 1973 کے آئین کی اہم خصوصیات کا تجزیہ کریں۔ <em>(باب 3)</em></li>
+              <li>عوامی جمہوریہ چین کے ساتھ پاکستان کے تعلقات پر بحث کریں، خاص طور پر سی پیک کے معاشی اور اسٹریٹجک اثرات کو اجاگر کریں۔ <em>(باب 4)</em></li>
+              <li>آج پاکستان کو درپیش بڑے ماحولیاتی خطرات کی نشاندہی کریں اور پائیدار ماحولیاتی تحفظ کے لیے عملی اقدامات تجویز کریں۔ <em>(باب 5 یا 6)</em></li>
+              <li>پاکستان کی ترقی میں خواتین کے کردار کا جائزہ لیں اور ان کے تحفظ اور بااختیاری کے لیے اٹھائے گئے قانونی اقدامات پر بحث کریں۔ <em>(باب 7 یا 8)</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <TuitionAd subject="Pakistan Studies" classLevel="Class 10" />
+
+      <!-- FAQ Section -->
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-10 mb-6 border-b border-slate-200 pb-2">Frequently Asked Questions</h2>
+      <div class="space-y-4 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-white border border-slate-200 p-5 rounded-lg">
+            <h4 class="font-bold text-slate-900 mb-2">{faq.q}</h4>
+            <p class="text-sm text-slate-600">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-slate-100 border border-slate-200 rounded-xl p-6 mt-10">
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Official and Supporting Resources</h3>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">The pairing scheme reference above is an educational resource prepared for practice. Students should always verify examination policies, syllabus updates, and paper patterns through official board channels.</p>
+        <ul class="text-sm text-slate-600 space-y-1 mb-4 list-disc pl-5">
+          <li>PECTAA Official Website: <a href="https://pectaa.edu.pk/curriculum-compliance/" class="text-teal-600 hover:underline">Curriculum and Compliance</a></li>
+          <li>BISE Lahore: <a href="https://www.biselahore.com/" class="text-teal-600 hover:underline">https://www.biselahore.com/</a></li>
+        </ul>
+        <p class="text-sm text-slate-600 leading-relaxed"><strong>Disclaimer:</strong> This article is an educational preparation guide. The model paper is independently prepared for practice and is not an official board paper. Always follow the latest examination instructions, prescribed textbooks and official notifications issued by PECTAA and your respective BISE board.</p>
+      </div>
+
+    </div>
+  </section>
+</Layout>
